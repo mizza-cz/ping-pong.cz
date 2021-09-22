@@ -1,0 +1,41 @@
+.footer{
+   background-color: $blue;
+   padding: 40px 0;
+  &__logo{
+     margin: 0 auto 40px;
+     width: 151px;
+     height: 64px;
+     display: block;
+  }
+  p{
+     font-size: 0.75rem;
+     color: #fff;
+     text-align: center;
+     a{
+        &:hover{
+         text-decoration: underline;
+        }
+     }
+  }
+  .social{
+     justify-content: center;
+     margin-bottom: 45px;
+  }
+  &__list{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 28px;
+     flex-wrap: wrap;
+     li{
+        padding: 0 12px;
+        margin-bottom: 12px;
+        a{
+           font-size: 0.875rem;
+           color: #fff;
+           &:hover{
+              text-decoration: underline;
+           }
+        }
+     }
+  }
+}

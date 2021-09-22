@@ -1,0 +1,10 @@
+$red:#E3003C;
+$dark-red:  #B80031;
+$blue:#1D215F;
+$dark-blue: #13163E;
+$gray: #9B9B9F;
+
+@mixin font-bold {
+   font-family: purista-web, sans-serif;
+   font-weight: 700;
+}
