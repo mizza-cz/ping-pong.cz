@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chevron-down</title>
+    <g id="1.-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.-Soupiska---Desktop" transform="translate(-714.000000, -361.000000)" fill="#383941">
+            <g id="chevron-down" transform="translate(714.000000, 361.000000)">
+                <path d="M0.29289,0.29289 C0.68342,-0.09763 1.31658,-0.09763 1.70711,0.29289 L5,3.5858 L8.2929,0.29289 C8.6834,-0.09763 9.3166,-0.09763 9.7071,0.29289 C10.0976,0.68342 10.0976,1.31658 9.7071,1.70711 L5.7071,5.7071 C5.3166,6.0976 4.68342,6.0976 4.29289,5.7071 L0.29289,1.70711 C-0.09763,1.31658 -0.09763,0.68342 0.29289,0.29289 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

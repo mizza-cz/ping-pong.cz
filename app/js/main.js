@@ -1,5 +1,6 @@
 $(function(){
-   
+  $('select, .shop__check').styler();
+  //presmerovani pomoci selectu
    $('.mob-menu').on('click', function () {
       $('.header__inner').slideToggle();
     });
