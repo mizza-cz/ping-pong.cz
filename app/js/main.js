@@ -99,6 +99,14 @@ $(function(){
            arrows: false,
         }
      },
+     {
+      breakpoint: 479,
+      settings: {
+         slidesToShow: 1,
+         arrows: false,
+         centerMode: true,
+      }
+   },
     ]
 
  });

@@ -45,14 +45,11 @@
       }
    }
    &__tym{
-      a{
+      h5{
          display: block;
          line-height: 1;
          margin-bottom: 8px;
          text-transform: uppercase;
-         &:hover{
-            text-decoration: underline;
-         }
       }
    }
    &__wrap{
@@ -74,6 +71,7 @@
          background-repeat: no-repeat;
          width: 16px;
          height: 100%;
+         background-size: contain;
       }
       
    }
@@ -147,9 +145,16 @@
       padding: 0;
    }
 }
-@media(max-width:680px){
-   .slick-initialized .slick-slide{
-      width: 350px !important;
+@media(max-width:370px){
+   .scoarboard__item{
+      padding: 0 15px;
+      min-width: auto;
+   }
+   .scoarboard__wrap{
+     padding: 0;
+   }
+   .scoarboard__wrap::before{
+      display: none;
    }
 }
 /// scoarboard end
@@ -456,6 +461,11 @@
    }
  
 }
+@media(max-width:480px){
+   .hp-tv .slick-initialized .slick-slide{
+      width: initial !important;
+   }
+}
 // extra liga
 .hp-extraliga{
    padding: 40px 0;
@@ -756,5 +766,32 @@
    &__item{
       padding: 0 20px;
       margin-bottom: 40px;
+   }
+}
+.scoarboard__btn,
+.hp-tv__btn{
+   cursor: pointer;
+   border: 1px solid transparent;
+   transition: all .3s;
+   border-radius: 50%;
+   padding: 5px;
+   width: 27px;
+   height: 22px;
+   img{
+      transition: all .3s;
+   }
+   &:hover{
+      
+    
+      border-color: #000;
+      img{
+         transform: scale(1.5);
+      }
+      
+   }
+}
+.hp-tv__btn{
+   &:hover{
+      border-color: #fff;
    }
 }
