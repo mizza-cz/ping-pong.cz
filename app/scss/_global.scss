@@ -35,6 +35,10 @@ h1{
    font-size: 3rem;
    line-height: 1.167;
 }
+h2{
+   font-size: 2rem;
+   line-height: 1.25;
+}
 h3{
    font-size: 1.25rem;
    line-height: 1.4;
@@ -66,6 +70,10 @@ h4{
 h6{
    font-size: 0.75rem;
    line-height: 1;
+}
+p{
+   font-size: 0.875rem;
+   line-height: 1.157;
 }
 body{
    font-family: 'Inter', sans-serif;
@@ -182,5 +190,183 @@ img{
          background-color: $red;
          color: #fff;
       }
+   }
+}
+
+.main{
+   padding: 40px 0;
+   &__inner{
+      display: flex;
+      margin-left: -20px;
+      margin-right: -20px;
+   }
+   &__filtr{
+      margin-bottom: 40px;
+   }
+   &__content{
+      flex: 0 0 74.7%;
+      max-width: 74.7%;
+      padding: 0 20px;
+   }
+   &__header{
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2{
+         text-transform: uppercase;
+      }
+      form{
+         display: flex;
+         align-items: center;
+         input{
+            color: #000;
+            padding: 6px 11px 8px;
+            width: 240px;
+            height: 40px;
+            border: 1px solid  #CDCDCF;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            line-height: 1.571;
+            &::placeholder{
+               color: #000;
+            }
+
+         }
+         .link{
+            min-width: 128px;
+            margin-left: 8px;
+         }
+      }
+   }
+   &__tabs{
+      display: flex;
+      align-items: center;
+      background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
+      border-radius: 4px;
+      margin-bottom: 16px;
+      .tab{
+         padding: 16px 0 14px;
+         border-bottom: 2px solid transparent;
+         font-size: 0.875rem;
+         @include font-bold;
+         line-height: 1.157;
+         letter-spacing: .04px;
+         
+      }
+      .tab.active{
+         border-bottom: 2px solid $red;
+         color: $red;
+      }
+      li{
+         margin-left: 24px;
+       
+         &:first-child{
+            margin-left: 16px;
+         }
+      }
+   }
+}
+.category{
+   display: none;
+   padding-bottom: 8px;
+   border-bottom: 1px solid $gray;
+   
+   &.tab-active{
+      display: block;
+   }
+   ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+         margin-left: 16px;
+         margin-bottom: 8px;
+         a{
+            text-transform: uppercase;
+            padding: 5px 6px 3px;
+            font-size: 0.75rem;
+            line-height: 1;
+            @include font-bold;
+            color: #000;
+            background-color: #fff;
+            background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
+            border-radius: 4px;
+         }
+         .active-link{
+            color: #fff;
+            background: $red;
+         }
+      }
+   }
+}
+.aside{
+   flex: 0 0 25.3%;
+   max-width: 25.3%;
+   padding: 0 20px;
+
+   .ban__inner{
+      height: 300px;
+      width: 100%;
+   }
+}
+
+@media(max-width:1100px){
+   .main__inner{
+      flex-wrap: wrap;
+   }
+   .main__content{
+      max-width: 100%;
+      flex: 100%;
+      margin-bottom: 40px;
+   }
+   .aside{
+      max-width: 100%;
+      flex: 100%;
+      .ban__inner{
+         width: 600px;
+         margin: 0 auto;
+      }
+   }
+}
+@media(max-width:740px){
+   .main__tabs{
+      flex-wrap: wrap;
+   }
+}
+@media(max-width:640px){
+   .aside .ban__inner{
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      min-height: 170px;
+   }
+   .main__filtr--scroll{
+      overflow:auto;
+   }
+   .main__tabs{
+      width: 610px;
+   }
+   .main__header{
+      display: block;
+      h2{
+         margin-bottom: 16px;
+      }
+   }
+}
+@media(max-width:400px){
+   .main__header{
+      form{
+         display: block;
+         input{
+            margin-bottom: 8px;
+            width: 100%;
+         }
+         .link{
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
+         }
+      }
+    
    }
 }

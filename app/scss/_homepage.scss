@@ -62,6 +62,9 @@
       width: 100%;
       justify-content: space-between;
       padding-right: 32px;
+      p{
+         font-size: 0.75rem;
+      }
       &::before{
          content: '';
          position: absolute;
