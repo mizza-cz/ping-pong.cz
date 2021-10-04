@@ -1,0 +1,46 @@
+.zapas{
+   &__box{
+      padding: 16px;
+      border: 1px solid $gray;
+      border-radius: 4px;
+      margin-bottom: 40px;
+   }
+   &__item{
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__info{
+      p{
+         display: flex;
+         align-items: center;
+      }
+      p img{
+         height: 18px;
+         width: 49px;
+         margin-left: 4px;
+         object-fit: contain;
+      }
+      h4{
+         line-height: 1.5;
+         font-size: 1rem;
+         text-transform: uppercase;
+      }
+      p{
+         font-size: 0.75rem;
+         line-height: 1.5;
+         margin-bottom: 0;
+      }
+   }
+   &__result{
+      font-size: 2rem;
+      color: $red;
+      border-radius: 4px;
+      padding: 8px;
+      @include font-bold;
+      line-height: 1.25;
+      background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
+   }
+
+}

@@ -1,37 +1,5 @@
 .reprezentace{
-   .hp-cast{
-      border-bottom: none;
-      border-top: 1px solid RGB(205, 205, 207);
-      padding-bottom: 0;
-      margin-bottom: 0;
-      h2{
-         font-size: 1.25rem;
-         line-height: 1.4;
-         position: relative;
-         display: block;
-         padding: 0 28px;
-         text-transform: uppercase;
-         max-width: fit-content;
-         margin-left: auto;
-         margin-right: auto;
-         &::before,
-         &::after{
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 4px;
-         }
-         &::before{
-            left: 0;
-            background-image: url('../images/svg/h3-left.svg');
-         }
-         &::after{
-            right: 0;
-            background-image: url('../images/svg/h3-right.svg');
-         }
-      }
-   }
+  
    h2{
       padding: 0;
       text-transform: uppercase;
