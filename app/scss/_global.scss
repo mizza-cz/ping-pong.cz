@@ -419,6 +419,9 @@ table{
       padding: 9px 8px;
       a{
          color: $red;
+         &:hover{
+            text-decoration: underline;
+         }
       }
    }
 }
