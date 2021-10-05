@@ -110,10 +110,10 @@ $(function(){
     ]
 
  });
-   // $('select, input.radio, input.checkbox').styler();
+  
    $('.main__filtr .tab').on('click', function (event) {
       var id = $(this).attr('data-id');
-      $('.main__filtr').find('.category').removeClass('tab-active').hide();
+      $('.main__filtr').find('.category, .fotogalerie-page, .oddil__content').removeClass('tab-active').hide();
       $('.main__filtr .main__tabs').find('.tab').removeClass('active');
       $(this).addClass('active');
       $('#' + id)
@@ -121,6 +121,7 @@ $(function(){
         .fadeIn();
       return false;
     });
+  
     var _gallery_loading = false;
 
     $('a[data-gallery]').click(function () {

@@ -1,8 +1,11 @@
 .fotogalerie-page{
-   display: flex;
+   display: none;
    margin-left: -20px;
    margin-right: -20px;
    flex-wrap: wrap;
+   &.tab-active{
+      display: flex;
+   }
    &__full{
       font-size: 0.75rem;
       color: $red;
