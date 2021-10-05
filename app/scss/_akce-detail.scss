@@ -1,0 +1,116 @@
+.akce-detail{
+   padding-top: 40px;
+   &__downloads{
+      border-bottom: 1px solid #CDCDCF;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+      a{
+         display: block;
+         padding-right: 29px;
+         position: relative;
+         color: $red;
+         font-weight: 700;
+         font-size: 0.875rem;
+         line-height: 1.3;
+         margin-bottom: 12px;
+         width: fit-content;
+         &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/svg/cloud-download-alt-solid.svg');
+            right: 0;
+            top: 0;
+            width: 16px;
+            height: 18px;
+            background-repeat: no-repeat;
+         }
+      }
+   }
+   &__inner{
+      padding: 0 10px;
+      h3{
+         font-size: 1.5rem;
+         padding: 0;
+         margin-bottom: 16px;
+         &::before,
+         &::after{
+            display: none;
+         }
+      }
+   }
+
+   &__top{
+      border-bottom: 1px solid #CDCDCF;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      .tag__row{
+         margin-bottom: 0;
+      }
+      h2{
+         text-transform: uppercase;
+         margin-bottom: 16px;
+      }
+      p{
+         margin-bottom: 8px;
+         line-height: 1.571;
+      }
+   }
+}
+.menu-links{
+   border-bottom: 1px solid #CDCDCF;
+   padding-bottom: 6px;
+   margin-bottom: 16px;
+   li{
+      margin-bottom: 12px;
+      a{
+         font-weight: 700;
+         padding-right: 22px;
+         position: relative;
+         color: $red;
+         font-size: 0.875rem;
+         &::before{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 2px;
+            background-image: url('../images/svg/arrow-right-solid.svg');
+            width: 11px;
+            height: 12px;
+         }
+      }
+   }
+}
+.map{
+   height: 560px;
+   iframe{
+      height: 100%;
+      width: 100%;
+      display: block;
+   }
+}
+@media(max-width:940px){
+   .map{
+      height: 400px;
+   }
+}
+@media(max-width:640px){
+   .akce-detail__top h2{
+      font-size: 1.6rem;
+   }
+   .map{
+      height: 320px;
+   }
+}
+@media(max-width:410px){
+   .map{
+      height: 270px;
+   }
+}
+@media(max-width:400px){
+   .akce-detail__downloads a{
+      padding-right: 0;
+   }
+   .akce-detail__downloads a::before{
+      display: none;
+   }
+}
