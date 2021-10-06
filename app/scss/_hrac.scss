@@ -1,0 +1,125 @@
+.hrac-page{
+   .main__tabs{
+      margin-bottom: 40px;
+   }
+   table{
+      .vysledek{
+         a{
+            margin-right: 12px;
+         }
+      }
+      .souper{
+         width: 237px;
+      }
+      .kolo{
+         width: 139px;
+      }
+      .categories{
+         width: 218px;
+      }
+      .date{
+         width: 183px;
+      }
+      .tym{
+         width: 315px;
+      }
+      
+   }
+   form{
+      margin-bottom: 40px;
+      .select{
+         margin: 0;
+      }
+   }
+   &__content{
+      display: none;
+      &.tab-active{
+         display: block;
+      }
+   }
+   &__header{
+      display: flex;
+      justify-content: space-between;
+   }
+   &__box{
+      display: flex;
+     &-info{
+      border: 1px solid #cfcfcf;
+      padding: 24px 30px;
+      text-align: center;
+      height: fit-content;
+      margin-left: 16px;
+      h3{
+         margin-bottom: 23px;
+      }
+      span{
+         width: fit-content;
+         padding: 6px 17px;
+         margin: 0 auto 7px;
+         display: block;
+         @include font-bold;
+         font-size: 2rem;
+         background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
+      }
+      p{
+         font-size: 0.75rem;
+         line-height: 1.5;
+      }
+     }
+   }
+   .oddil__box{
+      h2{
+         margin-bottom: 19px;
+      }
+      p{
+         margin-bottom: 10px;
+      }
+   }
+   
+}
+
+@media(max-width:1320px){
+   
+   .hrac-page__box-info{
+      margin: 0 8px;
+   }
+   .hrac-page__header{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+   }
+   .hrac-page{
+      table{
+         .souper,
+         .kolo,
+         .categories,
+         .date,
+         .tym{
+            width: auto;
+         }
+        
+      }
+   }
+}
+@media(max-width:980px){
+   .hrac-page__sezony{
+      overflow: auto;
+      table{
+         width: 960px;
+
+      }
+   }
+}
+@media(max-width:680px){
+   .hrac-page__box{
+      flex-direction: column;
+      &-info{
+         margin-bottom: 16px;
+      }
+   }
+}
+@media(max-width:600px){
+   .oddil__box{
+      text-align: center;
+   }
+}
