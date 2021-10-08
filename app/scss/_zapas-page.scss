@@ -113,9 +113,15 @@
          font-weight: 700;
          margin-bottom: 2px;
       }
-      h4{
+      a{
+         font-size: 1rem;
+         line-height: 1.5;
          color: $red;
+         @include font-bold;
          text-transform: uppercase;
+         &:hover{
+            text-decoration: underline;
+         }
       }
    }
    &__teams{
@@ -126,11 +132,17 @@
    }
    &__team{
       margin: 0 40px;
-      h2{
+      a{
+         display: block;
          font-size: 1.5rem;
          line-height: 1.333;
          text-transform: uppercase;
          color: $red;
+         @include font-bold;
+         transition: all .3s;
+         &:hover{
+            color: $dark-red;
+         }
       }
    }
    &__result{
