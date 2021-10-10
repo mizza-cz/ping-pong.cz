@@ -85,6 +85,11 @@
   position: relative;
   text-transform: uppercase;
 }
+a.navbar__menu-item{
+   &:hover{
+      text-decoration: underline;
+   }
+}
 
 
 .navbar__menu-list+.navbar__menu-list{
