@@ -1,8 +1,10 @@
 .zapas-page{
+  
    &__table{
       border: 1px solid #CDCDCF;
       padding: 21px 24px 12px 24px;
       box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
+      margin-bottom: 40px;
       table{
          tr:last-child{
             td{
@@ -191,7 +193,7 @@
 }
 .zapas{
    &__box{
-      padding: 16px;
+      padding: 16px 16px 22px;
       border: 1px solid #CDCDCF;
       border-radius: 4px;
       margin-bottom: 40px;

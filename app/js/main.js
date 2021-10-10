@@ -113,7 +113,7 @@ $(function(){
   
    $('.main__filtr .tab').on('click', function (event) {
       var id = $(this).attr('data-id');
-      $('.main__filtr').find('.category, .fotogalerie-page, .oddil__content, .hrac-page__content').removeClass('tab-active').hide();
+      $('.main__filtr').find('.category, .fotogalerie-page, .oddil__content, .hrac-page__content, .extraliga').removeClass('tab-active').hide();
       $('.main__filtr .main__tabs').find('.tab').removeClass('active');
       $(this).addClass('active');
       $('#' + id)
