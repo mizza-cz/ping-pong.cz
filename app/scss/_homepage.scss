@@ -83,6 +83,11 @@
       width: 100%;
       padding-left: 16px;
       min-width: 340px;
+      &:hover{
+         span{
+            text-decoration: underline;
+         }
+      }
    }
    &__result{
       display: flex;
@@ -98,9 +103,7 @@
          line-height: 1.35;
          display: block;
          margin-right: 8px;
-         &:hover{
-            text-decoration: underline;
-         }
+        
       }
    }
    &__box{
@@ -824,6 +827,11 @@
       margin-bottom: 40px;
    }
 }
+.scoarboard__btn{
+   &:hover{
+      background: #F2F2F3;
+   }
+}
 .scoarboard__btn,
 .hp-tv__btn{
    cursor: pointer;
@@ -840,12 +848,5 @@
       height: 22px;
       object-fit: none;
    }
-   &:hover{
-      background: #F2F2F3;
-   }
-}
-.hp-tv__btn{
-   &:hover{
-      border-color: #fff;
-   }
+  
 }
