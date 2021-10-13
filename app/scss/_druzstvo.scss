@@ -1,0 +1,30 @@
+.druzstvo-page{
+   &__content{
+      display: none;
+      &.tab-active{
+         display: block;
+      }
+   }
+   .main__tabs{
+      margin-bottom: 40px;
+   }
+   form{
+      display: flex;
+      margin-left: -4px;
+      margin-right: -4px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+      .select{
+         margin: 0 4px 8px;
+      }
+   }
+   .oddil__box .menu-info {
+      ul{
+         max-width: 100%;
+      }
+      li{
+         max-width: 33.333%;
+         flex: 0 0 33.333%;
+      }
+   }
+}

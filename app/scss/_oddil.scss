@@ -39,6 +39,12 @@
          text-transform: uppercase;
          margin-bottom: 11px;
       }
+      p a{
+         color: $red;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
       .menu-info{
          border-top: 1px solid $gray;
          margin-top: 19px;

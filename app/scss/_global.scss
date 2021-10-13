@@ -322,6 +322,26 @@ img{
    }
 }
 .menu-info{
+   &__herna{
+      &::before{
+         background-image: url('../images/svg/herna.svg');
+      }
+   }
+   &__stoly{
+      &::before{
+         background-image: url('../images/svg/stoly.svg');
+      }
+   }
+   &__micky{
+      &::before{
+         background-image: url('../images/svg/micky.svg');
+      }
+   }
+   &__soutez{
+      &::before{
+         background-image: url('../images/svg/soutez.svg');
+      }
+   }
    &__mail{
       &::before{
          background-image: url('../images/svg/at-solid.svg');
