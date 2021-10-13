@@ -135,13 +135,138 @@
         line-height: 1.157;
      }
   }
+  &-tabulky{
+     &__time{
+      display: flex;
+      a{
+         color: $red;
+         background: #fff;
+         border-radius: 4px;
+         line-height: 1.571;
+         font-size: 0.875rem;
+         padding: 0 15px;
+         margin-top: 7px;
+         margin-bottom: 4px;
+         
+      }
+      a+a{
+         margin-left: 4px;
+      }
+     }
+     
+     &__inner{
+        display: flex;
+        margin-left: -24px;
+        margin-right: -16px;
+     }
+     &__col,
+     &__midle,
+     &__final{
+        flex: 0 0 33.333%;
+        max-width: 33.333%; 
+        padding: 0 16px 0 24px;  
+        justify-content: space-around;   
+        display: flex;
+        flex-direction: column;
+      }
+      &__box{
+         &+&{
+            margin-top: 32px;
+         }
+      }
+      &__left{
+         padding-right: 10px;
+         a{
+            display: block;
+            font-size: 0.875rem;
+            line-height: 1.645;
+         }
+      }
+     &__item{
+      background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
+      padding: 16px 16px 12px 16px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 4px;
+      a{
+        
+         text-transform: uppercase;
+         @include font-bold;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+      .win{
+         color: $red;
+      }
+     }
+     &__result{
+      font-size: 2rem;
+      line-height: 1.25;
+      color: #000;
+      background: #fff;
+      height: fit-content;
+      padding: 0 15px;
+      border-radius: 4px;
+   }
+     h3{
+        font-size: 1.5rem;
+        line-height: 1.333;
+        padding: 0;
+        margin: 40px 0 24px;
+        &::before,
+        &::after{
+           display: none;
+        }
+     }
+     table{
+        .num{
+           width: 28px;
+           text-align: left;
+        }
+        .team{
+           text-align: left;
+           width: 380px;
+         a{
+            display: flex;
+            align-items: center;
+         }
+         img{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #F2F2F3;
+            padding: 3px;
+            margin-right: 16px;
+            display: inline-block;
+         }
+        }
+        th{
+           text-align: center;
+           padding-top: 8px;
+        }
+        td{
+         padding: 8px;
+         text-align: center;
+         width: 55px;
+        }
+     }
+  }
+  .elo{
+   background: #F2F2F3;
+}
   &-statistiky{
      margin-top: 19px;
      table{
+        th{
+           padding: 8px;
+        }
         td,
         th{
            text-align: center;
         }
+       
         .druz,
         .nar,
         .num,
@@ -202,6 +327,12 @@
 }
 
 @media(max-width:1080px){
+   .extraliga-tabulky__scroll{
+      overflow: auto;
+      table{
+         width: 1000px;
+      }
+   }
    .extraliga-prehled__box{
       flex: 0 0 50%;
       max-width: 50%;
