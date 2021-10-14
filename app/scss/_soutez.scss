@@ -253,9 +253,7 @@
         }
      }
   }
-  .elo{
-   background: #F2F2F3;
-}
+
   &-statistiky{
      margin-top: 19px;
      table{
@@ -314,7 +312,9 @@
       }
    }
 }
-
+.elo{
+   background: #F2F2F3;
+}
 @media(max-width:1140px){
    .extraliga-statistiky table {
       .num,
