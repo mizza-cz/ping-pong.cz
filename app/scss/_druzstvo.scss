@@ -48,6 +48,7 @@
          margin: 0 4px 8px;
       }
    }
+   .oddil__box{}
    .oddil__box .menu-info {
       ul{
          max-width: 100%;
@@ -55,6 +56,38 @@
       li{
          max-width: 33.333%;
          flex: 0 0 33.333%;
+      }
+   }
+}
+.druzstvo-herna{
+   &__img{
+      height: 460px;
+      img{
+         object-fit: cover;
+      }
+   }
+   .menu-info{
+      border-bottom: 1px solid #CDCDCF;
+      padding-bottom: 13px;
+      margin-bottom: 16px;
+   }
+   .oddil__box .menu-info {
+      ul{
+         max-width: 100%;
+      }
+      li{
+         max-width: 50%;
+         flex: 0 0 50%;
+         padding-right: 16px;
+      }
+   }
+   h3{
+      margin-bottom: 23px;
+      padding: 0;
+      font-size: 1.25rem;
+      &::before,
+      &::after{
+         display: none;
       }
    }
 }
@@ -90,6 +123,16 @@
    }
    
 }
+@media(max-width:980px){
+   .druzstvo-herna{
+      .oddil__img{
+         margin: 0 auto 16px;
+      }
+      .oddil__top{
+         flex-direction: column;
+      }
+   }
+}
 @media(max-width:840px){
    
    .druzstvo-page{
@@ -107,15 +150,30 @@
          flex-direction: column;
       }
    }
-   .druzstvo-page .oddil__box .menu-info li{
+   .druzstvo-page .oddil__box .menu-info li,
+   .druzstvo-herna .oddil__box .menu-info li{
         max-width: 100%;
         flex: 100%;
    }
 }
+@media(max-width:660px){
+   .druzstvo-herna__img{
+      height: 380px;
+   }
+}
 @media(max-width:600px){
+   .druzstvo-herna,
    .druzstvo-page {
       .oddil__box .menu-info{
          text-align: left;
       }
+   }
+   .druzstvo-herna__img{
+      height: 320px;
+   }
+}
+@media(max-width:480px){
+   .druzstvo-herna__img{
+      height: 260px;
    }
 }

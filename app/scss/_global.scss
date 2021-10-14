@@ -322,6 +322,36 @@ img{
    }
 }
 .menu-info{
+   &__zarizeni{
+      &::before{
+         background-image: url('../images/svg/zarizeni.svg');
+      }
+   }
+   &__prostor{
+      &::before{
+         background-image: url('../images/svg/prostor.svg');
+      }
+   }
+   &__podlaha{
+      &::before{
+         background-image: url('../images/svg/podlaha.svg');
+      }
+   }
+   &__urceni{
+      &::before{
+         background-image: url('../images/svg/urceni.svg');
+      }
+   }
+   &__vyska{
+      &::before{
+         background-image: url('../images/svg/vyska.svg');
+      }
+   }
+   &__rozmer{
+      &::before{
+         background-image: url('../images/svg/rozmer.svg');
+      }
+   }
    &__herna{
       &::before{
          background-image: url('../images/svg/herna.svg');
