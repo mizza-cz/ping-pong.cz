@@ -1,5 +1,6 @@
 .article{
    margin-top: 40px;
+
    &__fotogalerie{
       display: flex;
       margin-left: -4px;
@@ -94,17 +95,36 @@
    .zapas__box{
       margin-top: 40px;
    }
+   .zapas__item{
+      a{
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+         align-items: center;
+         &:hover{
+            .zapas__result{
+               text-decoration: underline;
+            }
+         }
+      }
+     
+   }
    &__content{
       padding: 0 32px;
+      max-width: 70.2%;
+      flex: 0 0 70.2%;
    }
    .aside{
       padding: 0 32px;
+      max-width: 29.8%;
+      flex: 0 0 29.8%;
    }
    &__inner{
       display: flex;
       padding: 0 72px;
       margin-left: -32px;
       margin-right: -32px;
+     
    }
    p{
       margin-bottom: 32px;
@@ -162,6 +182,10 @@
    }
 }
 @media(max-width:1140px){
+   .article__content{
+      max-width: 100%;
+      flex: 100%;
+   }
    .article__inner{
       flex-direction: column-reverse;
       .aside{
@@ -187,9 +211,16 @@
 @media(max-width:740px){
    .zapas__item{
       flex-wrap: wrap;
+      a{
+         flex-direction: column;
+      }
    }
    .article__inner{
       padding: 0;
+      
+      .zapas__info p{
+         align-items: start;
+      }
    }
    .article{
       margin-top: 20px;
