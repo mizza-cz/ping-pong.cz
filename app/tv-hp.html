@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Ping-pong.cz</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+   integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/libs.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="head">
+            <a class="head__logo" href="index.html">
+               <img src="images/svg/logo.svg" alt="">
+            </a>
+            <ul class="head__tv">
+               <li>
+                  <a href="#">Všechna videa</a>
+               </li>
+               <li>
+                  <a href="#">TV utkání</a>
+               </li>
+               <li>
+                  <a href="#">Klubové přenosy</a>
+               </li>
+               <li>
+                  <a href="#">Nesoutěžní videa</a>
+               </li>
+            </ul>
+            <a class="head__link" href="index.html">ping-pong.cz</a>
+         
+         </div>
+      
+      </div>
+   
+   </header>
+   <main class="tv-page">
+      <section class="hp-tv">
+         <div class="container">
+            <div class="tv-page__top">
+               <h2>DOPORUČUJEME</h2>
+               <div class="timer__wrapper">
+                  <h3>Další TV Přenos za</h3>
+                  <div class="calednar-date">
+                     <div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to {{eventName}}" data-endtime="2021-10-30 17:00:00">
+                        <span class="timer__item" id="timer-days">
+                           <span class="timer__value">{{days}}</span>
+                           <span class="timer__label timer__label-days">Dní</span>
+                        </span>
+                        <span class="timer__item" id="timer-hours">
+                           <span class="timer__value">{{hours}}</span>
+                           <span class="timer__label">Hodin</span>
+                        </span>
+                        <span class="timer__item" id="timer-minutes">
+                           <span class="timer__value">{{minutes}}</span>
+                           <span class="timer__label">Minut</span>
+                        </span>
+                        <span class="timer__item" id="timer-seconds">
+                           <span class="timer__value">{{seconds}}</span>
+                           <span class="timer__label">Sekund</span>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      
+         <div class="hp-tv__slider">
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-1.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-2.jpg" alt="">
+                     <span>ŽIVĚ</span>
+                  </div>
+                  <h3>HB Ostrov – KT Praha</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-3.jpg" alt="">
+                     <span>ŽIVĚ</span>
+                  </div>
+                  <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-4.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item"> 
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-5.jpg" alt="">
+                     <span>ŽIVĚ</span>
+                  </div>
+                  <h3>SF SKK El Niňo Praha – TTC</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-1.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-2.jpg" alt="">
+                     <span>ŽIVĚ</span>
+                  </div>
+                  <h3>HB Ostrov – KT Praha</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-3.jpg" alt="">
+                     <span>ŽIVĚ</span>
+                  </div>
+                  <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-4.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item"> 
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-5.jpg" alt="">
+                     <span>ŽIVĚ</span>
+                  </div>
+                  <h3>SF SKK El Niňo Praha – TTC</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+      
+   
+         </div>
+         <a class="link" href="tv-page.html">PING-PONG TV</a>
+      </section>
+   
+      <div class="hp-tv__utkani">
+      <div class="container">
+         <form>
+            <select class="select" name="kategorie" id="kategorie">
+               <option  value="">Všechny kategorie</option>
+               <option value="">1</option>
+               <option value="">2</option>
+               <option value="">3</option>
+               <option value="">4</option>
+            </select>
+            <select class="select" name="soutez" id="soutez">
+               <option  value="">Všechny soutěže</option>
+               <option value="">1</option>
+               <option value="">2</option>
+               <option value="">3</option>
+               <option value="">4</option>
+            </select>
+            <select class="select" name="druzstva" id="druzstva">
+               <option  value="">Všecha družstva</option>
+               <option value="">1</option>
+               <option value="">2</option>
+               <option value="">3</option>
+               <option value="">4</option>
+            </select>
+            <button class="link">ZOBRAZIT</button>
+         </form>
+         <div class="hp-tv__archiv">
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-1.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-2.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – KT Praha</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-3.jpg" alt="">
+                  
+                  </div>
+                  <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-4.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item"> 
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-5.jpg" alt="">
+               
+                  </div>
+                  <h3>SF SKK El Niňo Praha – TTC</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-1.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-2.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – KT Praha</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-3.jpg" alt="">
+                  
+                  </div>
+                  <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
+                  <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+            <div class="hp-tv__item">
+               <a href="tv-page.html">
+                  <div class="hp-tv__img">
+                     <img src="images/content/tv-4.jpg" alt="">
+                  
+                  </div>
+                  <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+                  <span>Extraliga žen / 12.8.2021 / 15:30</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      </div>
+   </main>
+
+
+
+
+
+   <div class="hp-partners">
+      <div class="container">
+         <div class="hp-partners__inner">
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/1.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/2.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/3.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/4.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/5.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/6.png" alt="">
+               </a>
+            </div>
+
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/7.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/8.png" alt="">
+               </a>
+            </div>
+
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/9.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/10.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/11.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/12.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/13.png" alt="">
+               </a>
+            </div>
+            <div class="hp-partners__item">
+               <a href="#">
+                  <img src="images/partners/14.png" alt="">
+               </a>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+   <!-- footer start  -->
+   <footer class="footer">
+      <a class="footer__logo" href="#">
+         <img src="images/svg/footer-logo.svg" alt="">
+      </a>
+      <ul class="footer__list">
+         <li>
+            <a href="#">Cookies</a>
+         </li>
+         <li>
+            <a href="#">Copyright</a>
+         </li>
+         <li>
+            <a href="#">Fakturační údaje</a>
+         </li>
+         <li>
+            <a href="#">Podmínky použití</a>
+         </li>
+         <li>
+            <a href="#">Obchodní podmínky</a>
+         </li>
+      </ul>
+      <ul class="social">
+         <li class="social__item">
+            <a class="social__link" href="#">
+               <img src="images/svg/facebook.svg" alt="">
+            </a>
+         </li>
+         <li class="social__item">
+            <a class="social__link" href="#">
+               <img src="images/svg/twitter.svg" alt="">
+            </a>
+         </li>
+         <li class="social__item">
+            <a class="social__link" href="#">
+               <img src="images/svg/youtube.svg" alt="">
+            </a>
+         </li>
+         <li class="social__item">
+            <a class="social__link" href="#">
+               <img src="images/svg/instagram.svg" alt="">
+            </a>
+         </li>
+         <li class="social__item">
+            <a class="social__link" href="#">
+               <img src="images/svg/flickr.svg" alt="">
+            </a>
+         </li>
+      </ul>
+      <p>
+         © Česká asociace stolního tenisu & <a href="https://esportsmedia.cz/">eSportsmedia</a> s.r.o
+      </p>
+
+   </footer>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/light-gallery.js"></script>
+   <script src="js/timer.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

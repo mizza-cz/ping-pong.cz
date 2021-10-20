@@ -1,7 +1,36 @@
+
 .head{
-   display: flex;
+  display: flex;
   align-items: flex-end;
   padding-top: 16px;
+  &__tv{
+     display: flex;
+     li+li{
+        margin-left: 32px;
+     }
+     li{
+        
+        a{
+           color: #fff;
+           font-size: 0.875rem;
+           text-transform: uppercase;
+           @include font-bold;
+           &:hover{
+              text-decoration: underline;
+           }
+        }
+     }
+  }
+  &__link{
+     color: $red;
+     @include font-bold;
+     font-size: 0.875rem;
+     line-height: 1.571;
+     text-transform: uppercase;
+     &:hover{
+      text-decoration: underline;
+   }
+  }
    .social{
       margin-left: auto;
       padding: 16px 0;
@@ -11,6 +40,9 @@
    &__logo{
       width: 151px;
       height: 64px;
+      svg path{
+         transition: all .4s;
+      }
    }
    &__list{
       margin-left: 40px;
@@ -189,6 +221,9 @@ a.navbar__menu-item{
       width: 16px;
       height: 16px;
       display: block;
+      &--dark{
+         display: none;
+      }
       svg path{
          transition: all .3s;
       }

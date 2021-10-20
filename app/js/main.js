@@ -35,8 +35,8 @@ $(function(){
       slidesToScroll: 1,
       autoplay:true,
       infinite:true,
-      prevArrow: '<button class="scoarboard__btn scoarboard__btnprev"><img src="images/svg/arrow-left.svg" alt="" ></button> ',
-      nextArrow: ' <button class="scoarboard__btn scoarboard__btnnext"><img src="images/svg/arrow-right.svg" alt = "" ></button > ',
+      prevArrow: '<button class="scoarboard__btn scoarboard__btnprev"><img class="scoarboard__btn--white" src="images/svg/arrow-left.svg" alt="" ><img class="scoarboard__btn--dark" src="images/svg/arrowl.svg" alt="" ></button> ',
+      nextArrow: ' <button class="scoarboard__btn  scoarboard__btnnext"><img class="scoarboard__btn--white" src="images/svg/arrow-right.svg" alt = "" ><img class="scoarboard__btn--dark" src="images/svg/arrowr.svg" alt="" ></button></button > ',
       responsive: [
          {
             breakpoint: 1900,
@@ -159,3 +159,39 @@ $(function(){
     });
 // end
 });
+
+(function () {
+   const url = new URL(window.location.href);
+   const forcedTheme = url.searchParams.get('theme');
+   const savedTheme = forcedTheme || window.localStorage.theme || 'light';
+
+   const changeTheme = (value) => {
+       // remove old theme
+       const currentTheme = value === 'light' ? 'dark' : 'light';
+       document.documentElement.classList.remove(`theme-${currentTheme}`);
+       // set new theme
+       document.documentElement.classList.add(`theme-${value}`);
+       // save theme
+       window.localStorage.theme = value;
+   };
+
+   // change theme
+   changeTheme(savedTheme);
+
+   // theme toggle event listener
+   window.addEventListener('DOMContentLoaded', () => {
+       // get toggle
+       const toggles = document.querySelectorAll('.js-theme-toggle');
+       // add event listeneer
+       toggles.forEach((toggle) => {
+           toggle.addEventListener('click', (e) => {
+               // stop default action
+               e.preventDefault();
+               // set new theeme
+               const newTheme = window.localStorage.theme === 'light' ? 'dark' : 'light';
+               // change theme
+               changeTheme(newTheme);
+           });
+       });
+   });
+})();

@@ -3,8 +3,6 @@
    padding: 16px 0;
  
    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.05));
-   height: 118px;
-
    &__inner{
       display: flex;
      
@@ -177,7 +175,7 @@
 .top-clanky{
    margin-bottom: 40px;
    &__inner{
-     
+      margin-bottom: 40px;
       height: 100%;
       position: relative;
       
@@ -194,7 +192,7 @@
 .top-clanek{
    height: 870px;
    position: relative;
-   margin-bottom: 40px;
+  
    &:hover{
       h1{
          text-decoration: underline;
