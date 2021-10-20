@@ -13,6 +13,7 @@
          .hrac{
             width: 186px;
             text-align: left;
+            font-weight: 700;
          }
          .date{
             width: 54px;
@@ -21,6 +22,7 @@
          .player{
             text-align: left;
             width: 370px;
+            
          }
          tr{
             th{
@@ -159,6 +161,11 @@
 @media(max-width:660px){
    .druzstvo-herna__img{
       height: 380px;
+   }
+}
+@media(max-width:640px){
+   .druzstvo-page__content{
+      margin-top: 8px;
    }
 }
 @media(max-width:600px){
