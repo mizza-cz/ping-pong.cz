@@ -29,9 +29,12 @@
          span{
             display: flex;
             margin-bottom: 16px;
+            align-items: center;
          }
          span p{
             color: $red;
+            margin-left: 4px;
+            font-size: 0.75rem;
          }
       }
       &__link{
