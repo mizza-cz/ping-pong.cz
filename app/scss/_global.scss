@@ -384,6 +384,8 @@ img{
    &__tel{
       &::before{
          background-image: url('../images/svg/mobile-solid.svg');
+         width: 10px !important;
+         left: 2px !important;
       }
    }
    &__web{

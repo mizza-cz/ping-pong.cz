@@ -111,7 +111,15 @@
       }
    }
 }
+@media(max-width:640px){
+   .oddil__content{
+      margin-top: 8px;
+   }
+}
 @media(max-width:600px){
+   .menu-info li{
+      text-align: left;
+   }
    .oddil .main__tabs{
       margin-bottom: 20px;
    }

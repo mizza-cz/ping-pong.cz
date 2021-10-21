@@ -1,4 +1,11 @@
 .akce{
+   .hp-akce__inner{
+      flex-wrap: wrap;
+   }
+   .hp-akce__item{
+      text-align: center;
+      margin-bottom: 40px;
+   }
    .main__filtr{
       margin-bottom: 32px;
    }
@@ -53,5 +60,14 @@
       table{
          width: 880px;
       }
+   }
+}
+@media(max-width:660px){
+   .akce .hp-akce__inner{
+      margin-top: 0px;
+      margin-bottom: 20px;
+   }
+   .akce .hp-akce__item{
+      margin-bottom: 20px;
    }
 }
