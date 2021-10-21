@@ -1,6 +1,7 @@
 .akce{
    .hp-akce__inner{
       flex-wrap: wrap;
+      display: none;
    }
    .hp-akce__item{
       text-align: center;
@@ -55,19 +56,25 @@
 }
 
 @media(max-width:920px){
+   .akce .hp-akce__inner{
+      display: flex;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      margin-left: -10px;
+      margin-right: -10px;
+   }
+   .akce .hp-akce__item{
+      margin-bottom: 20px;
+      padding: 0 10px;
+   }
    .akce__table{
       overflow: auto;
+      display: none;
       table{
          width: 880px;
       }
    }
 }
 @media(max-width:660px){
-   .akce .hp-akce__inner{
-      margin-top: 0px;
-      margin-bottom: 20px;
-   }
-   .akce .hp-akce__item{
-      margin-bottom: 20px;
-   }
+   
 }
