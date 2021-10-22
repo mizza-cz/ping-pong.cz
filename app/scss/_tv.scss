@@ -6,6 +6,9 @@
    background-size: cover;
    width: 100%;
    height: 100%;
+   .mob-menu{
+      display: none;
+   }
    .footer{
       padding-top: 80px;
       background-color: $dark-blue;
@@ -14,13 +17,25 @@
       width: 135px;
       height: 64px;
    }
+   .header{
+      border-bottom: 1px solid rgba(#fff, .08);
+   }
    .head{
       padding-top: 19px;
       padding-bottom: 19px;
       align-items: center;
       justify-content: space-between;
+  
    }
-
+   .hp-tv__title{
+      font-size: 1.5rem;
+      line-height: 1.333;
+      color: #fff;
+      @include font-bold;
+      text-transform: uppercase;
+      margin-top: 74px;
+      margin-bottom: 32px;
+   }
 }
 
 .tv-page{
@@ -28,9 +43,7 @@
    .hp-tv__utkani{
       margin-bottom: 74px;
    }
-   .mob-menu{
-      display: none;
-   }
+ 
    .hp-tv__btn--white{
       display: none;
    }
@@ -184,6 +197,9 @@
    }
 }
 @media(max-width:920px){
+   .tv-bg .hp-tv__title{
+      margin-top: 40px;
+   }
    .tv-page .hp-tv{
       margin-bottom: 40px;
    }
@@ -315,7 +331,9 @@
    }
 }
 @media(max-width:440px){
-   
+   .head__link{
+      display: none;
+   }
    .tv-page .hp-tv__utkani form .jq-selectbox, .tv-page .hp-tv__utkani form button{
      
       max-width: 100%;

@@ -123,6 +123,16 @@
       }
    }
 }
+@media(max-width:740px){
+   .zapas__info p{
+      text-align: center;
+      margin-bottom: 16px;
+      display: block;
+   }
+   .zapas__info h4{
+      text-align: center;
+   }
+}
 @media(max-width:680px){
    .hrac-page__box{
       flex-direction: column;
