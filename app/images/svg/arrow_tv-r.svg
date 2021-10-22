@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>arrowTV_R</title>
+    <g id="9.-TV" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-TV-samostatná-HP" transform="translate(-1627.000000, -335.000000)" fill="#FFFFFF">
+            <g id="arrowTV_R" transform="translate(1660.000000, 368.000000) scale(-1, 1) translate(-1660.000000, -368.000000) translate(1628.000000, 336.000000)">
+                <g id="arrow-left" transform="translate(24.000000, 25.000000)">
+                    <path d="M7.70711,13.7071 C7.31658,14.0976 6.68342,14.0976 6.29289,13.7071 L0.29289,7.7071 C-0.09763,7.3166 -0.09763,6.68342 0.29289,6.29289 L6.29289,0.29289 C6.68342,-0.09763 7.31658,-0.09763 7.70711,0.29289 C8.0976,0.68342 8.0976,1.31658 7.70711,1.70711 L3.41421,6 L15,6 C15.5523,6 16,6.44772 16,7 C16,7.5523 15.5523,8 15,8 L3.41421,8 L7.70711,12.2929 C8.0976,12.6834 8.0976,13.3166 7.70711,13.7071 Z" id="Path"></path>
+                </g>
+                <circle id="Oval" stroke-opacity="0.147793857" stroke="#FFFFFF" fill-opacity="0.0784032862" cx="32" cy="32" r="32"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

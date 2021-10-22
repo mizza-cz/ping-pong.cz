@@ -1,6 +1,7 @@
 .theme-dark{
    background: #050610;
    transition: all .4s;
+  
    .hp-cast{
       .top-clanky__row{
          justify-content: start;
@@ -69,14 +70,19 @@
          color: $red;
       }
    }
-   .head{
-      justify-content: space-between;
+   .header{
       border-bottom: 1px solid rgba(#fff, .15);
    }
+   .head{
+      justify-content: space-between;
+      
+   }
+   .hp-tv__btn--dark,
    .scoarboard__btn--dark,
    .user-menu__item--dark{
       display: block;
    }
+   .hp-tv__btn--white,
    .scoarboard__btn--white,
    .user-menu__item--white{
       display: none;

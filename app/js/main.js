@@ -2,7 +2,7 @@ $(function(){
   $('select, .shop__check').styler();
   //presmerovani pomoci selectu
    $('.mob-menu').on('click', function () {
-      $('.header__inner').slideToggle();
+      $('.header__inner, .head__tv').slideToggle();
     });
     $('.navbar__menu-item').on('click', function () {
       $(this).closest('.navbar__menu-list').toggleClass('active');
@@ -36,7 +36,7 @@ $(function(){
       autoplay:true,
       infinite:true,
       prevArrow: '<button class="scoarboard__btn scoarboard__btnprev"><img class="scoarboard__btn--white" src="images/svg/arrow-left.svg" alt="" ><img class="scoarboard__btn--dark" src="images/svg/arrowl.svg" alt="" ></button> ',
-      nextArrow: ' <button class="scoarboard__btn  scoarboard__btnnext"><img class="scoarboard__btn--white" src="images/svg/arrow-right.svg" alt = "" ><img class="scoarboard__btn--dark" src="images/svg/arrowr.svg" alt="" ></button></button > ',
+      nextArrow: ' <button class="scoarboard__btn  scoarboard__btnnext"><img class="scoarboard__btn--white" src="images/svg/arrow-right.svg" alt = "" ><img class="scoarboard__btn--dark" src="images/svg/arrowr.svg" alt="" ></button>',
       responsive: [
          {
             breakpoint: 1900,
@@ -74,8 +74,8 @@ $(function(){
     infinite:true,
     centerMode:true,
     variableWidth:true,
-    prevArrow: '<button class="hp-tv__btn hp-tv__btnprev"><img src="images/svg/arrow-left-w.svg" alt="" ></button> ',
-    nextArrow: ' <button class="hp-tv__btn hp-tv__btnnext"><img src="images/svg/arrow-right-w.svg" alt = "" ></button > ',
+    prevArrow: '<button class="hp-tv__btn hp-tv__btnprev"><img class="hp-tv__btn--white" src="images/svg/arrow-left-w.svg" alt="" ><img class="hp-tv__btn--dark" src="images/svg/arrow_tv-l.svg" alt = "" ></button> ',
+    nextArrow: ' <button class="hp-tv__btn hp-tv__btnnext"><img class="hp-tv__btn--white" src="images/svg/arrow-right-w.svg" alt = "" ><img class="hp-tv__btn--dark" src="images/svg/arrow_tv-r.svg" alt = "" ></button > ',
     responsive: [
        {
           breakpoint: 1440,
