@@ -135,8 +135,16 @@
    display: flex;
    justify-content: center;
    align-items: center;
+
+   &--white{
+      display: block;
+   }
+   &--dark{
+      display: none;
+   }
    img{
       width: auto;
+      background-repeat: no-repeat;
    }
 }
 .scoarboard__btnnext{
@@ -146,6 +154,7 @@
 .scoarboard__btnprev{
    left: 27px;
 }
+
 .slick-slide.slick-active:last-child{
    .scoarboard__wrap::before{
       display: none;

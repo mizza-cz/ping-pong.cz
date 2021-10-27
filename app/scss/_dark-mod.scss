@@ -87,7 +87,26 @@
    .user-menu__item--white{
       display: none;
    }
-
+   .hp-tv__btn{
+      width: 40px;
+      height: 40px;
+   }
+   .hp-tv__btnnext{
+      right: 16%;
+   }
+   .hp-tv__btnprev{
+      left: 16%;
+   }
+   .hp-tv__btn--dark{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+   }
+   .scoarboard__btn{
+      &:hover{
+         background: #F2F2F3;
+      }
+   }
    .head__logo{
       svg{
          path{
