@@ -10,6 +10,7 @@
     max-width: 25%;
     padding: 0 20px;
     margin-bottom: 40px;
+    height: auto;
   }
 
   &__item {
@@ -17,10 +18,10 @@
     box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
     border: 1px solid $gray;
     border-radius: 4px;
-
+    height: 100%;
     img {
       width: 130px;
-      min-height: 80px;
+      height: auto;
       object-fit: contain;
       margin: 0 auto 24px;
     }
