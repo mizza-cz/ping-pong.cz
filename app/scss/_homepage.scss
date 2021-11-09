@@ -282,6 +282,7 @@
       transition: all .5s;
       img{
          display: block;
+         object-fit: cover;
       }
    }
    &__info{
@@ -567,7 +568,7 @@
       width: 146px;
       margin: 0 auto 16px;
       img{
-         object-fit: none;
+         object-fit: cover;
       }
    }
 }
