@@ -9,6 +9,7 @@
     max-width: 856px;
     margin: 0 auto;
     padding: 40px 64px;
+    color: #000;
     text-align: center;
     p {
       font-size: 0.875rem;
@@ -54,6 +55,7 @@
   }
 }
 .mfp-fade.mfp-bg {
+  background: RGB(5, 6, 16);
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
   -moz-transition: all 0.15s ease-out;
@@ -63,7 +65,7 @@
 /* overlay animate in */
 
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 /* overlay animate out */
