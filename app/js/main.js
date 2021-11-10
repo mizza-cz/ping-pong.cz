@@ -1,4 +1,9 @@
 $(function(){
+   $('.open-popup').magnificPopup({
+      type: 'inline',
+      midClick: true,
+      mainClass: 'mfp-fade'
+    });
   $('select, .shop__check').styler();
   //presmerovani pomoci selectu
    $('.mob-menu').on('click', function () {
