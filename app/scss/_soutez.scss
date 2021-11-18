@@ -64,7 +64,7 @@
             @include font-bold;
             font-size: 1rem;
             color: $red;
-            text-transform: uppercase;
+        
             line-height: 1.5;
             &:hover{
                text-decoration: underline;
@@ -113,13 +113,13 @@
      }
      h4{
         color: $red;
-        text-transform: uppercase;
+     
         border-bottom: 1px solid #CDCDCF;
         padding-bottom: 17px;
         margin-bottom: 16px;
      }
      h6{
-        text-transform: uppercase;
+   
         color: #9B9B9F;
         margin-bottom: 7px;
      }
@@ -190,8 +190,7 @@
       justify-content: space-between;
       border-radius: 4px;
       a{
-        
-         text-transform: uppercase;
+   
          @include font-bold;
          &:hover{
             text-decoration: underline;

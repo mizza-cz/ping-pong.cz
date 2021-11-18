@@ -1,139 +1,140 @@
-.oddil{
-   padding-top: 40px;
-   &__subtitle a{
-      margin-right: 8px;
-   }
-   .main__tabs{
+.oddil {
+  padding-top: 40px;
+  &__subtitle a {
+    margin-right: 8px;
+  }
+  .main__tabs {
+    margin-bottom: 40px;
+  }
+  &-druzstva {
+    table {
+      .tym {
+        width: 415px;
+      }
+    }
+    form {
       margin-bottom: 40px;
-   }
-   &-druzstva{
-      table{
-     
-       .tym{
-         width: 415px;
-       }
-      }
-      form{
-         margin-bottom: 40px;
-      }
-      .select{
-         margin: 0;
-      }
-   }
-   &-utkani{
-      form{
-         display: flex;
-         margin-left: -4px;
-         margin-right: -4px;
-         flex-wrap: wrap;
-         margin-bottom: 32px;
-         .select{
-            margin: 0 4px 8px;
-         }
-      }
-   }
-   &__top{
+    }
+    .select {
+      margin: 0;
+    }
+  }
+  &-utkani {
+    form {
       display: flex;
-      margin-bottom: 32px;
-   }
-   &__box{
-      width: 100%;
-      h2{
-         text-transform: uppercase;
-         margin-bottom: 11px;
-      }
-      p a{
-         color: $red;
-         &:hover{
-            text-decoration: underline;
-         }
-      }
-      .menu-info{
-         border-top: 1px solid #CDCDCF;
-         margin-top: 19px;
-         padding-top: 16px;
-         width: 100%;
-         ul{
-            max-width: 578px;
-            justify-content: space-between;
-            display: flex;
-            flex-wrap: wrap;
-            li{
-               max-width: 242px;
-               width: 100%;
-               a{
-                  color: $red;
-               }
-            }
-         }
-      }
-   }
-   &__img{
-      margin-right: 40px;
-      width: 100%;
-      max-width: 184px;
-      height: 184px;
-      border-radius: 98.133333px 98.133333px 73.6px 73.6px;
-      background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
-      img{
-         width: 100%;
-         height: 100%;
-         display: block;
-         object-fit: contain;
-         
-      }
-   }
-   &__content{
-      display: none;
-      &.tab-active{
-         display: block;
-      }
-   }
-}
-@media(max-width:1340px){
-   .oddil-druzstva table .tym{
-      width: auto;
-   }
-}
-@media(max-width:1200px){
-   .oddil-druzstva--scroll{
-      overflow: auto;
-      table{
-         width: 1200px;
-      }
-   }
-}
-@media(max-width:1200px){
-   .oddil-herny{
-      overflow: auto;
-      table{
-         width: 1100px;
-      }
-   }
-}
-@media(max-width:640px){
-   .oddil__content{
-      margin-top: 8px;
-   }
-}
-@media(max-width:600px){
-   .menu-info li{
-      text-align: left;
-   }
-   .oddil .main__tabs{
-      margin-bottom: 20px;
-   }
-   .oddil{
-      padding-top: 20px;
-   }
-   .oddil-utkani form .select{
-      width: 100%;
-      max-width: 100%;
-   }
-   .oddil__top{
+      margin-left: -4px;
+      margin-right: -4px;
       flex-wrap: wrap;
-   }
-   .oddil__img{
-      margin: 0 auto 16px;
-   }
+      margin-bottom: 32px;
+      .select {
+        margin: 0 4px 8px;
+      }
+    }
+  }
+  &__top {
+    display: flex;
+    margin-bottom: 32px;
+  }
+  &__box {
+    width: 100%;
+    h2 {
+      margin-bottom: 11px;
+    }
+    p {
+      margin-bottom: 8px;
+    }
+    p a {
+      color: $red;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .menu-info {
+      border-top: 1px solid #cdcdcf;
+      margin-top: 19px;
+      padding-top: 16px;
+      width: 100%;
+      ul {
+        max-width: 578px;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          max-width: 242px;
+          width: 100%;
+          a {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+  &__img {
+    margin-right: 40px;
+    width: 100%;
+    max-width: 184px;
+    height: 184px;
+    border-radius: 98.133333px 98.133333px 73.6px 73.6px;
+    background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 98.133333px 98.133333px 73.6px 73.6px;
+    }
+  }
+  &__content {
+    display: none;
+    &.tab-active {
+      display: block;
+    }
+  }
+}
+@media (max-width: 1340px) {
+  .oddil-druzstva table .tym {
+    width: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .oddil-druzstva--scroll {
+    overflow: auto;
+    table {
+      width: 1200px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .oddil-herny {
+    overflow: auto;
+    table {
+      width: 1100px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .oddil__content {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .menu-info li {
+    text-align: left;
+  }
+  .oddil .main__tabs {
+    margin-bottom: 20px;
+  }
+  .oddil {
+    padding-top: 20px;
+  }
+  .oddil-utkani form .select {
+    width: 100%;
+    max-width: 100%;
+  }
+  .oddil__top {
+    flex-wrap: wrap;
+  }
+  .oddil__img {
+    margin: 0 auto 16px;
+  }
 }

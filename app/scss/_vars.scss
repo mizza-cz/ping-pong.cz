@@ -7,4 +7,5 @@ $gray: #9B9B9F;
 @mixin font-bold {
    font-family: purista-web, sans-serif;
    font-weight: 700;
+   text-transform: uppercase;
 }

@@ -6,7 +6,7 @@
    justify-content: center;
    &__label{
       display: block;
-      text-transform: uppercase;
+    
       opacity: 0.25;
       @include font-bold;
       color: #fff;

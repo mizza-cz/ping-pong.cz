@@ -32,7 +32,7 @@
          margin-bottom: 32px;
          h4{
             color: $red;
-            text-transform: uppercase;
+           
             margin-bottom: 8px;
             &:hover{
                text-decoration: underline;
@@ -59,7 +59,7 @@
       padding: 0 20px;
       color: #fff;
       h2{
-         text-transform: uppercase;
+       
          margin-bottom: 8px;
       }
       p{
@@ -85,7 +85,7 @@
             font-size: 1rem;
             line-height: 1.5;
             color: $red;
-            text-transform: uppercase;
+         
             margin-bottom: 8px;
             &:hover{
                text-decoration: underline;
@@ -103,7 +103,7 @@
       }
       h3{
          color: #fff;
-         text-transform: uppercase;
+       
          font-size: 1.5rem;
          line-height: 1.333;
          padding: 0;
@@ -126,7 +126,7 @@
             line-height: 1.571;
             color: #fff;
             @include font-bold;
-            text-transform: uppercase;
+           
             padding: 0;
             &::before,
             &::after{
