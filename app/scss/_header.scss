@@ -60,6 +60,7 @@
         }
       }
       svg {
+        display: none;
         margin-right: 8px;
         path,
         ellipse {
@@ -122,7 +123,8 @@ a.navbar__menu-item {
     background-repeat: no-repeat;
     left: 0;
     top: 27px;
-    background-image: url('../images/svg/separator-small-L.svg');
+    background-color: #fff;
+    border-radius: 50%;
   }
 }
 .header {
@@ -257,6 +259,7 @@ a.navbar__menu-item {
   }
   .head__list a svg {
     margin-right: 0;
+    display: block;
   }
 
   /// burger
@@ -358,7 +361,8 @@ a.navbar__menu-item {
       top: 4px;
 
       display: block;
-      background-image: url(../images/svg/separator-small-L.svg);
+      background-color: #fff;
+      border-radius: 50%;
     }
     &::after {
       content: '';
@@ -367,8 +371,8 @@ a.navbar__menu-item {
       height: 10px;
       top: 4px;
       left: 0;
-      background-image: url(../images/svg/h3-left.svg);
-      background-size: contain;
+      background-color: #fff;
+      border-radius: 50%;
     }
   }
   .header .navbar__menu-list {

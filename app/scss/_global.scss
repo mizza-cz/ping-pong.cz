@@ -62,14 +62,16 @@ h3 {
     width: 20px;
     height: 20px;
     top: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   &::before {
     left: 0;
-    background-image: url('../images/svg/h3-left.svg');
+    background-image: url('../images/title.png');
   }
   &::after {
     right: 0;
-    background-image: url('../images/svg/h3-right.svg');
+    background-image: url('../images/title.png');
   }
 }
 h4 {

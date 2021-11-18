@@ -1,113 +1,115 @@
-.archiv-page{
-   .link{
-      margin: 0;
-   }
-   .clanek{
-      max-width: 100%;
-      flex: 100%;
+.archiv-page {
+  .link {
+    margin: 0;
+  }
+  .clanek {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+    margin-bottom: 40px;
+    &:hover {
+      .clanek__info {
+        background: transparent;
+        h2 {
+          text-decoration: underline;
+        }
+      }
+    }
+    &__info {
       padding: 0;
-      margin-bottom: 40px;
-      &:hover{
-         .clanek__info{
-            background: transparent;
-            h2{
-               text-decoration: underline;
-            }
-         }
+      background: transparent;
+      color: $red;
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 8px;
       }
-      &__info{
-         padding: 0;
-         background: transparent;
-         color: $red;
-         h2{
-            text-transform: uppercase;
-            margin-bottom: 8px;
-         }
-         span,p{
-            color: #000;
-         }
-         span{
-            display: flex;
-            margin-bottom: 16px;
-            align-items: center;
-         }
-         span p{
-            color: $red;
-            margin-left: 4px;
-            font-size: 0.75rem;
-         }
+      span,
+      p {
+        color: #000;
       }
-      &__link{
-         display: flex;
+      span {
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
       }
-      &__img{
-         margin-right: 40px;
-         opacity: 1;
-         max-width: 408px;
-         width: 100%;
-         height: 272px;
+      span p {
+        color: $red;
+        margin-left: 4px;
+        font-size: 0.75rem;
       }
-   }
+    }
+    &__link {
+      display: flex;
+    }
+    &__img {
+      margin-right: 40px;
+      opacity: 1;
+      max-width: 408px;
+      width: 100%;
+      height: 272px;
+    }
+  }
 }
 .reprezentace,
-.article{
-   .hp-cast{
-      border-bottom: none;
-      border-top: 1px solid RGB(205, 205, 207);
-      padding-bottom: 0;
-      margin-bottom: 0;
-      h2{
-         font-size: 1.25rem;
-         line-height: 1.4;
-         position: relative;
-         display: block;
-         padding: 0 28px;
-         text-transform: uppercase;
-         max-width: fit-content;
-         margin-left: auto;
-         margin-right: auto;
-         margin-bottom: 16px;
-         &::before,
-         &::after{
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            top: 4px;
-         }
-         &::before{
-            left: 0;
-            background-image: url('../images/svg/h3-left.svg');
-         }
-         &::after{
-            right: 0;
-            background-image: url('../images/svg/h3-right.svg');
-         }
-      }
-   }
-}
-@media(max-width:740px){
-   .archiv-page .clanek__link{
+.article {
+  .hp-cast {
+    border-bottom: none;
+    border-top: 1px solid RGB(205, 205, 207);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.4;
+      position: relative;
       display: block;
-   }
-   .archiv-page .clanek__img{
-      max-width: 100%;
-      height: 320px;
-      margin-bottom: 20px;
-      img{
-         object-fit: cover;
+      padding: 0 28px;
+      text-transform: uppercase;
+      max-width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 16px;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 4px;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
-   }
+      &::before {
+        left: 0;
+        background-image: url('../images/title.png');
+      }
+      &::after {
+        right: 0;
+        background-image: url('../images/title.png');
+      }
+    }
+  }
+}
+@media (max-width: 740px) {
+  .archiv-page .clanek__link {
+    display: block;
+  }
+  .archiv-page .clanek__img {
+    max-width: 100%;
+    height: 320px;
+    margin-bottom: 20px;
+    img {
+      object-fit: cover;
+    }
+  }
 }
 
-@media(max-width:740px){
-   .archiv-page .clanek__img{
-      height: 240px;
-   }
-   .archiv-page .clanek__info{
-      h2{
-         font-size: 1.6rem;
-      }
-   }
- 
+@media (max-width: 740px) {
+  .archiv-page .clanek__img {
+    height: 240px;
+  }
+  .archiv-page .clanek__info {
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
 }

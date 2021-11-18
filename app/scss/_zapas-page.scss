@@ -1,311 +1,303 @@
-.zapas-page{
-  
-   &__table{
-      border: 1px solid #CDCDCF;
-      padding: 21px 24px 12px 24px;
-      box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
-      margin-bottom: 40px;
-      table{
-         tr:last-child{
-            td{
-               border: none;
-            }
-         }
+.zapas-page {
+  &__table {
+    border: 1px solid #cdcdcf;
+    padding: 21px 24px 12px 24px;
+    box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
+    margin-bottom: 40px;
+    table {
+      tr:last-child {
+        td {
+          border: none;
+        }
       }
-      table tr {
-         td{
-            padding: 8px;
-         }
-         .num{
-            width: 24px;
-         }
-         .team{
-            color: $red;
-            @include font-bold;
-           
-            font-size: 1rem;
-            line-height: 1.5;
-         }
-         th, th.team{
-            border-color: #CDCDCF;
-            padding: 0 8px 5px;
-            @include font-bold;
-            font-size: 0.75rem;
-            color:  #9B9B9F;
-         }
+    }
+    table tr {
+      td {
+        padding: 8px;
       }
-   }
-   &__statistics{
-      display: flex;
-      margin-right: -20px;
-      margin-left: -20px;
-      &-col{
-         padding: 0 20px;
-         flex: 0 0 50%;
-         max-width: 50%;
-         
-         h3{
-            width: fit-content;
-            display: flex;
-            margin: 0 auto 24px;
-           
-         }
+      .num {
+        width: 24px;
       }
-   }
-   &__tv{
-      
-      height: 608px;
-      max-width: 1080px;
-      margin: 0 auto 40px;
-      iframe{
-         display: block;
-         width: 100%;
-         height: 100%;
+      .team {
+        color: $red;
+        @include font-bold;
+
+        font-size: 1rem;
+        line-height: 1.5;
       }
-   }
-   &__row{
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -8px;
-      margin-right: -8px;
-      margin-bottom: 40px;
-   }
-   &__col{
-      flex: 0 0 20%;
-      max-width: 20%;
-      padding: 0 8px;
-   }
-   &__item{
-      border: 1px solid #CDCDCF;
-      border-radius: 4px;
-      text-align: center;
-      padding: 24px 12px 21px 12px;
+      th,
+      th.team {
+        border-color: #cdcdcf;
+        padding: 0 8px 5px;
+        @include font-bold;
+        font-size: 0.75rem;
+        color: #9b9b9f;
+      }
+    }
+  }
+  &__statistics {
+    display: flex;
+    margin-right: -20px;
+    margin-left: -20px;
+    &-col {
+      padding: 0 20px;
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      h3 {
+        width: fit-content;
+        display: flex;
+        margin: 0 auto 24px;
+      }
+    }
+  }
+  &__tv {
+    height: 608px;
+    max-width: 1080px;
+    margin: 0 auto 40px;
+    iframe {
+      display: block;
+      width: 100%;
       height: 100%;
-      box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
-      h2{
-         width: fit-content;
-         margin: 20px auto 16px;
-         background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
-         padding: 4px 13px;
-         border-radius: 4px;
-      
-      }
-      ul{
-       
-        margin-top: 4px;
-        
-         display: flex;
-         justify-content: center;
-         li{
-            @include font-bold;
-            color: #9B9B9F;
-            width: 32px;
-         
-         }
-         .win{
-            color: #000;
-         }
-         &:first-of-type{
-            margin-top: 20px;
-           }
-      }
-      p{
-         font-size: 0.75rem;
-         line-height: 1.5;
-         font-weight: 700;
-         margin-bottom: 2px;
-      }
-      a{
-         font-size: 1rem;
-         line-height: 1.5;
-         color: $red;
-         @include font-bold;
-       
-         &:hover{
-            text-decoration: underline;
-         }
-      }
-   }
-   &__teams{
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 40px;
+  }
+  &__col {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+  }
+  &__item {
+    border: 1px solid #cdcdcf;
+    border-radius: 4px;
+    text-align: center;
+    padding: 24px 12px 21px 12px;
+    height: 100%;
+    box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
+    h2 {
+      width: fit-content;
+      margin: 20px auto 16px;
+      background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+      padding: 4px 13px;
+      border-radius: 4px;
+    }
+    ul {
+      margin-top: 4px;
+
       display: flex;
       justify-content: center;
-      align-items: center;
-      margin: 3px 0;
-   }
-   &__team{
-      margin: 0 40px;
-      a{
-         display: block;
-         font-size: 1.5rem;
-         line-height: 1.333;
-     
-         color: $red;
-         @include font-bold;
-         transition: all .3s;
-         &:hover{
-            color: $dark-red;
-         }
+      li {
+        @include font-bold;
+        color: #9b9b9f;
+        width: 32px;
       }
-   }
-   &__result{
-      @include font-bold;
-      font-size: 3rem;
-      line-height: 1.167;
-      padding: 0px 16px;
-      width: fit-content;
-      margin: 0 auto 17px;
-      border-radius: 4px;
-      background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
-   }
-   &__logo{
-      width: 89px;
-      height: 89px;
-      img{
-         object-fit: contain;
+      .win {
+        color: #000;
       }
-   }
-   &__top{
-      text-align: center;
-      .link{
-         margin-top: 16px;
-         margin-bottom: 40px;
+      &:first-of-type {
+        margin-top: 20px;
       }
-      h6{
-         
-         color: #fff;
-         background: #000;
-         width: fit-content;
-         padding: 4px 6px;
-         margin: 0 auto 16px;
-         border-radius: 4px;
-      }
-      p{
-         font-size: 0.75rem;
-         line-height: 1.5;
-         a{
-            color: $red;
-            &:hover{
-               text-decoration: underline;
-            }
-         }
-      }
-   }
-}
-.zapas{
-   &__box{
-      padding: 16px 16px 22px;
-      border: 1px solid #CDCDCF;
-      border-radius: 4px;
-      margin-bottom: 40px;
-      box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
-   }
-   &__item{
-      padding: 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      &+&{
-         border-top: 1px solid #CDCDCF;
-         padding-top: 9px;
-      }
-   }
-   &__info{
-      p{
-         display: flex;
-         align-items: center;
-         flex-wrap: wrap;
-      }
-      p a{
-         height: 18px;
-      }
-      p img{
-         height: 18px;
-         width: 49px;
-         margin-left: 4px;
-         object-fit: contain;
-      }
-      h4{
-         line-height: 1.4;
-         font-size: 1rem;
-      
-
-      }
-      p{
-         margin-top: 6px;
-         font-size: 0.75rem;
-         line-height: 1.5;
-         margin-bottom: 0;
-      }
-   }
-   &__result{
-      font-size: 2rem;
+    }
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    a {
+      font-size: 1rem;
+      line-height: 1.5;
       color: $red;
-      border-radius: 4px;
-      padding: 4px 14px;
       @include font-bold;
-      line-height: 1.25;
-      background: linear-gradient(180deg, #F2F2F3 0%, #E6E6E7 100%);
-   }
 
-}
-
-
-@media(max-width:1040px){
-   .zapas-page__tv{
-      height: 530px;
-   }
-   .zapas-page__statistics{
-      flex-wrap: wrap;
-   }
-   .zapas-page__statistics-col{
-      max-width: 100%;
-      flex: 100%;
-   }
-   .zapas-page__col{
-      max-width: 33.333%;
-      flex: 0 0 33.333%;
-      margin-bottom: 16px;
-   }
-}
-
-@media(max-width:720px){
-   .zapas-page__tv{
-      height: 380px;
-   }
-   .zapas-page__team{
-      order: 2;
-      width: 100%;
-   }
-   .zapas-page__logo{
-      order: 1;
-      margin: 0 8px;
-   }
-   
-   .zapas-page__teams{
-      flex-wrap: wrap;
-   }
-}
-
-@media(max-width:640px){
-   .zapas-page__col{
-      max-width: 50%;
-      flex: 0 50%;
-   }
-}
-@media(max-width:540px){
-   .zapas-page__table{
-      overflow: auto;
-      table{
-         width: 500px;
+      &:hover {
+        text-decoration: underline;
       }
-   }
+    }
+  }
+  &__teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0;
+  }
+  &__team {
+    margin: 0 40px;
+    a {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1.333;
+
+      color: $red;
+      @include font-bold;
+      transition: all 0.3s;
+      &:hover {
+        color: $dark-red;
+      }
+    }
+  }
+  &__result {
+    @include font-bold;
+    font-size: 3rem;
+    line-height: 1.167;
+    padding: 0px 16px;
+    width: fit-content;
+    margin: 0 auto 17px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+  }
+  &__logo {
+    width: 89px;
+    height: 89px;
+    img {
+      object-fit: contain;
+    }
+  }
+  &__top {
+    text-align: center;
+    margin-bottom: 16px;
+    .link {
+      margin-top: 16px;
+      margin-bottom: 40px;
+    }
+    h6 {
+      color: #fff;
+      background: #000;
+      width: fit-content;
+      padding: 4px 6px;
+      margin: 0 auto 16px;
+      border-radius: 4px;
+    }
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5;
+      a {
+        color: $red;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
-@media(max-width:480px){
-   .zapas-page__tv{
-      height: 320px;
-   }
-   .zapas-page__col{
-      max-width: 100%;
-      flex: 100%;
-   }
+.zapas {
+  &__box {
+    padding: 16px 16px 22px;
+    border: 1px solid #cdcdcf;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    box-shadow: 0px 2px 6px rgba(5, 6, 16, 0.07);
+  }
+  &__item {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & + & {
+      border-top: 1px solid #cdcdcf;
+      padding-top: 9px;
+    }
+  }
+  &__info {
+    p {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    p a {
+      height: 18px;
+    }
+    p img {
+      height: 18px;
+      width: 49px;
+      margin-left: 4px;
+      object-fit: contain;
+    }
+    h4 {
+      line-height: 1.4;
+      font-size: 1rem;
+    }
+    p {
+      margin-top: 6px;
+      font-size: 0.75rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+  }
+  &__result {
+    font-size: 2rem;
+    color: $red;
+    border-radius: 4px;
+    padding: 4px 14px;
+    @include font-bold;
+    line-height: 1.25;
+    background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+  }
+}
+
+@media (max-width: 1040px) {
+  .zapas-page__tv {
+    height: 530px;
+  }
+  .zapas-page__statistics {
+    flex-wrap: wrap;
+  }
+  .zapas-page__statistics-col {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .zapas-page__col {
+    max-width: 33.333%;
+    flex: 0 0 33.333%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .zapas-page__tv {
+    height: 380px;
+  }
+  .zapas-page__team {
+    order: 2;
+    width: 100%;
+  }
+  .zapas-page__logo {
+    order: 1;
+    margin: 0 8px;
+  }
+
+  .zapas-page__teams {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .zapas-page__col {
+    max-width: 50%;
+    flex: 0 50%;
+  }
+}
+@media (max-width: 540px) {
+  .zapas-page__table {
+    overflow: auto;
+    table {
+      width: 500px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .zapas-page__tv {
+    height: 320px;
+  }
+  .zapas-page__col {
+    max-width: 100%;
+    flex: 100%;
+  }
 }
