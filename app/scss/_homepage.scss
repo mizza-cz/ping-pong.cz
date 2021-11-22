@@ -148,11 +148,6 @@
   left: 27px;
 }
 
-.slick-slide.slick-active:last-child {
-  .scoarboard__wrap::before {
-    display: none;
-  }
-}
 @media (max-width: 1220px) {
   .scoarboard__inner {
     padding: 0;
@@ -552,7 +547,7 @@
     width: 146px;
     margin: 0 auto 16px;
     img {
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }

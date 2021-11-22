@@ -430,8 +430,8 @@ img {
     }
   }
   &__links {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+
     &::before {
       background-image: url('../images/svg/share.svg');
     }

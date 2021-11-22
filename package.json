@@ -21,7 +21,9 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.2",
     "jquery-form-styler": "^2.0.2",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "tippy.js": "^6.3.7"
   }
 }

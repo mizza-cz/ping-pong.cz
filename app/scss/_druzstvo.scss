@@ -35,6 +35,7 @@
       tr {
         th {
           padding-top: 8px;
+          cursor: pointer;
         }
       }
     }
@@ -117,7 +118,7 @@
   .druzstvo-page .oddil__box .menu-info li {
     max-width: 50%;
     flex: 0 0 50%;
-    padding-right: 16px;
+    padding-right: 0px;
   }
   .druzstvo-page .oddil__box .menu-info .menu-info__herna {
     max-width: 100%;

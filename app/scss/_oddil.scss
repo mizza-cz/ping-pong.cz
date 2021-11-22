@@ -62,8 +62,14 @@
         li {
           max-width: 242px;
           width: 100%;
+          display: block;
           a {
             color: $red;
+            display: initial;
+            img {
+              width: 22px;
+              height: 22px;
+            }
           }
         }
       }
