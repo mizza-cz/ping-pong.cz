@@ -38,9 +38,13 @@
     }
   }
   form {
-    margin-bottom: 40px;
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
     .select {
-      margin: 0;
+      margin: 0 4px 8px;
     }
   }
   &__content {
@@ -121,7 +125,6 @@
 @media (max-width: 740px) {
   .hrac-page .main__tabs {
     margin-bottom: 25px;
-    
   }
   .zapas__info p {
     text-align: center;

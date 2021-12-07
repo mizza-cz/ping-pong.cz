@@ -6,7 +6,7 @@ $(function(){
       midClick: true,
       mainClass: 'mfp-fade'
     });
-  $('select, .shop__check').styler();
+//   $('select, .shop__check').styler();
   //presmerovani pomoci selectu
    $('.mob-menu').on('click', function () {
       $('.header__inner, .head__tv').slideToggle();
