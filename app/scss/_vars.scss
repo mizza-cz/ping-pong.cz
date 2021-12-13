@@ -1,11 +1,14 @@
-$red:#E3003C;
-$dark-red:  #B80031;
-$blue:#1D215F;
-$dark-blue: #13163E;
-$gray: #9B9B9F;
+$red: #e3003c;
+$dark-red: #b80031;
+$blue: #1d215f;
+$dark-blue: #13163e;
+$gray: #9b9b9f;
 
 @mixin font-bold {
-   font-family: purista-web, sans-serif;
-   font-weight: 700;
-   text-transform: uppercase;
+  font-family: purista-web, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.filter-green {
+  filter: invert(11%) sepia(29%) saturate(6141%) hue-rotate(230deg) brightness(85%) contrast(96%);
 }

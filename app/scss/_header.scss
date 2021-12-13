@@ -36,7 +36,11 @@
   .social {
     margin-left: auto;
     padding: 16px 0;
+    &__icon {
+      display: none;
+    }
     svg {
+      fill: red;
       path {
       }
     }

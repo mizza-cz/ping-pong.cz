@@ -21,6 +21,7 @@
 @import 'tv-prehled';
 @import 'partneri-page';
 @import 'sin-slavy';
+@import 'popup';
 @import 'new-akce';
 :root {
   --select-border: #777;
@@ -41,6 +42,8 @@ select {
   cursor: inherit;
   line-height: inherit;
   outline: none;
+  padding: 12px 12px 9px 12px;
+  height: 100%;
 }
 select::-ms-expand {
   display: none;
@@ -53,7 +56,7 @@ select::-ms-expand {
   width: 100%;
   min-width: 220px;
   font-size: 0.875rem;
-  padding: 12px 12px 9px 12px;
+
   border-radius: 4px;
   cursor: pointer;
   display: grid;
@@ -73,6 +76,8 @@ select::-ms-expand {
   height: 6px;
   background-image: url('../images/svg/chevron-down.svg');
   justify-self: end;
+  position: absolute;
+  right: 12px;
 }
 
 select:focus + .focus {
