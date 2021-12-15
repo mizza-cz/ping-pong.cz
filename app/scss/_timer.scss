@@ -1,34 +1,37 @@
-.timer{
-   display: flex;
-   margin-bottom: 26px;
-   margin: 16px auto 40px;
-   max-width: 100%;
-   justify-content: center;
-   &__label{
-      display: block;
-    
-      opacity: 0.25;
-      @include font-bold;
-      color: #fff;
-      font-size: 0.75rem;
-      line-height: 1;
-   }
-   &__value{
-      display: block;
-      @include font-bold;
-      color: #fff;
-      font-size: 2rem;
-      line-height: 1.25;
-   }
-   &__item{
-      text-align: center;
-      background-color: $dark-blue;
-      width: 64px ;
-      margin: 0 4px ;
-      padding-right: 0;
-      padding: 4px 4px 8px 4px;
-   }
+.timer {
+  display: flex;
+  margin-bottom: 26px;
+  margin: 16px auto 40px;
+  max-width: 100%;
+  justify-content: center;
+  &__wrapper {
+    display: block;
+  }
+  &__label {
+    display: block;
+
+    opacity: 0.25;
+    @include font-bold;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1;
+  }
+  &__value {
+    display: block;
+    @include font-bold;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  &__item {
+    text-align: center;
+    background-color: $dark-blue;
+    width: 64px;
+    margin: 0 4px;
+    padding-right: 0;
+    padding: 4px 4px 8px 4px;
+  }
 }
-#timer-seconds::after{
-   display: none;
+#timer-seconds::after {
+  display: none;
 }
