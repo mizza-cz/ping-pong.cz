@@ -1,6 +1,10 @@
 
 
 $(function(){
+
+$('.nastaveni-notifikace__checkbox').on('click', function () {
+   $(this).parent().parent().toggleClass("notifikace-check");
+ });
    $('.open-popup').magnificPopup({
       type: 'inline',
       midClick: true,
@@ -256,3 +260,7 @@ tippy('.tooltip', {
 
  // table sort
  new Tablesort(document.getElementById('table-id'));
+
+
+
+

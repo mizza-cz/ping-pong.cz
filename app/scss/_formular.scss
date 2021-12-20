@@ -1,0 +1,146 @@
+.formular {
+  max-width: 1000px;
+  margin: 0 auto;
+  .link {
+    margin-bottom: 16px;
+  }
+  &__message {
+    text-align: center;
+    letter-spacing: 1px;
+    a {
+      text-decoration: underline;
+      font-weight: 600;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__address {
+    .formular__box {
+      &:nth-of-type(3) {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+      &:nth-of-type(2) {
+        max-width: 33.3333%;
+        flex: 0 0 33.3333%;
+      }
+      &:nth-of-type(3) {
+        max-width: 16.6666%;
+        flex: 0 0 16.666%;
+      }
+    }
+  }
+  &__form {
+    form {
+      display: block;
+      width: 100%;
+    }
+  }
+  .select {
+    min-width: auto;
+  }
+  .label-tooltip {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0 8px;
+
+    span {
+      width: 12px;
+      height: 12px;
+      display: block;
+      margin-left: 4px;
+    }
+  }
+  .tooltip {
+    display: block;
+  }
+  input {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 6px 11px 8px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #cdcdcf;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    line-height: 1.571;
+    display: block;
+    outline: none;
+    &::placeholder {
+      color: #000;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+    }
+  }
+  &__box {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 0 8px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-bottom: 32px;
+    align-items: center;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      line-height: 1.157;
+    }
+  }
+  &__phone {
+    max-width: 75%;
+    flex: 0 0 75%;
+    padding: 0 8px;
+    input {
+      width: 100%;
+    }
+  }
+}
+.select-wrapper {
+  max-width: 25%;
+  flex: 0 0 25%;
+  padding: 0 8px;
+  .select {
+    margin: 0;
+    width: 100%;
+
+    min-width: auto;
+  }
+}
+.formular__date {
+  .select-wrapper {
+    max-width: auto;
+    flex: initial;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 770px) {
+  .formular__date .select-wrapper {
+    margin-bottom: 8px;
+  }
+  .formular__row {
+    margin-bottom: 32px;
+  }
+  .formular__box + .formular__box {
+    margin-top: 32px;
+  }
+  .formular__address .formular__box:nth-of-type(2),
+  .formular__address .formular__box:nth-of-type(3),
+  .formular__box {
+    max-width: 100%;
+    flex: 100%;
+    margin-bottom: 0;
+  }
+}
