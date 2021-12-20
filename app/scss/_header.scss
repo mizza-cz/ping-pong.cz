@@ -213,6 +213,7 @@ a.navbar__menu-item {
 
 .user-menu {
   display: flex;
+  align-items: center;
   .user-menu__item + .user-menu__item {
     margin-left: 15px;
   }
@@ -238,6 +239,59 @@ a.navbar__menu-item {
     }
   }
 }
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-right: 26px;
+}
+.input-search {
+  height: 16px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 0.75rem;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: $blue;
+  padding-right: 40px;
+  color: #fff;
+}
+.input-search::placeholder {
+  color: #fff;
+  font-size: 0.75rem;
+}
+.btn-search {
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 150px;
+  border-radius: 25px;
+  background-color: $dark-blue;
+
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 150px;
+  border-radius: 25px;
+
+  background-color: $dark-blue;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
 
 @media (max-width: 940px) {
   .head {
@@ -247,6 +301,26 @@ a.navbar__menu-item {
   }
 }
 @media (max-width: 820px) {
+  .input-search:focus,
+  .btn-search:focus ~ .input-search {
+    width: 100%;
+  }
+  .input-search {
+    background-color: $dark-blue;
+    width: 100%;
+  }
+  .search-mobil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .search-box {
+    margin-right: 0;
+  }
+  .user-menu {
+    flex-wrap: wrap;
+  }
   .header {
     .container {
       padding: 0;
