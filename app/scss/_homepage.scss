@@ -186,7 +186,6 @@
   }
 }
 .top-clanek {
-  height: 870px;
   position: relative;
 
   &:hover {
@@ -195,6 +194,7 @@
     }
   }
   &__img {
+    height: 100%;
     img {
       object-fit: cover;
     }
@@ -203,7 +203,6 @@
     height: 100%;
     display: block;
     width: 100%;
-    background-size: cover;
   }
   &__info {
     position: absolute;
@@ -220,15 +219,16 @@
     }
     h1 {
       position: relative;
-      padding: 40px 4px 0 40px;
+      padding: 35px 4px 0 35px;
       margin-bottom: 8px;
+      font-size: 2.7rem;
       &::before {
         content: '';
         position: absolute;
         left: 0;
         top: 0;
-        width: 55px;
-        height: 40px;
+        width: 50px;
+        height: 35px;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('../images/title.png');
@@ -541,13 +541,14 @@
     }
   }
   &__img {
-    background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
     border-radius: 77.8667px 77.8667px 58.4px 58.4px;
     height: 146px;
     width: 146px;
     margin: 0 auto 16px;
     img {
+      border-radius: 77.8667px 77.8667px 58.4px 58.4px;
       object-fit: contain;
+      background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
     }
   }
 }
