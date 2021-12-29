@@ -9,7 +9,7 @@
   position: relative;
 }
 .notification-popup {
-  box-shadow: 0 0.5rem 1rem rgba(#000, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(#000, 0.25) !important;
   top: 100%;
   right: -1rem;
   width: 300px;
@@ -18,7 +18,7 @@
   position: absolute;
   border-top: 2px solid $red;
   display: block;
-  top: 39px;
+  top: 40px;
   padding: 8px;
   li + li {
     border-top: 1px solid #cdcdcf;
