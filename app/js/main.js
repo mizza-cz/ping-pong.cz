@@ -90,8 +90,8 @@ $(function(){
       infinite:true,
       centerMode:true,
       variableWidth:true,
-      prevArrow: '<button class="hp-tv__btn hp-tv__btnprev"><img class="hp-tv__btn--white" src="/dist/images/svg/arrow-left-w.svg" alt="" ><img class="hp-tv__btn--dark" src="/dist/images/svg/arrow_tv-l.svg" alt = "" ></button> ',
-      nextArrow: ' <button class="hp-tv__btn hp-tv__btnnext"><img class="hp-tv__btn--white" src="/dist/images/svg/arrow-right-w.svg" alt = "" ><img class="hp-tv__btn--dark" src="/dist/images/svg/arrow_tv-r.svg" alt = "" ></button > ',
+      prevArrow: '<button class="hp-tv__btn hp-tv__btnprev"><img class="hp-tv__btn--white" src="/images/svg/arrow-left-w.svg" alt="" ><img class="hp-tv__btn--dark" src="/images/svg/arrow_tv-l.svg" alt = "" ></button> ',
+      nextArrow: ' <button class="hp-tv__btn hp-tv__btnnext"><img class="hp-tv__btn--white" src="/images/svg/arrow-right-w.svg" alt = "" ><img class="hp-tv__btn--dark" src="/images/svg/arrow_tv-r.svg" alt = "" ></button > ',
       responsive: [
          {
             breakpoint: 1440,
