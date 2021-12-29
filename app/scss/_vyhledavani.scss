@@ -1,0 +1,68 @@
+.vyhledavani__form {
+  .select {
+    margin: 0 8px;
+  }
+  .btn.link {
+    font-size: 1rem;
+    color: $red;
+    border: 2px solid $red;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    max-width: fit-content;
+    min-width: 192px;
+    text-align: center;
+    @include font-bold;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid $dark-red;
+      background-color: $dark-red;
+      color: #fff;
+    }
+  }
+}
+.vyhledavani {
+  h3 {
+    padding: 0;
+    margin-bottom: 16px;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  .typography {
+    p {
+      text-align: center;
+      font-size: 1.6rem;
+      margin: 32px 0;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .vyhledavani__form .btn.link {
+    margin: 0;
+  }
+  .vyhledavani {
+    .main__header {
+      display: block;
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .vyhledavani__form {
+    flex-wrap: wrap;
+    .select,
+    input {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 0 12px 0;
+    }
+  }
+}

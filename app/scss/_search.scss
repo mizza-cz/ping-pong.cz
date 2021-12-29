@@ -1,0 +1,125 @@
+.search {
+  background-color: $blue;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 1rem 4rem;
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    margin: 5px auto 0;
+    max-width: 1334px;
+    .tag {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .tag + .tag {
+      margin-left: 4px;
+    }
+  }
+  .btn-link {
+    border: none;
+    background: none;
+    margin-left: 1.6rem !important;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__form {
+    flex-grow: 1 !important;
+    display: block;
+    &-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn.btn-icon {
+        display: none;
+      }
+
+      .btn {
+        cursor: pointer;
+        border-radius: 0 4px 4px 0;
+        height: 40px;
+        display: block;
+        border: none;
+        &:hover {
+        }
+      }
+    }
+  }
+  &__content {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1334px;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.search.d-none {
+  display: none;
+}
+.search-togle {
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 20px;
+  transition: all 0.3s;
+  &:hover {
+    color: $red;
+  }
+}
+
+.form-control {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #fff;
+  background: $dark-blue;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  line-height: 4rem;
+  padding: 0 1.2rem;
+  letter-spacing: 1px;
+  width: 100%;
+  -webkit-appearance: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+@media (max-width: 820px) {
+  .search {
+    padding: 1rem 0rem;
+  }
+}
+@media (max-width: 680px) {
+  .search .btn-link {
+    margin-left: 8px !important;
+  }
+  .search__form-row .btn.btn-icon {
+    display: block;
+    background: $dark-blue;
+    border: 1px solid #fff;
+    border-left: none;
+    color: #fff;
+    width: 40px;
+  }
+  .search__form-row .btn.link {
+    display: none;
+  }
+}

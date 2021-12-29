@@ -13,7 +13,7 @@ $(function(){
   //   $('select, .shop__check').styler();
     //presmerovani pomoci selectu
      $('.mob-menu').on('click', function () {
-        $('.header__inner, .head__tv').slideToggle();
+        $('.navbar, .head__tv').slideToggle();
       });
       $('.navbar__menu-item').on('click', function () {
         $(this).closest('.navbar__menu-list').toggleClass('active');
@@ -49,8 +49,8 @@ $(function(){
         slidesToScroll: 1,
         autoplay:true,
         infinite:true,
-        prevArrow: '<button class="scoarboard__btn scoarboard__btnprev"><img class="scoarboard__btn--white" src="/dist/images/svg/arrow-left.svg" alt="" ><img class="scoarboard__btn--dark" src="/dist/images/svg/arrowl.svg" alt="" ></button> ',
-        nextArrow: ' <button class="scoarboard__btn  scoarboard__btnnext"><img class="scoarboard__btn--white" src="/dist/images/svg/arrow-right.svg" alt = "" ><img class="scoarboard__btn--dark" src="/dist/images/svg/arrowr.svg" alt="" ></button>',
+        prevArrow: '<button class="scoarboard__btn scoarboard__btnprev"><img class="scoarboard__btn--white" src="/images/svg/arrow-left.svg" alt="" ><img class="scoarboard__btn--dark" src="/images/svg/arrowl.svg" alt="" ></button> ',
+        nextArrow: ' <button class="scoarboard__btn  scoarboard__btnnext"><img class="scoarboard__btn--white" src="/images/svg/arrow-right.svg" alt = "" ><img class="scoarboard__btn--dark" src="/images/svg/arrowr.svg" alt="" ></button>',
         responsive: [
            {
               breakpoint: 1900,

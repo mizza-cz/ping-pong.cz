@@ -24,20 +24,11 @@
       <div class="container">
          <div class="head">
             <a class="head__logo" href="index.html">
-               <img src="images/logo.png" alt="">
+               <img class="white-logo" src="images/logo.png" alt="">
+               <img class="dark-logo" src="images/dark-logo.png" alt="">
             </a>
             <nav class="head__menu">
                <ul class="head__list">
-                  <!-- <li>
-                     <a class="active" href="index.html">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <ellipse cx="1.99997" cy="14" rx="1.99997" ry="1.99997" fill="white"/>
-                           <path d="M12.1212 5.14014C11.6638 3.84349 10.9698 2.68684 10.1665 1.88352C9.06187 0.778868 7.50056 0.0955432 5.88392 0.0088777C4.18195 -0.0777878 2.65798 0.472205 1.56533 1.56552C-0.641302 3.77283 -0.491971 7.79211 1.88399 10.1674C2.68664 10.9701 3.84262 11.6641 5.1406 12.1214C5.1766 12.1341 5.21393 12.1401 5.25127 12.1401C5.33793 12.1401 5.42326 12.1061 5.48726 12.0427L12.0432 5.48681C12.1325 5.39547 12.1631 5.26148 12.1212 5.14014Z" fill="white"/>
-                           <path d="M15.8831 13.414L12.2418 10.2927C12.6745 9.30739 12.7751 8.06608 12.5311 6.68209C12.5098 6.55943 12.4218 6.45943 12.3031 6.4221C12.1825 6.38476 12.0545 6.41743 11.9671 6.50476L6.50389 11.9674C6.41589 12.0554 6.38389 12.1847 6.42189 12.3034C6.45922 12.422 6.55922 12.51 6.68189 12.5314C8.06386 12.776 9.30651 12.6753 10.2925 12.2427L13.4138 15.884C13.4784 15.9593 13.5711 16 13.6664 16C13.7171 16 13.7678 15.9886 13.8158 15.9646C14.7398 15.5026 15.5024 14.74 15.9651 13.8153C16.0331 13.6787 15.9997 13.5127 15.8831 13.414Z" fill="white"/>
-                        </svg>
-                        <span>Český ping-pong</span>
-                     </a>
-                  </li> -->
                   <li>
                      <a href="#">
                         <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,28 +64,33 @@
             </nav>
             <ul class="social">
                <li class="social__item">
-                  <a class="social__link" href="#">
-                     <img src="images/svg/facebook.svg" alt="">
+                  <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
+                     <img class="social__icon" src="images/svg/facebook.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/facebook-head.svg" >
                   </a>
                </li>
                <li class="social__item">
-                  <a class="social__link" href="#">
-                     <img src="images/svg/twitter.svg" alt="">
+                  <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+                     <img class="social__icon" src="images/svg/twitter.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/twitter-head.svg" >
                   </a>
                </li>
                <li class="social__item">
-                  <a class="social__link" href="#">
-                     <img src="images/svg/youtube.svg" alt="">
+                  <a target="_blank" class="social__link" href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw">
+                     <img class="social__icon" src="images/svg/youtube.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/youtube-head.svg" >
                   </a>
                </li>
                <li class="social__item">
-                  <a class="social__link" href="#">
-                     <img src="images/svg/instagram.svg" alt="">
+                  <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
+                     <img class="social__icon" src="images/svg/instagram.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="">
                   </a>
                </li>
                <li class="social__item">
-                  <a class="social__link" href="#">
-                     <img src="images/svg/flickr.svg" alt="">
+                  <a target="_blank" class="social__link" href="https://www.flickr.com/photos/czechtabletennis/albums">
+                     <img class="social__icon" src="images/svg/flickr.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/flickr-head.svg" >
                   </a>
                </li>
             </ul>
@@ -205,6 +201,9 @@
                </ul>
             </nav>
             <div class="user-menu">
+               <a href="#" class="search-togle js-search-inline-toggle" role="button" aria-haspopup="true">
+                  <i class="fas fa-search"></i>
+               </a>
                <a  class="user-menu__item js-theme-toggle" href="#">
                   <svg class="user-menu__item--white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M16 11.0757C14.9493 11.5509 13.7829 11.8154 12.5548 11.8154C7.93228 11.8154 4.18495 8.06809 4.18495 3.4455C4.18495 2.21725 4.44951 1.05079 4.92476 0C2.02067 1.31328 0 4.23579 0 7.63024C0 12.2528 3.74733 16.0001 8.3699 16.0001C11.7642 16.0001 14.6867 13.9796 16 11.0757Z" fill="white"/>
@@ -224,9 +223,37 @@
                      </svg>
                </a>
             </div>
+            
            </div>
         </div>
       </div>
+      <div class="search  d-none js-search-inline-wrapper" role="search">
+         <div class="search__content">
+             <form action="vyhledavani.html" class="search__form" method="GET">
+                 <div class="search__form-row">
+                     <input type="search" class="form-control" placeholder="Co hledáte?" aria-label="Hledej na ping-pong.cz" autofocus />
+                     <input type="submit" value="hledat" class="btn link" />
+                     <button aria-label="Hledat" class="btn btn-icon">
+                        <i class="fas fa-search"></i>
+                     </button>
+                 </div>
+             </form>
+             <button aria-lable="Zavřít hledaní" class="btn-link js-search-inline-toggle">
+                
+                 <svg  aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+             </button>
+         </div>
+         <div class="search__tags">
+            <a href="" class="tag">tag</a>
+            <a href="" class="tag">tag</a>
+            <a href="" class="tag">tag</a>
+            <a href="" class="tag">tag</a>
+            <a href="" class="tag">tag</a>
+            <a href="" class="tag">tag</a>
+            <a href="" class="tag">tag</a>                                
+         </div>
+     </div>
+     <script async src="js/search-inline.js"></script>
    </header>
 
    <main class="main akce">
