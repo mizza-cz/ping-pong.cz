@@ -285,6 +285,31 @@ img {
   flex: 0 0 25.3%;
   max-width: 25.3%;
   padding: 0 20px;
+  &__box {
+    text-align: center;
+    margin-bottom: 32px;
+    h3 {
+      margin-bottom: 32px;
+    }
+  }
+  &__menu {
+    text-align: left;
+
+    &-list {
+      border-bottom: 1px solid #cdcdcf;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      a {
+        color: #e3003c;
+        margin-left: 4px;
+        font-size: 1rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   .menu-info {
     margin-bottom: 40px;
   }
@@ -472,8 +497,10 @@ table {
     margin-bottom: 40px;
   }
   .aside {
+    display: none;
     max-width: 100%;
     flex: 100%;
+
     .ban__inner {
       width: 600px;
       margin: 0 auto;
