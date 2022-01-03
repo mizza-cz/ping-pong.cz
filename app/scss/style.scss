@@ -48,6 +48,8 @@ select {
   outline: none;
   padding: 12px 12px 9px 12px;
   height: 100%;
+  position: relative;
+  z-index: 9999;
 }
 select::-ms-expand {
   display: none;
