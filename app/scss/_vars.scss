@@ -4,6 +4,11 @@ $blue: #1d215f;
 $dark-blue: #13163e;
 $gray: #9b9b9f;
 
+$background: #e74c3c;
+$select-color: #fff;
+$select-background: #c0392b;
+$select-width: 220px;
+$select-height: 40px;
 @mixin font-bold {
   font-family: purista-web, sans-serif;
   font-weight: 700;

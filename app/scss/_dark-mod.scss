@@ -1,6 +1,9 @@
 .theme-dark {
   background: #050610;
   transition: all 0.4s;
+  .select {
+    background-color: #fff;
+  }
   .notification-popup {
     background-color: $red;
 

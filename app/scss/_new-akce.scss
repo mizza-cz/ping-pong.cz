@@ -27,6 +27,11 @@
     }
   }
 }
+@media (max-width: 660px) {
+  .akce .form__filtr {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 600px) {
   .new-akce__table {
     overflow: auto;

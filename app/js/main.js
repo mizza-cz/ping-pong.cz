@@ -1,7 +1,13 @@
 
 
 $(function(){
-
+  $('.article__fotogalerie').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true,
+    },
+  });
   $('.nastaveni-notifikace__checkbox').on('click', function () {
       $(this).parent().parent().toggleClass("notifikace-check");
   });
@@ -10,8 +16,7 @@ $(function(){
         midClick: true,
         mainClass: 'mfp-fade'
       });
-  //   $('select, .shop__check').styler();
-    //presmerovani pomoci selectu
+
      $('.mob-menu').on('click', function () {
         $('.navbar, .head__tv').slideToggle();
       });
@@ -263,3 +268,4 @@ $(function(){
   
    // table sort
    new Tablesort(document.getElementById('table-id'));
+

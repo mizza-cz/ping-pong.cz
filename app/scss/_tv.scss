@@ -98,27 +98,14 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: 40px;
-        .jq-selectbox__dropdown {
-          background: rgba($dark-blue, 0.9);
-          li {
-            color: #fff;
-          }
-        }
-        .select::after {
-          width: 13px;
-          height: 8px;
-          background-image: url('../images/svg/angle-down-white.svg');
-        }
+
         .select {
           border: 1px solid rgba(#fff, 0.15);
           margin: 0;
           margin-right: 8px;
           padding: 12px 12px 9px 12px;
-          background: RGBA(255, 255, 255, 0.08);
-          background: transparent;
           color: #fff;
-          &__select-text {
-          }
+
           &:last-of-type {
             padding-right: 8px;
           }

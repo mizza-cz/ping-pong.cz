@@ -23,9 +23,9 @@
     height: 163px;
     position: relative;
     margin-bottom: 8px;
-    &:nth-last-child(2) {
-      display: none;
-    }
+    // &:nth-last-child(2) {
+    //   display: none;
+    // }
     &:last-child {
       h4 {
         position: absolute;
