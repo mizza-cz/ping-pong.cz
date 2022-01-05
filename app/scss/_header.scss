@@ -297,6 +297,16 @@ a.navbar__menu-item {
   }
 }
 @media (max-width: 820px) {
+  .search-togle {
+    height: 18px;
+  }
+  .navbar__menu-list,
+  .navbar__menu-list + .navbar__menu-list {
+    padding-left: 8px;
+  }
+  .header .navbar__menu-list {
+    padding-right: 8px;
+  }
   .notification-box {
     display: none;
   }
