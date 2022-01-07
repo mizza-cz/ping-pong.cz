@@ -1,9 +1,84 @@
 .hp-cast {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid RGB(205, 205, 207);
+  &__kontakty {
+    border-bottom: 1px solid RGB(205, 205, 207);
+    padding-bottom: 32px;
+    h2 {
+      text-align: center;
+    }
+    &-row {
+      display: flex;
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+    &-box {
+      padding: 0 24px;
+      h3 {
+        margin-bottom: 24px;
+      }
+      .kontakty__item {
+        max-width: 100%;
+        flex: 100%;
+      }
+      .kontakty__row {
+        .kontakty__item {
+          max-width: 50%;
+          flex: 0 0 50%;
+        }
+      }
+    }
+    h2 {
+      margin-bottom: 32px;
+    }
+    .kontakty__item {
+      p a {
+        color: $red;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .hp-akce__inner {
+    margin-top: 20px;
+  }
+
+  &__odkazy {
+    text-align: center;
+    margin-bottom: 32px;
+    border-bottom: 1px solid RGB(205, 205, 207);
+    padding-bottom: 40px;
+    h3 {
+      margin-bottom: 24px;
+    }
+  }
+  &__odkazy-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      padding: 0 4px;
+      margin-bottom: 6px;
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
   h3 {
     margin: 0 auto;
   }
@@ -119,6 +194,22 @@
   }
 }
 @media (max-width: 940px) {
+  .hp-cast__kontakty-box {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  .hp-cast__kontakty-box .kontakty__row .kontakty__item {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .hp-cast {
+    h1 {
+      font-size: 2.2rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
   .documents__inner {
     flex-wrap: wrap;
     max-width: 640px;
@@ -137,6 +228,16 @@
   }
 }
 @media (max-width: 620px) {
+  .hp-cast__kontakty-row {
+    flex-wrap: wrap;
+  }
+  .hp-cast__kontakty-box {
+    max-width: 100%;
+    flex: 100%;
+    .kontakty__row {
+      margin: 0;
+    }
+  }
   .hp-cast .clanek {
     max-width: 100%;
     flex: 100%;

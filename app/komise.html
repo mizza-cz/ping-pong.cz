@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Ping-pong.cz</title>
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css">
@@ -18,6 +19,21 @@
 </head>
 
 <body>
+
+   <!-- popup -->
+   <!-- <div id="overlay">
+      <div class="popup">
+        <h1>popup</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus magni similique cumque ab tempora. Fugit dolorum dolorem odio quod nesciunt culpa quae cumque corrupti ullam iusto, nostrum mollitia nemo.
+          Sequi magnam consectetur deleniti hic obcaecati similique magni fugiat tempora temporibus animi rerum, ut velit accusamus quibusdam facere, numquam autem maxime dolorem, eius quam dolorum voluptate praesentium aspernatur dolore? Possimus!
+          Recusandae qui, ut quam quis architecto voluptates, amet officia alias laborum natus, nesciunt dicta saepe inventore accusantium. Minus odit ullam quam architecto modi placeat hic repudiandae magnam harum? Excepturi, reprehenderit.
+        </p>
+          <button class="close" title="zavřít" onclick="document.getElementById('overlay').style.display='none';"></button>
+      </div>
+  </div> -->
+   <!-- popup -->
+
 
    <header class="header">
       <div class="container">
@@ -210,12 +226,29 @@
                      <svg class="user-menu__item--dark" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z" fill="#fff" fill-rule="evenodd"/></svg>
 
                </a>
-               <a class="user-menu__item" href="#">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z" fill="white"/>
-                     <path d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z" fill="white"/>
-                     </svg>
-               </a>
+               <div class="notification-box">
+                  <a class="user-menu__item js-notification-toggle" aria-haspopup="true" aria-expanded="false" id="notification-menu" href="notifikace.html">
+                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z" fill="white"/>
+                        <path d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z" fill="white"/>
+                        </svg>
+                  </a>
+                  <ul class="notification-popup d-none js-notification-popup" aria-labelledby="notification-menu">
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                  </ul>
+               </div>
+               <script async src="js/notification.js"></script>
                <a class="user-menu__item" href="#">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z" fill="white"/>
@@ -255,288 +288,134 @@
      <script async src="js/search-inline.js"></script>
    </header>
 
-   <!-- top clanky  -->
-  <section class="hp-cast">
-   <div class="container">
-      <h1>Vítejte na asociační části portálu ping-pong.cz "ČAST"</h1>
-      <h2>Tato část webu slouží primárně pro interní účely členů asociace. Najdete zde všechny oficiální informace a dokumenty</h2>
-      <section class="hp-akce">
-         <div class="container">
-            <h3>AKTUÁLNÍ AKCE</h3>
-            <div class="hp-akce__inner">
-               <div class="hp-akce__item">
-                  <a class="hp-akce__link" href="#">
-                     <span>MEZINÁRODNÍ</span>
-                     <h4>Evropské univerzitní hry, 2021</h4>
-                     <p>14. 7. - 27. 7. 2021</p>
-                  </a>
-               </div>
-             
-               <div class="hp-akce__item">
-                  <a class="hp-akce__link" href="#">
-                     <span>MLÁDEŽ</span>
-                     <h4>ITTF SQY French Para Open 2021</h4>
-                     <p>14. 7. - 27. 7. 2021</p>
-                  </a>
-               </div>
-               <div class="hp-akce__item">
-                  <a class="hp-akce__link" href="#">
-                     <span>MLÁDEŽ</span>
-                     <h4>WTT Youth Contender Varadzin</h4>
-                     <p>14. 7. - 27. 7. 2021</p>
-                  </a>
-               </div>
-               <div class="hp-akce__item">
-                  <a class="hp-akce__link" href="#">
-                     <span>MEZINÁRODNÍ</span>
-                     <h4>World Table Tennis Championships Finals</h4>
-                     <p>14. 7. - 27. 7. 2021</p>
-                  </a>
-               </div>
-            </div>
-            <a class="link" href="#">TERMÍNOVÁ LISTINA</a>
-         </div>
-      </section>
-  
-   </div>
-   <!-- <a class="link" href="clanky.html">DALŠÍ ZPRÁVY</a> -->
-  </section>
+   <main class="article">
+      <div class="container">
+          <h1>
+              Komise
+          </h1>
+          <div class="article__inner">
+              <div class="article__content">
+                 <div class="kontakty">
 
-   <section class="hp-cast__odkazy">
-      <div class="container">
-         <h3>Organizační informace k probíhající sezóně</h3>
-         <ul class="hp-cast__odkazy-menu">
-            <li>
-               <a class="link" href="#">Termínová listina</a>
-            </li>
-            <li>
-               <a class="link" href="#">Aktuální žebříčky</a>
-            </li>
-            <li>
-               <a class="link" href="#">Seznam rozhodčích</a>
-            </li>
-            <li>
-               <a class="link" href="#">Školení rozhodčích</a>
-            </li>
-            <li>
-               <a class="link" href="#">Seznam trenérů</a>
-            </li>
-            <li>
-               <a class="link" href="#">Seznam odkazů</a>
-            </li>
-         </ul>
-      </div>
-   </section>
-   <section class="hp-cast__odkazy">
-      <div class="container">
-         <h3>Organizační struktura</h3>
-         <ul class="hp-cast__odkazy-menu">
-            <li>
-               <a class="link" href="#">KONFERENCE ASOCIACE</a>
-            </li>
-            <li>
-               <a class="link" href="#">Výkonný výbor</a>
-            </li>
-            <li>
-               <a class="link" href="#">Dozorčí rada</a>
-            </li>
-            <li>
-               <a class="link" href="#">Komise</a>
-            </li>
-         </ul>
-      </div>
-   </section>
-   <section class="hp-cast__kontakty">
-      <div class="container">
-         <h2>Kontakty asiciace</h2>
-         <div class="hp-cast__kontakty-row">
-            <div class="hp-cast__kontakty-box">
-               <h3>Adresa</h3>
-               <div class="kontakty__item">
-                  <p>
-                     <b>Česká asociace stolního tenisu</b>
-                  </p>
-                  <p><b>pošt. schránka:</b> 40</p>
-                  <p>Zátopkova 100/2</p>
-                  <p>160 17, Praha 6 Strahov</p>
-                  <p><b>IČ:</b> 00676888</p>
-                  <p><a href="#">Zobrazit na mapě</a></p>
-               </div>
-            </div>
-            <div class="hp-cast__kontakty-box">
-               <h3>Sekretariát</h3>
-               <div class="kontakty__row">
-                  <div class="kontakty__item">
-                     <p><b>Jan Brothánek</b></p>
-                     <p>generální sekretář ČAST, ekonom</p>
-                     <p><b>mobil:</b>602 588 748</p>
-                     <p><b>e-mail:</b>
-                        <a href="mailto:jan.brothanek@ping-pong.cz">jan.brothanek@ping-pong.cz</a>
-                     </p>
+                  <h3>Hlavní komise asociace</h3>
+                  <div class="kontakty__row">
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Spornotvní komise</b></p>
+                      
+                        <p><a href="mailto:zbynek.spacek@ping-pong.cz">více informace</a></p>
+                     </div>
+                 
+                     
                   </div>
-                  <div class="kontakty__item">
-                     <p><b>Zuzana Kaplanová</b></p>
-                     <p>vedoucí sekretariátu</p>
-                     <p><b>mobil:</b>734 436 570</p>
-                     <p><b>e-mail:</b>
-                        <a href="mailto:info@ping-pong.cz">info@ping-pong.cz</a></p>
+                  <h3>SEKRETARIÁT ČAST</h3>
+                  <div class="kontakty__row">
+                     <div class="kontakty__item">
+                        <p><b>Zuzana Kaplanová, sekretariát</b></p>
+                        <p><b>mobil:</b>734 436 570</p>
+                        <p><b>e-mail:</b><a href="mailto:info@ping-pong.cz">info@ping-pong.cz</a></p>
+                     </div>
+                     <div class="kontakty__item">
+                        <p><b>Ilona Navrátilová, účtárna</b></p>
+                        <p><b>mobil:</b>776 676 427</p>
+                        <p><b>e-mail:</b><a href="mailto:uctarna@ping-pong.cz">uctarna@ping-pong.cz;</a>
+                        <a href="mailto:navratilova@cuscz.cz">navratilova@cuscz.cz</a></p>
+                     </div>
                   </div>
-                  <div class="kontakty__item">
-                     <p><b>Ilona Navrátilová</b></p>
-                     <p>účetní</p>
-                     <p><b>mobil:</b>776 676 427</p>
-                     <p><b>e-mail:</b>
-                        <a href="mailto:uctarna@ping-pong.cz">uctarna@ping-pong.cz</a>
-                     <a href="maito:navratilova@cuscz.cz">navratilova@cuscz.cz</a></p>
+                  <h3>ŘEDITEL SOUTĚŽÍ ČAST</h3>
+                  <div class="kontakty__row">
+                     <div class="kontakty__item">
+                        <p><b>Miroslav Henžel</b></p>
+                        <p><b>mobil:</b>724 049 092</p>
+                        <p><b>e-mail:</b><a href="mailto:reditel@ping-pong.cz">reditel@ping-pong.cz</a></p>
+                     </div>
+                     
+                   
+                     
                   </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <div class="hp-cast">
-      <div class="container">
-         <div class="top-clanky__row">
-            <div class="clanek">
-               <a class="clanek__link" href="article.html">
-                  <div class="clanek__img">
-                     <img src="images/content/tv-2.jpg" alt="">
+                  <h3>ŘEDITEL ČESKÉHO POHÁRU</h3>
+                  <div class="kontakty__row">
+                     <div class="kontakty__item">
+                        <p><b>Václav Drozda</b></p>
+                        <p><b>mobil:</b>734 436 573</p>
+                        <p><b>e-mail:</b><a href="mailto:v.drozda@volny.cz">v.drozda@volny.cz</a></p>
+                     </div>
+                   
+                     
                   </div>
-                  <div class="clanek__info">
-                     <h3>
-                        Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl
-                     </h3>
-                     <span>14.7.2021</span>
+                  <h3>KORESPONDENČNÍ ADRESA ČAST</h3>
+                  <div class="kontakty__row">
+                     <div class="kontakty__item">
+                        <p>pošt. schránka 40, Zátopkova 100/2, 160 17 Praha 6 Strahov</p>
+                        <p><b>ičo:</b>00676888</p>
+                        
+                     </div>
+                
+                     
                   </div>
-               </a>
-            </div>
-            <div class="clanek">
-               <a class="clanek__link" href="article.html">
-                  <div class="clanek__img">
-                     <img src="images/content/tv-3.jpg" alt="">
-                  </div>
-                  <div class="clanek__info">
-                     <h3>
-                        Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže
-                     </h3>
-                     <span>14.7.2021</span>
-                  </div>
-               </a>
-            </div>
-            <div class="clanek">
-               <a class="clanek__link" href="article.html">
-                  <div class="clanek__img">
-                     <img src="images/content/tv-5.jpg" alt="">
-                  </div>
-                  <div class="clanek__info">
-                     <h3>
-                        Český stolní tenis na olympiádách – Rio de Janeiro 2016
-                     </h3>
-                     <span>14.7.2021</span>
-                  </div>
-               </a>
-            </div>
+                 </div>
+               
             
-        
-         </div>
-        
+              </div>
+              <aside class="aside">
+              </aside>
+          </div>
       </div>
-   </div>
-   <section class="hp-cast__odkazy">
-      <div class="container">
-         <h3>Odkazy</h3>
-         <ul class="hp-cast__odkazy-menu">
-            <li>
-               <a class="link" href="#">Dokumenty</a>
-            </li>
-            <li>
-               <a class="link" href="#">PŘESTUPY</a>
-            </li>
-           
-         </ul>
-      </div>
-   </section>
-
-
-   <div class="hp-partners">
-      <div class="container">
-         <div class="hp-partners__inner">
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/1.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/2.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/3.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/4.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/5.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/6.png" alt="">
-               </a>
-            </div>
-
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/7.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/8.png" alt="">
-               </a>
-            </div>
-
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/9.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/10.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/11.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/12.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/13.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/14.png" alt="">
-               </a>
-            </div>
-
-         </div>
-      </div>
-   </div>
+  </main>
 
    <!-- footer start  -->
    <footer class="footer">
@@ -562,28 +441,33 @@
       </ul>
       <ul class="social">
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/facebook.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
+               <img class="social__icon" src="images/svg/facebook-head.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/facebook.svg" >
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/twitter.svg" alt="">
+            <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+               <img class="social__icon" src="images/svg/twitter.svg" alt="">
+               <img class="social__icon--head" src="images/svg/twitter-head.svg" >
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/youtube.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw">
+               <img class="social__icon" src="images/svg/youtube.svg" alt="">
+               <img class="social__icon--head" src="images/svg/youtube-head.svg" >
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/instagram.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
+               <img class="social__icon" src="images/svg/instagram.svg" alt="">
+               <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="">
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/flickr.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.flickr.com/photos/czechtabletennis/albums">
+               <img class="social__icon" src="images/svg/flickr.svg" alt="">
+               <img class="social__icon--head" src="images/svg/flickr-head.svg" >
             </a>
          </li>
       </ul>
@@ -597,6 +481,10 @@
    <script src="js/libs.min.js"></script>
    <script src="js/light-gallery.js"></script>
    <script src="js/timer.js"></script>
+   <script type="text/javascript">
+      var delay_popup = 5000;
+      setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+</script>
    <script src="js/main.js"></script>
 </body>
 
