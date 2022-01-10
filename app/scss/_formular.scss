@@ -125,6 +125,52 @@
     min-width: 100px;
   }
 }
+.open-popup__content {
+  .typography p {
+    .link.open-popup {
+      margin-top: 4px;
+    }
+  }
+  .formular .form-control {
+    background-color: #fff;
+  }
+
+  .formular__form {
+    .typography {
+      p {
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .formular__box {
+    text-align: left;
+    margin-bottom: 24px;
+
+    label {
+      margin-bottom: 8px;
+      display: block;
+    }
+  }
+}
+#register .open-popup__content {
+  .formular__box {
+    padding: 0 !important;
+  }
+  .formular__row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    .formular__box {
+      padding: 0 8px !important;
+    }
+  }
+}
+input[type='date'] {
+  background-color: #fff;
+}
 
 @media (max-width: 770px) {
   .formular__date .select-wrapper {

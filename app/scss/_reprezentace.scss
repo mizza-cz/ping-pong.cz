@@ -27,10 +27,12 @@
       font-size: 0.75rem;
       line-height: 1.5;
     }
-    a {
+
+    .reprezentace__item--border {
       border: 1px solid $gray;
       padding: 24px;
       width: 100%;
+      height: 100%;
       &:hover {
         h4 {
           text-decoration: underline;
