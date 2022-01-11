@@ -187,9 +187,13 @@
     }
   }
 }
+.hp-cast__odkazy-menu li a {
+  text-decoration: none !important;
+}
 .hp-cast__odkazy-main {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 32px !important;
+  display: block;
 }
 
 @media (max-width: 980px) {
