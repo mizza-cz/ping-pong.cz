@@ -100,6 +100,17 @@
   .new-kontakt {
     max-width: 100%;
     flex: 100%;
+    padding: 0;
+  }
+  .new-kontakty {
+    padding: 0;
+  }
+  .kontakty,
+  .hp-cast--castegory {
+    .article__inner {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 

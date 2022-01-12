@@ -1,8 +1,23 @@
+.hp-cast,
+.kontakty {
+  .akce-detail__downloads {
+    border-bottom: none;
+  }
+}
 .hp-cast {
   position: relative;
   padding-top: 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid RGB(205, 205, 207);
+
+  &.hp-cast--category {
+    .akce-detail__downloads {
+      a {
+        text-align: center;
+        display: inline-block;
+      }
+    }
+  }
   &__kontakty {
     border-bottom: 1px solid RGB(205, 205, 207);
     padding-bottom: 32px;
@@ -77,7 +92,7 @@
     margin-bottom: 24px;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   h3 {
     margin: 0 auto;
