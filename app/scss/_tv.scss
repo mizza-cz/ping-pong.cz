@@ -105,7 +105,11 @@
           margin-right: 8px;
           padding: 12px 12px 9px 12px;
           color: #fff;
-
+          background: transparent;
+          background-image: url('../images/svg/chevron-down-white.svg');
+          background-repeat: no-repeat;
+          background-position: right 1.2rem center;
+          background-size: 6px 10px;
           &:last-of-type {
             padding-right: 8px;
           }

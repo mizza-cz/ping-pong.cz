@@ -11,6 +11,9 @@ $(function(){
   $('.nastaveni-notifikace__checkbox').on('click', function () {
       $(this).parent().parent().toggleClass("notifikace-check");
   });
+  $('.hp-cast__message-close').on('click', function () {
+    $(this).parent().addClass("hp-cast__message-off");
+});
      $('.open-popup').magnificPopup({
         type: 'inline',
         midClick: true,

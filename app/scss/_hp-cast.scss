@@ -8,7 +8,6 @@
   position: relative;
   padding-top: 40px;
   margin-bottom: 40px;
-  border-bottom: 1px solid RGB(205, 205, 207);
 
   &.hp-cast--category {
     .akce-detail__downloads {
@@ -19,11 +18,28 @@
     }
   }
   &__kontakty {
-    border-bottom: 1px solid RGB(205, 205, 207);
+    text-align: center;
     padding-bottom: 32px;
-    h2 {
-      text-align: center;
+
+    h3 {
+      margin-bottom: 24px;
     }
+    &-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 8px;
+      border-radius: 50%;
+      background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+      img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+      }
+    }
+
     &-row {
       display: flex;
       margin-left: -24px;
@@ -64,9 +80,42 @@
 
   &__odkazy {
     text-align: center;
-    margin-bottom: 32px;
-    border-bottom: 1px solid RGB(205, 205, 207);
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    &-item {
+      border-radius: 4px;
+      border: 1px solid #cdcdcf;
+      box-shadow: #050610;
+      background: #fff;
+      width: 296px;
+      padding: 16px;
+      margin-bottom: 16px;
+      margin-left: 8px;
+      margin-right: 8px;
+      h4 {
+        color: $blue;
+        margin-bottom: 4px;
+      }
+      a {
+        color: $red;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    &-inner {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+    }
+    &-row {
+      display: flex;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
     h3 {
       margin-bottom: 24px;
     }
@@ -183,6 +232,7 @@
     flex: 0 0 33.333%;
     padding: 0 20px;
     text-align: center;
+
     .select {
       margin: 0 auto 23px;
     }
@@ -237,14 +287,119 @@
   display: block;
 }
 
+.hp-cast__message {
+  border: 1px solid #cdcdcf;
+  border-radius: 4px;
+  padding: 14px 16px 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  p {
+    padding-right: 16px;
+    width: fit-content;
+  }
+  &.hp-cast__message-off {
+    display: none;
+  }
+  span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    background-image: url('../images/svg/delete-circled-outline.svg');
+  }
+}
+
+.hp-zebricky {
+  text-align: center;
+  h3 {
+    margin: 0 auto 20px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  &__img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto 8px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+    h4 {
+      color: $blue;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+      border-radius: 4px;
+      border: 1px solid #cdcdcf;
+    }
+  }
+}
+
+.hp-cast__kontakty {
+  border-bottom: 1px solid #cdcdcf;
+  .hp-extraliga__col {
+    &::before {
+      background-size: cover;
+      height: 100%;
+    }
+    a {
+      text-decoration: underline;
+      color: $red;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// media
 @media (max-width: 980px) {
+  .hp-cast__odkazy-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .hp-cast .top-clanky__row {
     width: auto;
   }
 }
 @media (max-width: 940px) {
+  .hp-zebricky__inner {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .hp-zebricky__item {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
   .hp-cast__kontakty-box {
     max-width: 50%;
+    margin: 0 auto;
     flex: 0 0 50%;
   }
   .hp-cast__kontakty-box .kontakty__row .kontakty__item {
@@ -284,13 +439,35 @@
     padding-right: 0;
   }
 }
+@media (max-width: 840px) {
+  .hp-cast__odkazy-inner {
+    padding: 40px 20px 20px;
+  }
+  .hp-zebricky__item {
+    max-width: 50%;
+    flex: 0 50%;
+  }
+  .hp-zebricky__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hp-cast__kontakty .hp-extraliga__col::before {
+    height: 16px;
+    width: 253px;
+    background-size: contain;
+  }
+}
 @media (max-width: 820px) {
   .hp-cast .clanek {
     max-width: 50%;
     flex: 0 0 50%;
   }
 }
+
 @media (max-width: 620px) {
+  .hp-cast__odkazy-item {
+    width: 100%;
+  }
   .hp-cast__kontakty-row {
     flex-wrap: wrap;
   }
@@ -300,6 +477,10 @@
     .kontakty__row {
       margin: 0;
     }
+  }
+  .hp-zebricky__item {
+    max-width: 100%;
+    flex: 100%;
   }
   .hp-cast .clanek {
     max-width: 100%;

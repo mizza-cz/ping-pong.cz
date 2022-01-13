@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>delete-circled-outline</title>
+    <g id="1.-HP,-Článek,-Archiv,-Foto-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="1.2.-HP-ČAST-Desktop" transform="translate(-1575.000000, -200.000000)" stroke="#E3003C" stroke-width="1.5">
+            <g id="Group-3" transform="translate(308.000000, 184.000000)">
+                <g id="delete-circled-outline" transform="translate(1268.000000, 17.000000)">
+                    <path d="M7.17218,12.8284 L10.0006,10 M12.829,7.17157 L10.0006,10 M10.0006,10 L7.17218,7.17157 M10.0006,10 L12.829,12.8284" id="Shape"></path>
+                    <path d="M10,20 C15.5228,20 20,15.5228 20,10 C20,4.47715 15.5228,0 10,0 C4.47715,0 0,4.47715 0,10 C0,15.5228 4.47715,20 10,20 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
