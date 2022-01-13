@@ -8,7 +8,20 @@
   position: relative;
   padding-top: 40px;
   margin-bottom: 40px;
-
+  &__rozcestnik {
+    .hp-akce__inner {
+      flex-wrap: wrap;
+      .hp-akce__item {
+        margin-bottom: 16px;
+        min-height: 100px;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
   &.hp-cast--category {
     .akce-detail__downloads {
       a {
