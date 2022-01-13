@@ -364,6 +364,12 @@
 .hp-cast__kontakty {
   border-bottom: 1px solid #cdcdcf;
   .hp-extraliga__col {
+    &:hover {
+      h4,
+      p {
+        text-decoration: none;
+      }
+    }
     &::before {
       background-size: cover;
       height: 100%;
