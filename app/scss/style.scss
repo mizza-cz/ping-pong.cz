@@ -89,7 +89,41 @@ img.mfp-img {
     }
   }
 }
+#cm {
+  max-width: 93% !important;
+}
+#c-ttl strong {
+  font-weight: 600 !important;
+}
+#c-bns button:first-child,
+#s-bns button:first-child {
+  background: $blue !important;
+  color: #fff !important;
+}
+.cc_div #c-bns {
+  button {
+    max-width: 180px !important;
+    width: 100% !important;
+  }
+}
+.cc_div .c-bn:not(:first-child) {
+  border: 1px solid #767676 !important;
+  font-weight: 600 !important;
+}
+@media (max-width: 1600px) {
+  .cc_div #c-bns button {
+    max-width: 380px !important;
+    text-align: center;
+  }
+  #c-ttl {
+    max-width: 100%;
+    flex: 100%;
+  }
+}
 @media (max-width: 1040px) {
+  .cc_div #c-bns button {
+    flex: 0 0 27%;
+  }
   .content-box {
     .main__header {
       .vyhledavani__form {
@@ -110,7 +144,12 @@ img.mfp-img {
     }
   }
 }
-
+@media (max-width: 720px) {
+  .cc_div #c-bns button {
+    margin: 0 auto 16px !important;
+    flex: 100%;
+  }
+}
 @media (max-width: 660px) {
   .content-box {
     .main__header {
