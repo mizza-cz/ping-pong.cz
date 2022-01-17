@@ -285,6 +285,30 @@ img {
   flex: 0 0 25.3%;
   max-width: 25.3%;
   padding: 0 20px;
+  &__menu-list.active {
+    font-weight: 700;
+    border-bottom: 2px solid $red;
+    .aside-podmenu {
+      font-weight: 400;
+      height: 100%;
+      display: block;
+      padding-top: 8px;
+      &__list {
+        padding: 6px;
+        &.active {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &-podmenu {
+    height: 0;
+    position: static;
+    transition: all 0s;
+    display: none;
+  }
   &__box {
     text-align: center;
     margin-bottom: 32px;
@@ -300,7 +324,9 @@ img {
       padding-bottom: 8px;
       margin-bottom: 8px;
       padding: 8px 12px;
-      a {
+      a,
+      .aside__menu-item {
+        cursor: pointer;
         color: #e3003c;
         margin-left: 4px;
         font-size: 1rem;

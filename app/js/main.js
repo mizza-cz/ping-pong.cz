@@ -26,6 +26,9 @@ $(function(){
       $('.navbar__menu-item').on('click', function () {
         $(this).closest('.navbar__menu-list').toggleClass('active');
       });
+      $('.aside__menu-item').on('click', function () {
+        $(this).closest('.aside__menu-list').toggleClass('active');
+      });
           // tabs
   
   
