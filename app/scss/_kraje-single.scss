@@ -1,4 +1,25 @@
 .kraje-single {
+  .document__title p {
+    font-weight: 700;
+  }
+  .aside {
+    margin-top: -80px;
+  }
+  .kontakty {
+    h3 {
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 32px;
+      line-height: 1.5;
+      a {
+        color: $red;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   h2 {
     margin-bottom: 32px;
   }
