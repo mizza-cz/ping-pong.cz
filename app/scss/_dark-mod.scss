@@ -1,6 +1,21 @@
 .theme-dark {
   background: #050610;
   transition: all 0.4s;
+  .bg-gray {
+    td {
+      color: #000;
+      font-weight: 700;
+    }
+    .team {
+      color: $red;
+    }
+  }
+  .zapas-page__item h2 {
+    color: #000;
+  }
+  .zapas-page__item ul .win {
+    color: #fff;
+  }
   .select {
     background-color: #fff;
   }
