@@ -19,16 +19,26 @@
     }
   }
   &__rozcestnik {
+    h3 {
+      margin: 0 auto;
+      display: block;
+      width: max-content;
+    }
     .hp-akce__inner {
       flex-wrap: wrap;
       justify-content: center;
       .hp-akce__item {
         margin-bottom: 24px;
         min-height: 100px;
+        h4 {
+          height: 100%;
+        }
         a {
           display: flex;
+          height: 100%;
           align-items: center;
           justify-content: center;
+          color: $blue;
         }
       }
     }

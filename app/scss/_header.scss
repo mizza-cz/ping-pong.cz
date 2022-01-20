@@ -270,6 +270,7 @@ a.navbar__menu-item {
     width: 16px;
     height: 16px;
     display: block;
+    position: relative;
     &--dark {
       display: none;
     }
@@ -522,4 +523,22 @@ a.navbar__menu-item {
       box-shadow: none;
     }
   }
+}
+.notification_point {
+  position: absolute;
+  width: max-content;
+  height: auto;
+  bottom: -12px;
+  background-color: #e3003c;
+  border-radius: 100%;
+  right: -10px;
+  color: #fff;
+  padding: 4px;
+  font-size: 0.6rem;
+}
+
+.scoarboard__item--after {
+  position: relative;
+  padding-left: 16px;
+  min-width: 340px;
 }

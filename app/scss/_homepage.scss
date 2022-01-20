@@ -623,32 +623,19 @@
   margin-bottom: 40px;
   &__inner {
     border-radius: 4px;
-    height: 320px;
+    height: auto;
     border-radius: 4px;
     width: 100%;
     display: block;
     background: linear-gradient(180deg, #f2f2f3 0%, #e6e6e7 100%);
     img {
-      object-fit: contain;
+      object-fit: cover;
       border-radius: 4px;
     }
   }
 }
-@media (max-width: 1100px) {
-  .ban__inner {
-    height: 270px;
-  }
-}
-@media (max-width: 900px) {
-  .ban__inner {
-    height: 220px;
-  }
-}
-@media (max-width: 660px) {
-  .ban__inner {
-    height: 94px;
-  }
-}
+
+
 // hp-akce
 .hp-akce {
   text-align: center;
