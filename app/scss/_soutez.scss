@@ -324,6 +324,10 @@
 }
 @media (max-width: 1140px) {
   .extraliga-statistiky table {
+    td.hrac,
+    th.hrac {
+      text-align: left;
+    }
     .num,
     .player,
     .nar,

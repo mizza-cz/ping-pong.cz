@@ -124,8 +124,25 @@
     max-width: 100%;
     flex: 100%;
   }
+
   .druzstvo-page__soupiska table .player {
     width: auto;
+  }
+  .hrac-page_statistiky {
+    .druzstvo-page__soupiska table th:first-child {
+      text-align: left;
+    }
+    .druzstvo-page__soupiska table th,
+    .druzstvo-page__soupiska table td {
+      padding-left: 4px;
+      padding-right: 4px;
+      max-width: 50px;
+    }
+    .druzstvo-page__soupiska table .hrac {
+      width: auto;
+      text-align: left;
+      max-width: 100%;
+    }
   }
   .druzstvo-page__soupiska {
     overflow: auto;

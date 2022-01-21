@@ -267,10 +267,14 @@
   .zapas-page__team {
     order: 2;
     width: 100%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .zapas-page__logo {
     order: 1;
-    margin: 0 8px;
+    margin: 8px;
   }
 
   .zapas-page__teams {

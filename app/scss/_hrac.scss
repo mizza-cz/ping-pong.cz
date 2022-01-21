@@ -92,6 +92,12 @@
     }
   }
 }
+.hp-name {
+  display: block;
+}
+.mob-name {
+  display: none;
+}
 
 @media (max-width: 1320px) {
   .hrac-page__box-info {
@@ -123,6 +129,24 @@
   }
 }
 @media (max-width: 740px) {
+  .hrac-page {
+    .druzstvo-page__soupiska table {
+      width: 900px;
+    }
+    .hrac-page_statistiky .druzstvo-page__soupiska table th,
+    .hrac-page_statistiky .druzstvo-page__soupiska table td {
+      max-width: 30px;
+      &:first-child {
+        max-width: 200px;
+      }
+    }
+  }
+  .mob-name {
+    display: block;
+  }
+  .hp-name {
+    display: none;
+  }
   .hrac-page .main__tabs {
     margin-bottom: 25px;
   }

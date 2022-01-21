@@ -514,6 +514,18 @@ table {
 }
 
 @media (max-width: 1100px) {
+  .table-respon {
+    overflow: auto;
+    table {
+      width: 1130px;
+      tr td,
+      tr th {
+        &:first-child {
+          width: 50px;
+        }
+      }
+    }
+  }
   .main__inner {
     flex-wrap: wrap;
   }

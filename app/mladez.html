@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Ping-pong.cz</title>
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css">
@@ -18,6 +19,22 @@
 </head>
 
 <body>
+
+   <!-- popup -->
+   <!-- <div id="overlay">
+      <div class="popup">
+        <h1>popup</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor natus magni similique cumque ab tempora. Fugit dolorum dolorem odio quod nesciunt culpa quae cumque corrupti ullam iusto, nostrum mollitia nemo.
+          Sequi magnam consectetur deleniti hic obcaecati similique magni fugiat tempora temporibus animi rerum, ut velit accusamus quibusdam facere, numquam autem maxime dolorem, eius quam dolorum voluptate praesentium aspernatur dolore? Possimus!
+          Recusandae qui, ut quam quis architecto voluptates, amet officia alias laborum natus, nesciunt dicta saepe inventore accusantium. Minus odit ullam quam architecto modi placeat hic repudiandae magnam harum? Excepturi, reprehenderit.
+        </p>
+          <button class="close" title="zavřít" onclick="document.getElementById('overlay').style.display='none';"></button>
+      </div>
+  </div> -->
+   <!-- popup -->
+
+
    <header class="header">
       <div class="container">
          <div class="head">
@@ -209,12 +226,29 @@
                      <svg class="user-menu__item--dark" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z" fill="#fff" fill-rule="evenodd"/></svg>
 
                </a>
-               <a class="user-menu__item" href="#">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z" fill="white"/>
-                     <path d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z" fill="white"/>
-                     </svg>
-               </a>
+               <div class="notification-box">
+                  <a class="user-menu__item js-notification-toggle" aria-haspopup="true" aria-expanded="false" id="notification-menu" href="notifikace.html">
+                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z" fill="white"/>
+                        <path d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z" fill="white"/>
+                        </svg>
+                  </a>
+                  <ul class="notification-popup d-none js-notification-popup" aria-labelledby="notification-menu">
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                     <li>
+                        <a href="#">Testovací text notifikace</a>
+                     </li>
+                  </ul>
+               </div>
+               <script async src="js/notification.js"></script>
                <a class="user-menu__item" href="#">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z" fill="white"/>
@@ -253,385 +287,70 @@
      </div>
      <script async src="js/search-inline.js"></script>
    </header>
-   <main class="main reprezentace">
+
+  <div class="hp-cast">
+   <section class="hp-akce">
       <div class="container">
-         <div class="main__header">
-            <h2>REPREZENTACE</h2>
-         </div>
-         <section class="hp-cast">
-            <h2>související články</h2>
-            <div class="top-clanky__row">
-                <div class="clanek">
-                    <a class="clanek__link" href="/article/jiri-martinko-s-nikitou-petrovovou-vyhrali-kontrolni-turnaj">
-                        <div class="clanek__img">
-                            <img src="/dist/images/default_foto.jpg" alt="">
-                        </div>
-                        <div class="clanek__info">
-                            <h3>
-                                Jiří Martinko s Nikitou Petrovovou vyhráli kontrolní turnaj
-                            </h3>
-                            <span>27.08.2021 / 14:22</span>
-                            <p>
-                                
-                            </p>
-        
-                        </div>
-                    </a>
-                </div>
-                <div class="clanek">
-                    <a class="clanek__link" href="/article/v-havirove-zacal-kontrolni-turnaj-muzu-a-zen">
-                        <div class="clanek__img">
-                            <img src="/dist/images/default_foto.jpg" alt="">
-                        </div>
-                        <div class="clanek__info">
-                            <h3>
-                                V Havířově začal kontrolní turnaj mužů a žen
-                            </h3>
-                            <span>26.08.2021 / 19:06</span>
-                            <p>
-                                
-                            </p>
-        
-                        </div>
-                    </a>
-                </div>
-                <div class="clanek">
-                    <a class="clanek__link" href="/article/hostem-sesteho-pingcastu-special-byl-reprezentant-tomas-polansky">
-                        <div class="clanek__img">
-                            <img src="/dist/images/default_foto.jpg" alt="">
-                        </div>
-                        <div class="clanek__info">
-                            <h3>
-                                Hostem šestého PingCastu speciál byl reprezentant Tomáš Polanský
-                            </h3>
-                            <span>23.08.2021 / 08:55</span>
-                            <p>
-                                
-                            </p>
-        
-                        </div>
-                    </a>
-                </div>
+         <div class="hp-cast__rozcestnik">
+            <h3>HLAVNÍ KOMISE ASOCIACE</h3>
+         <div class="hp-akce__inner">
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>SPORTOVNĚ-TECHNICKÁ KOMISE</h4>
+               </a>
             </div>
-            <a class="link mb-4" style="margin-bottom: 32px;" href="/archive/category/3/category2/7">DALŠÍ ZPRÁVY</a>
-        </section>
-        
-         <form class="form__filtr" action="">
-            <select class="select" name="sezona" id="sezona">
-               <option>2021</option>
-               <option>2020</option>
-               <option>2019</option>
-               <option>2018</option>
-            </select>
-            <select class="select" name="category" id="category">
-               <option>Reprezentace dospělých</option>
-               <option>Reprezentace 1</option>
-               <option>Reprezentace 2</option>
-               <option>Reprezentace 3</option>
-             </select>
-        
-         
-         </form>
-         <section class="reprezentace__inner">
-            <h2>Muži</h2>
-            <div class="reprezentace__row">
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-1.png" alt="">
-                     </div>
-                     <h4>Michal Obešlo</h4>
-                     <p>nar. 1991</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-2.png" alt="">
-                     </div>
-                     <h4>Oleksandr Tymofieiev</h4>
-                     <p>nar. 1987</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>Tomáš POLANSKÝ</h4>
-                     <p>nar. 1985</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-1.png" alt="">
-                     </div>
-                     <h4>Lubomír JANČAŘÍK</h4>
-                     <p>nar. 1995</p>
-                  </a>
-               </div>
+          
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>KOMISE MLÁDEŽE</h4>
+               </a>
             </div>
-            <h2>Muži - širší kádr</h2>
-            <div class="reprezentace__row">
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-1.png" alt="">
-                     </div>
-                     <h4>Michal Obešlo</h4>
-                     <p>nar. 1991</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-2.png" alt="">
-                     </div>
-                     <h4>Oleksandr Tymofieiev</h4>
-                     <p>nar. 1987</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>Tomáš POLANSKÝ</h4>
-                     <p>nar. 1985</p>
-                  </a>
-               </div>
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>TRENÉRSKO-METODICKÁ KOMISE</h4>
+               </a>
             </div>
-            <h2>Muži U21</h2>
-            <div class="reprezentace__row">
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-1.png" alt="">
-                     </div>
-                     <h4>Michal Obešlo</h4>
-                     <p>nar. 1991</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-2.png" alt="">
-                     </div>
-                     <h4>Oleksandr Tymofieiev</h4>
-                     <p>nar. 1987</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>Tomáš POLANSKÝ</h4>
-                     <p>nar. 1985</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-1.png" alt="">
-                     </div>
-                     <h4>Michal Obešlo</h4>
-                     <p>nar. 1991</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-2.png" alt="">
-                     </div>
-                     <h4>Oleksandr Tymofieiev</h4>
-                     <p>nar. 1987</p>
-                  </a>
-               </div>
-               <div class="reprezentace__item">
-                  <a href="#">
-                     <div class="reprezentace__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>Tomáš POLANSKÝ</h4>
-                     <p>nar. 1985</p>
-                  </a>
-               </div>
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>KOMISE VRCHOLOVÉHO SPORTU</h4>
+               </a>
             </div>
-        
-         </section>
-         <section class="hp-cast">
-            <h2>související články</h2>
-            <div class="top-clanky__row">
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/tv-2.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h3>
-                           Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl
-                        </h3>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/tv-3.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h3>
-                           Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže
-                        </h3>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/tv-5.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h3>
-                           Český stolní tenis na olympiádách – Rio de Janeiro 2016
-                        </h3>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/tv-2.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h3>
-                           Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl
-                        </h3>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/tv-3.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h3>
-                           Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže
-                        </h3>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/tv-5.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h3>
-                           Český stolní tenis na olympiádách – Rio de Janeiro 2016
-                        </h3>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>KOMISE ROZHODČÍCH</h4>
+               </a>
+            </div>
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>MEDIÁLNÍ KOMISE</h4>
+               </a>
+            </div>
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>REGISTRAČNĚ-INFORMAČNÍ KOMISE</h4>
+               </a>
+            </div>
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>ARBITRÁŽNÍ KOMISE</h4>
+               </a>
+            </div>
            
-            </div>
-         </section>
-         <a class="link" href="clanky.html">DALŠÍ ZPRÁVY</a>
-      </div>
-   </main>
-
-
-
-
-   <div class="hp-partners">
-      <div class="container">
-         <div class="hp-partners__inner">
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/1.png" alt="">
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>DISCIPLINÁRNÍ ŘÍZENÍ</h4>
                </a>
             </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/2.png" alt="">
+            <div class="hp-akce__item">
+               <a class="hp-akce__link" href="#">
+                  <h4>RADA KRAJŮ</h4>
                </a>
             </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/3.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/4.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/5.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/6.png" alt="">
-               </a>
-            </div>
-
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/7.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/8.png" alt="">
-               </a>
-            </div>
-
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/9.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/10.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/11.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/12.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/13.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/14.png" alt="">
-               </a>
-            </div>
-
+         </div>
          </div>
       </div>
-   </div>
+   </section>
+  </div>
 
    <!-- footer start  -->
    <footer class="footer">
@@ -657,28 +376,33 @@
       </ul>
       <ul class="social">
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/facebook.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
+               <img class="social__icon" src="images/svg/facebook-head.svg" alt="">
+                     <img class="social__icon--head" src="images/svg/facebook.svg" >
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/twitter.svg" alt="">
+            <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+               <img class="social__icon" src="images/svg/twitter.svg" alt="">
+               <img class="social__icon--head" src="images/svg/twitter-head.svg" >
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/youtube.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw">
+               <img class="social__icon" src="images/svg/youtube.svg" alt="">
+               <img class="social__icon--head" src="images/svg/youtube-head.svg" >
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/instagram.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
+               <img class="social__icon" src="images/svg/instagram.svg" alt="">
+               <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="">
             </a>
          </li>
          <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/flickr.svg" alt="">
+            <a target="_blank" class="social__link" href="https://www.flickr.com/photos/czechtabletennis/albums">
+               <img class="social__icon" src="images/svg/flickr.svg" alt="">
+               <img class="social__icon--head" src="images/svg/flickr-head.svg" >
             </a>
          </li>
       </ul>
@@ -687,11 +411,15 @@
       </p>
 
    </footer>
-  
+
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
    <script src="js/light-gallery.js"></script>
    <script src="js/timer.js"></script>
+   <script type="text/javascript">
+      var delay_popup = 5000;
+      setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
+</script>
    <script src="js/main.js"></script>
 </body>
 
