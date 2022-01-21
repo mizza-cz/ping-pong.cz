@@ -30,6 +30,15 @@
 @import 'kontakty';
 @import 'zebricky';
 @import 'kraje-single';
+.notification__poin {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  bottom: 0px;
+  background-color: #e3003c;
+  border-radius: 100%;
+  right: 0px;
+}
 :root {
   --select-border: #777;
   --select-focus: blue;

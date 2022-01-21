@@ -14,8 +14,8 @@
     background-color: $dark-blue;
   }
   .head__logo {
-    width: 135px;
-    height: 64px;
+    width: 200px;
+    height: auto;
   }
   .header {
     border-bottom: 1px solid rgba(#fff, 0.08);
@@ -239,7 +239,7 @@
   }
   .tv-bg {
     .head__logo {
-      height: 48px;
+      width: 150px;
     }
     .head {
       padding: 8px;
