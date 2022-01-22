@@ -30,7 +30,9 @@
       .hp-akce__item {
         margin-bottom: 24px;
         min-height: 100px;
-      
+        h4 {
+          height: 100%;
+        }
         a {
           display: flex;
           height: 100%;
