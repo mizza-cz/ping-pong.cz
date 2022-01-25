@@ -1,6 +1,21 @@
 .theme-dark {
   background: #050610;
   transition: all 0.4s;
+  .hp-cast__rozcestnik .hp-akce__inner .hp-akce__item a {
+    color: #fff;
+  }
+  .hp-zebricky__item h4 {
+    color: #fff;
+  }
+  .hp-cast__odkazy-item {
+    background: $dark-blue;
+    h4 {
+      color: #fff;
+    }
+  }
+  .hp-cast__odkazy-inner {
+    background: #050610;
+  }
   .bg-gray {
     td {
       color: #000;
