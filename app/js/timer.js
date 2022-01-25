@@ -78,8 +78,8 @@
  })();
  
  (function () {
-   Timer.start({
-     timer: document.getElementById('js-timer'),
-     endtime: document.getElementById('js-timer').getAttribute('data-endtime'),
-   });
- })();
+  Timer.start({
+    timer: document.getElementById('js-timer'),
+    endtime: document.getElementById('js-timer').getAttribute('data-endtime'),
+  });
+})();

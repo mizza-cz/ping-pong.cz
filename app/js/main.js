@@ -1,6 +1,11 @@
-
-
+const notifItems = document.querySelectorAll('.notification-popup li').length
+   
+window.onload = function() {
+   document.querySelector('.notification_point').innerHTML = notifItems
+  
+};
 $(function(){
+  
   $('.article__fotogalerie').magnificPopup({
     delegate: 'a',
     type: 'image',

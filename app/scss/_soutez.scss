@@ -223,12 +223,13 @@
     }
     table {
       .num {
-        width: 28px;
-        text-align: left;
+        width: 28px !important;
+        padding: 0;
+        text-align: center;
       }
       .team {
         text-align: left;
-        width: 380px;
+        // width: 380px;
         a {
           display: flex;
           align-items: center;
@@ -250,7 +251,7 @@
       td {
         padding: 8px;
         text-align: center;
-        width: 55px;
+        width: 60px;
       }
     }
   }
@@ -264,6 +265,9 @@
       td,
       th {
         text-align: center;
+      }
+      .hrac {
+        text-align: left;
       }
 
       .druz,
@@ -338,11 +342,11 @@
 }
 
 @media (max-width: 1080px) {
-  .extraliga-tabulky__scroll {
-    overflow: auto;
-    table {
-      width: 1000px;
-    }
+  .extraliga-tabulky table td {
+    width: 30px;
+  }
+  .extraliga-tabulky table .num {
+    width: 18px !important;
   }
   .extraliga-prehled__box {
     flex: 0 0 50%;
@@ -377,6 +381,17 @@
       margin: 0 0 8px 0px;
       padding: 0 4px;
     }
+  }
+}
+@media (max-width: 920px) {
+  .extraliga-tabulky__scroll {
+    overflow: auto;
+    table {
+      width: 900px;
+    }
+  }
+  .extraliga-tabulky table td {
+    width: 25px;
   }
 }
 @media (max-width: 770px) {

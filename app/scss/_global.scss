@@ -527,21 +527,33 @@ table {
     }
   }
   .main__inner {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    .aside {
+      max-width: 400px !important;
+      flex: 100% !important;
+      &__menu-list,
+      &__menu,
+      &__box {
+        width: 100%;
+      }
+    }
   }
   .main__content {
     max-width: 100%;
     flex: 100%;
     margin-bottom: 40px;
   }
-  .aside {
-    display: none;
-    max-width: 100%;
-    flex: 100%;
 
-    .ban__inner {
-      width: 600px;
-      margin: 0 auto;
+  .article__inner {
+    .aside {
+      display: none;
+      max-width: 100%;
+      flex: 100%;
+
+      .ban__inner {
+        width: 600px;
+        margin: 0 auto;
+      }
     }
   }
 }
