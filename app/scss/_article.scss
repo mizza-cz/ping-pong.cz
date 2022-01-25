@@ -242,6 +242,16 @@
 @media (max-width: 740px) {
   .zapas__item {
     flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    p {
+      a {
+        display: block;
+        img {
+          margin: 8px auto;
+        }
+      }
+    }
     a {
       flex-direction: column;
     }
