@@ -25,6 +25,7 @@
           padding-right: 30px;
           position: relative;
           text-align: right;
+
           &::before {
             content: '';
             position: absolute;
@@ -42,6 +43,15 @@
         &:first-child {
           // width: 183px;
         }
+      }
+    }
+  }
+}
+.event_list {
+  .akce__table {
+    tr td {
+      a {
+        width: 118px;
       }
     }
   }
@@ -74,6 +84,14 @@
     display: none;
     table {
       width: 880px;
+    }
+  }
+  .event_list {
+    .akce__table {
+      display: block !important;
+      table {
+        width: 1220px;
+      }
     }
   }
 }

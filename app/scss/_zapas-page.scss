@@ -156,8 +156,10 @@
   &__logo {
     width: 89px;
     height: 89px;
+    border-radius: 98.133333px 98.133333px 73.6px 73.6px;
     img {
       object-fit: contain;
+      border-radius: 98.133333px 98.133333px 73.6px 73.6px;
     }
   }
   &__top {

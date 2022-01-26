@@ -174,7 +174,9 @@
     }
   }
 }
-
+.head__link--mob {
+  display: none;
+}
 @media (max-width: 1600px) {
   .tv-bg .hp-tv__btnprev {
     left: 3%;
@@ -333,8 +335,18 @@
   }
 }
 @media (max-width: 440px) {
+  .head__tv {
+    width: 100%;
+  }
   .head__link {
     display: none;
+  }
+  .head__link--mob {
+    display: block;
+    .head__link {
+      display: block;
+      color: $red;
+    }
   }
   .tv-page .hp-tv__utkani form .jq-selectbox,
   .tv-page .hp-tv__utkani form button {
