@@ -162,6 +162,7 @@ $(function(){
            slidesToShow: 1,
            arrows: false,
            centerMode: true,
+           adaptiveHeight: true
         }
      },
       ]
