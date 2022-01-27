@@ -21,11 +21,14 @@
 <body>
 
    <div id="overlay">
+     
       <div class="popup popup--youtube">
+         
          <div class="popup__video">
-            <iframe width="560" height="" src="https://www.youtube.com/embed/j_cIW0QgMAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="playerid" width="560" height="315" src="https://www.youtube.com/embed/1dacFnmJbw8" allowfullscreen></iframe>
+           
          </div>
-         <button class="close" title="zavřít" onclick="document.getElementById('overlay').style.display='none';"></button>
+         <button id="close" class=" close"  title="zavřít"></button>
       </div>
    </div>
 
@@ -594,7 +597,7 @@
       <a href="#" class="timer__wrapper">
          <h3>Další TV Přenos za</h3>
          <div class="calednar-date">
-            <div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to {{eventName}}" data-endtime="2021-10-30 17:00:00">
+            <div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to {{eventName}}" data-endtime="2022-10-30 17:00:00">
                <span class="timer__item" id="timer-days">
                   <span class="timer__value">{{days}}</span>
                   <span class="timer__label timer__label-days">Dní</span>
@@ -1232,9 +1235,9 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="js/libs.min.js"></script>
    <script src="js/light-gallery.js"></script>
-   <!-- <script src="js/timer.js"></script> -->
+   <script src="js/timer.js"></script>
    <script type="text/javascript">
-      var delay_popup = 5000;
+      var delay_popup = 1000;
       setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
 </script>
    <script src="js/main.js"></script>

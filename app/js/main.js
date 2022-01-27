@@ -1,11 +1,31 @@
+
+
 const notifItems = document.querySelectorAll('.notification-popup li').length
    
 window.onload = function() {
    document.querySelector('.notification_point').innerHTML = notifItems
   
 };
+
 $(function(){
+  $(document).mouseup( function(e){ 
+    let div = $( ".popup" ); 
+    if ( !div.is(e.target) 
+        && div.has(e.target).length === 0 ) {
+      $('#overlay').hide();
+      let video = $("#playerid").attr("src");
+      $("#playerid").attr("src","");
+      $("#playerid").attr("src",video);
+      $(this).parent().parent().addClass("overlay-off");
+    }
+  });
+  $('.close').on('click', function() {
+    let video = $("#playerid").attr("src");
+    $("#playerid").attr("src","");
+    $("#playerid").attr("src",video);
+    $(this).parent().parent().addClass("overlay-off");
   
+  });
   $('.article__fotogalerie').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -16,6 +36,9 @@ $(function(){
   $('.nastaveni-notifikace__checkbox').on('click', function () {
       $(this).parent().parent().toggleClass("notifikace-check");
   });
+  
+
+
   $('.hp-cast__message-close').on('click', function () {
     $(this).parent().addClass("hp-cast__message-off");
 });
@@ -24,6 +47,8 @@ $(function(){
         midClick: true,
         mainClass: 'mfp-fade'
       });
+     
+     
 
      $('.mob-menu').on('click', function () {
         $('.navbar, .head__tv').slideToggle();
@@ -272,11 +297,15 @@ $(function(){
   
     // propper
   
-  tippy('.tooltip', {
-     content: '<strong>Bolded content</strong>',
-     allowHTML: true,
-   });
+  // tippy('.tooltip', {
+  //    content: '<strong>Bolded content</strong>',
+  //    allowHTML: true,
+  //  });
   
    // table sort
-   new Tablesort(document.getElementById('table-id'));
 
+   let inputLogin = document.getElementById('table-id');
+   if (inputLogin ) {
+     new Tablesort(inputLogin);
+     
+   }
