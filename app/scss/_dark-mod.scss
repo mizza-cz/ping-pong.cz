@@ -1,6 +1,9 @@
 .theme-dark {
   background: #050610;
   transition: all 0.4s;
+  .partneri-page__item {
+    background: #fff;
+  }
   .hp-cast__rozcestnik .hp-akce__inner .hp-akce__item a {
     color: #fff;
   }

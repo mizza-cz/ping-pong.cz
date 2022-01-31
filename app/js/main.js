@@ -48,7 +48,9 @@ $(function(){
         mainClass: 'mfp-fade'
       });
      
-     
+      $('.head__btn').on('click', function () {
+        $('.head__menu').slideToggle();
+      });
 
      $('.mob-menu').on('click', function () {
         $('.navbar, .head__tv').slideToggle();
