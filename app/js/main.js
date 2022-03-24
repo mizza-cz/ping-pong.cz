@@ -300,10 +300,10 @@ $(function(){
   
     // propper
   
-  // tippy('.tooltip', {
-  //    content: '<strong>Bolded content</strong>',
-  //    allowHTML: true,
-  //  });
+  tippy('.tooltip', {
+     content: '<strong>Bolded content</strong>',
+     allowHTML: true,
+   });
   
    // table sort
 
@@ -312,3 +312,6 @@ $(function(){
      new Tablesort(inputLogin);
      
    }
+
+
+   
