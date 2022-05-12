@@ -1,11 +1,13 @@
 
 
 const notifItems = document.querySelectorAll('.notification-popup li').length
+if(notifItems){
+  window.onload = function() {
+    document.querySelector('.notification_point').innerHTML = notifItems
    
-window.onload = function() {
-   document.querySelector('.notification_point').innerHTML = notifItems
-  
-};
+ };
+}
+
 
 $(function(){
   $(document).mouseup( function(e){ 
