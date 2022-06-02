@@ -3,12 +3,9 @@
 const notifItems = document.querySelectorAll('.notification-popup li').length
 if(notifItems){
   window.onload = function() {
-    document.querySelector('.notification_point').innerHTML = notifItems
-   
+    document.querySelector('.notification_point').innerHTML = notifItems;
  };
 }
-
-
 $(function(){
   $(document).mouseup( function(e){ 
     let div = $( ".popup" ); 
@@ -301,11 +298,13 @@ $(function(){
    
   
     // propper
-  
-  tippy('.tooltip', {
-     content: '<strong>Bolded content</strong>',
-     allowHTML: true,
-   });
+    let toolItem = document.querySelector('.tooltip');
+    if(toolItem){
+      tippy('.tooltip', {
+        content: '<strong>Bolded content</strong>',
+        allowHTML: true,
+      });
+    }
   
    // table sort
 

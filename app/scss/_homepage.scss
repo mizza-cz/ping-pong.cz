@@ -1,11 +1,12 @@
 /// scoarboard section
 .scoarboard {
   padding: 16px 0;
-
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.05));
+  .slick-list{
+    width: 100%;
+  }
   &__inner {
     display: flex;
-
     position: relative;
     padding: 0 118px 0 89px;
   }
