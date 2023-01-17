@@ -1,1835 +1,1842 @@
 <!DOCTYPE html>
 <html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ping-pong.cz</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Ping-pong.cz</title>
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-   integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/libs.min.css">
-   <link rel="stylesheet" href="css/lightgallery.css">
-   <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-   <header class="header">
+  <body>
+    <header class="header">
       <div class="container">
-         <div class="head">
-            <a class="head__logo" href="index.html">
-               <img class="white-logo" src="images/logo.png" alt="">
-               <img class="dark-logo" src="images/dark-logo.png" alt="">
-            </a>
-            <nav class="head__menu">
-               <ul class="head__list">
-                  <li>
-                     <a href="#">
-                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.89543 0.89543 0 2 0H12C13.1046 0 14 0.89543 14 2V10C14 11.1046 13.1046 12 12 12H9.7808L9.903 12.4887L10.7071 13.2929C10.9931 13.5789 11.0787 14.009 10.9239 14.3827C10.7691 14.7563 10.4045 15 10 15H4.00003C3.59557 15 3.23093 14.7563 3.07615 14.3827C2.92137 14.009 3.00692 13.5789 3.29292 13.2929L4.09706 12.4887L4.21925 12H2C0.89543 12 0 11.1046 0 10V2ZM5.7713 9C5.75657 8.9997 5.74189 8.9997 5.72725 9H2V2H12V9H8.2728C8.2582 8.9997 8.2435 8.9997 8.2288 9H5.7713Z" fill="#E3003C"/>
-                        </svg>
-                        <span>ping-pong TV</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="hp-cast.html">
-                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M12 3C12 4.65685 10.6569 6 9 6C7.34315 6 6 4.65685 6 3C6 1.34315 7.34315 0 9 0C10.6569 0 12 1.34315 12 3Z" fill="#E3003C"/>
-                           <path d="M17 5C17 6.10457 16.1046 7 15 7C13.8954 7 13 6.10457 13 5C13 3.89543 13.8954 3 15 3C16.1046 3 17 3.89543 17 5Z" fill="#E3003C"/>
-                           <path d="M13 12C13 9.7909 11.2091 8 9 8C6.79086 8 5 9.7909 5 12V15H13V12Z" fill="#E3003C"/>
-                           <path d="M5 5C5 6.10457 4.10457 7 3 7C1.89543 7 1 6.10457 1 5C1 3.89543 1.89543 3 3 3C4.10457 3 5 3.89543 5 5Z" fill="#E3003C"/>
-                           <path d="M15 15V12C15 10.9459 14.7282 9.9552 14.2507 9.0943C14.4902 9.0327 14.7413 9 15 9C16.6569 9 18 10.3431 18 12V15H15Z" fill="#E3003C"/>
-                           <path d="M3.74926 9.0943C3.27185 9.9552 3 10.9459 3 12V15H0V12C0 10.3431 1.34315 9 3 9C3.25871 9 3.50977 9.0327 3.74926 9.0943Z" fill="#E3003C"/>
-                           </svg>
-                        <span>ČAST</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M0 10V13C0 14.6569 3.13401 16 7 16C10.866 16 14 14.6569 14 13V10C14 11.6569 10.866 13 7 13C3.13401 13 0 11.6569 0 10Z" fill="#E3003C"/>
-                           <path d="M0 5V8C0 9.6569 3.13401 11 7 11C10.866 11 14 9.6569 14 8V5C14 6.65685 10.866 8 7 8C3.13401 8 0 6.65685 0 5Z" fill="#E3003C"/>
-                           <path d="M14 3C14 4.65685 10.866 6 7 6C3.13401 6 0 4.65685 0 3C0 1.34315 3.13401 0 7 0C10.866 0 14 1.34315 14 3Z" fill="#E3003C"/>
-                           </svg>
-                        <span>REGISTR</span>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-            <ul class="social">
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
-                     <img class="social__icon" src="images/svg/facebook.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/facebook-head.svg" >
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
-                     <img class="social__icon" src="images/svg/twitter.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/twitter-head.svg" >
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw">
-                     <img class="social__icon" src="images/svg/youtube.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/youtube-head.svg" >
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
-                     <img class="social__icon" src="images/svg/instagram.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="">
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.flickr.com/photos/czechtabletennis/albums">
-                     <img class="social__icon" src="images/svg/flickr.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/flickr-head.svg" >
-                  </a>
-               </li>
+        <div class="head">
+          <a class="head__logo" href="index.html">
+            <img class="white-logo" src="images/logo.png" alt="" />
+            <img class="dark-logo" src="images/dark-logo.png" alt="" />
+          </a>
+          <nav class="head__menu">
+            <ul class="head__list">
+              <li>
+                <a href="#">
+                  <svg
+                    width="14"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 2C0 0.89543 0.89543 0 2 0H12C13.1046 0 14 0.89543 14 2V10C14 11.1046 13.1046 12 12 12H9.7808L9.903 12.4887L10.7071 13.2929C10.9931 13.5789 11.0787 14.009 10.9239 14.3827C10.7691 14.7563 10.4045 15 10 15H4.00003C3.59557 15 3.23093 14.7563 3.07615 14.3827C2.92137 14.009 3.00692 13.5789 3.29292 13.2929L4.09706 12.4887L4.21925 12H2C0.89543 12 0 11.1046 0 10V2ZM5.7713 9C5.75657 8.9997 5.74189 8.9997 5.72725 9H2V2H12V9H8.2728C8.2582 8.9997 8.2435 8.9997 8.2288 9H5.7713Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>ping-pong TV</span>
+                </a>
+              </li>
+              <li>
+                <a href="hp-cast.html">
+                  <svg
+                    width="18"
+                    height="15"
+                    viewBox="0 0 18 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C12 4.65685 10.6569 6 9 6C7.34315 6 6 4.65685 6 3C6 1.34315 7.34315 0 9 0C10.6569 0 12 1.34315 12 3Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M17 5C17 6.10457 16.1046 7 15 7C13.8954 7 13 6.10457 13 5C13 3.89543 13.8954 3 15 3C16.1046 3 17 3.89543 17 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M13 12C13 9.7909 11.2091 8 9 8C6.79086 8 5 9.7909 5 12V15H13V12Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M5 5C5 6.10457 4.10457 7 3 7C1.89543 7 1 6.10457 1 5C1 3.89543 1.89543 3 3 3C4.10457 3 5 3.89543 5 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M15 15V12C15 10.9459 14.7282 9.9552 14.2507 9.0943C14.4902 9.0327 14.7413 9 15 9C16.6569 9 18 10.3431 18 12V15H15Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M3.74926 9.0943C3.27185 9.9552 3 10.9459 3 12V15H0V12C0 10.3431 1.34315 9 3 9C3.25871 9 3.50977 9.0327 3.74926 9.0943Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>ČAST</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 10V13C0 14.6569 3.13401 16 7 16C10.866 16 14 14.6569 14 13V10C14 11.6569 10.866 13 7 13C3.13401 13 0 11.6569 0 10Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M0 5V8C0 9.6569 3.13401 11 7 11C10.866 11 14 9.6569 14 8V5C14 6.65685 10.866 8 7 8C3.13401 8 0 6.65685 0 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M14 3C14 4.65685 10.866 6 7 6C3.13401 6 0 4.65685 0 3C0 1.34315 3.13401 0 7 0C10.866 0 14 1.34315 14 3Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>REGISTR</span>
+                </a>
+              </li>
             </ul>
-         </div>
-        
+          </nav>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.facebook.com/CeskyPingPong/"
+              >
+                <img class="social__icon" src="images/svg/facebook.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/facebook-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+                <img class="social__icon" src="images/svg/twitter.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/twitter-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw"
+              >
+                <img class="social__icon" src="images/svg/youtube.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/youtube-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.instagram.com/cesky_pingpong/"
+              >
+                <img class="social__icon" src="images/svg/instagram.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.flickr.com/photos/czechtabletennis/albums"
+              >
+                <img class="social__icon" src="images/svg/flickr.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/flickr-head.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="header__bottom">
         <div class="container">
-         <div class="mob-menu">
+          <div class="mob-menu">
             <div class="mob-menu__btn"></div>
           </div>
-           <div class="header__inner">
-           
+          <div class="header__inner">
             <nav class="navbar">
-               <ul class="navbar__menu">
-                  <li class="navbar__menu-list">
-                     <a href="soutez.html" class="navbar__menu-item">
-                        Soutěže
-                     </a>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <a href="reprezentace.html" class="navbar__menu-item">
-                        Reprezentace
-                     </a>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        MLÁDEŽ
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="#">link 1</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        Žebříčky
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="#">link 1</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        Akce
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="#">link 1</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        Média
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="fotogalerie.html">Fotogalerie</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <a href="partneri.html" class="navbar__menu-item">
-                        Partneři
-                     </a>
-                   
-                  </li>
-               </ul>
+              <ul class="navbar__menu">
+                <li class="navbar__menu-list">
+                  <a href="soutez.html" class="navbar__menu-item"> Soutěže </a>
+                </li>
+                <li class="navbar__menu-list">
+                  <a href="reprezentace.html" class="navbar__menu-item"> Reprezentace </a>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">MLÁDEŽ</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Žebříčky</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Akce</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Média</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <a href="partneri.html" class="navbar__menu-item"> Partneři </a>
+                </li>
+              </ul>
             </nav>
             <div class="user-menu">
-               <a href="#" class="search-togle js-search-inline-toggle" role="button" aria-haspopup="true">
-                  <i class="fas fa-search"></i>
-               </a>
-               <a  class="user-menu__item js-theme-toggle" href="#">
-                  <svg class="user-menu__item--white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M16 11.0757C14.9493 11.5509 13.7829 11.8154 12.5548 11.8154C7.93228 11.8154 4.18495 8.06809 4.18495 3.4455C4.18495 2.21725 4.44951 1.05079 4.92476 0C2.02067 1.31328 0 4.23579 0 7.63024C0 12.2528 3.74733 16.0001 8.3699 16.0001C11.7642 16.0001 14.6867 13.9796 16 11.0757Z" fill="white"/>
-                     </svg>
-                     <svg class="user-menu__item--dark" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z" fill="#fff" fill-rule="evenodd"/></svg>
-
-               </a>
-               <a class="user-menu__item" href="#">
-                  <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z" fill="white"/>
-                     <path d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z" fill="white"/>
-                     </svg>
-               </a>
-               <a class="user-menu__item" href="#">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z" fill="white"/>
-                     </svg>
-               </a>
+              <a
+                href="#"
+                class="search-togle js-search-inline-toggle"
+                role="button"
+                aria-haspopup="true"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a class="user-menu__item js-theme-toggle" href="#">
+                <svg
+                  class="user-menu__item--white"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 11.0757C14.9493 11.5509 13.7829 11.8154 12.5548 11.8154C7.93228 11.8154 4.18495 8.06809 4.18495 3.4455C4.18495 2.21725 4.44951 1.05079 4.92476 0C2.02067 1.31328 0 4.23579 0 7.63024C0 12.2528 3.74733 16.0001 8.3699 16.0001C11.7642 16.0001 14.6867 13.9796 16 11.0757Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  class="user-menu__item--dark"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z"
+                    fill="#fff"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a class="user-menu__item" href="#">
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a class="user-menu__item" href="#">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
             </div>
-            
-           </div>
+          </div>
         </div>
       </div>
-      <div class="search  d-none js-search-inline-wrapper" role="search">
-         <div class="search__content">
-             <form action="vyhledavani.html" class="search__form" method="GET">
-                 <div class="search__form-row">
-                     <input type="search" class="form-control" placeholder="Co hledáte?" aria-label="Hledej na ping-pong.cz" autofocus />
-                     <input type="submit" value="hledat" class="btn link" />
-                     <button aria-label="Hledat" class="btn btn-icon">
-                        <i class="fas fa-search"></i>
-                     </button>
-                 </div>
-             </form>
-             <button aria-lable="Zavřít hledaní" class="btn-link js-search-inline-toggle">
-                
-                 <svg  aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
-             </button>
-         </div>
-         <div class="search__tags">
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>                                
-         </div>
-     </div>
-     <script async src="js/search-inline.js"></script>
-   </header>
+      <div class="search d-none js-search-inline-wrapper" role="search">
+        <div class="search__content">
+          <form action="vyhledavani.html" class="search__form" method="GET">
+            <div class="search__form-row">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Co hledáte?"
+                aria-label="Hledej na ping-pong.cz"
+                autofocus
+              />
+              <input type="submit" value="hledat" class="btn link" />
+              <button aria-label="Hledat" class="btn btn-icon">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <button aria-lable="Zavřít hledaní" class="btn-link js-search-inline-toggle">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="times-circle"
+              class="svg-inline--fa fa-times-circle fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="search__tags">
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+        </div>
+      </div>
+      <script async src="js/search-inline.js"></script>
+    </header>
 
-   <main class="main extraliga-page">
+    <main class="main extraliga-page">
       <div class="container">
-         
-
-         <div class="main__header">
-            <h2>Extraliga mužů</h2>
-         </div>
-         <div class="main__filtr">
-            <div class="main__filtr--scroll">
-               <ul class="main__tabs">
-                  <li>
-                     <a class="active tab" href="#" data-id="prehled">Přehled</a>
-                  </li>
-                  <li>
-                     <a class="tab" href="#" data-id="tabulky">Tabulky</a>
-                  </li>
-                  <li>
-                     <a class="tab" href="#" data-id="utkani">Utkání</a>
-                  </li>
-                  <li>
-                     <a class="tab" href="#" data-id="statistiky">Hráčské statistiky</a>
-                  </li>
-                  <li>
-                     <a class="tab" href="#" data-id="adresar">Adresář</a>
-                  </li>
-               </ul>
-            </div>
-            <div class="extraliga tab-active" id="prehled">
-               <div class="extraliga-prehled">
-                  <div class="extraliga-prehled__box">
-                     <div class="extraliga-prehled__item">
-                        <h3>nejúspěšnější hráč</h3>
-                        <div class="hp-extraliga__img">
-                           <img src="images/content/liga-1.png" alt="">
-                        </div>
-                        <a href="#">Michal Obešlo</a>
-                        <h2>94,12 %</h2>
-                        <a class="link" href="#">VÍCE</a>
-                     </div>
+        <div class="main__header">
+          <h2>Extraliga mužů</h2>
+        </div>
+        <div class="main__filtr">
+          <div class="main__filtr--scroll">
+            <ul class="main__tabs">
+              <li>
+                <a class="active tab" href="#" data-id="prehled">Přehled</a>
+              </li>
+              <li>
+                <a class="tab" href="#" data-id="tabulky">Tabulky</a>
+              </li>
+              <li>
+                <a class="tab" href="#" data-id="utkani">Utkání</a>
+              </li>
+              <li>
+                <a class="tab" href="#" data-id="statistiky">Hráčské statistiky</a>
+              </li>
+              <li>
+                <a class="tab" href="#" data-id="adresar">Adresář</a>
+              </li>
+            </ul>
+          </div>
+          <div class="extraliga tab-active" id="prehled">
+            <div class="extraliga-prehled">
+              <div class="extraliga-prehled__box">
+                <div class="extraliga-prehled__item">
+                  <h3>nejúspěšnější hráč</h3>
+                  <div class="hp-extraliga__img">
+                    <img src="images/content/liga-1.png" alt="" />
                   </div>
-                  <div class="extraliga-prehled__box">
-                     <div class="extraliga-prehled__item">
-                        <h3>žebříček hráčů</h3>
-                        <div class="extraliga-prehled__item-table">
-                           <table>
-                              <tr>
-                                 <th>P.</th>
-                                 <th>HRÁČ</th>
-                                 <th>ELO</th>
-                              </tr>
-                              <tr>
-                                 <td>1.</td>
-                                 <td>
-                                    <a href="#">Tregler Tomáš</a>
-                                 </td>
-                                 <td>2443</td>
-                              </tr>
-                              <tr>
-                                 <td>2.</td>
-                                 <td>
-                                    <a href="#">Prokopcov Dmitrij</a>
-                                 </td>
-                                 <td>2417</td>
-                              </tr>
-                              <tr>
-                                 <td>3.</td>
-                                 <td>
-                                    <a href="#">Gavlas Antonín ml.</a>
-                                 </td>
-                                 <td>2409</td>
-                              </tr>
-                              <tr>
-                                 <td>4.</td>
-                                 <td>
-                                    <a href="#">Kleprlík Jakub</a>
-                                 </td>
-                                 <td>2365</td>
-                              </tr>
-                              <tr>
-                                 <td>5.</td>
-                                 <td>
-                                    <a href="#">Olejník Martin</a>
-                                 </td>
-                                 <td>2359</td>
-                              </tr>
-                           </table>
-                        </div>
-                        <a class="link" href="#">VÍCE</a>
-                     </div>
-                  </div>
-                  <div class="extraliga-prehled__box">
-                     <div class="extraliga-prehled__item">
-                        <h3>NEJVÍCE VÝHER</h3>
-                        <table>
-                           <tr>
-                              <th>P.</th>
-                              <th>HRÁČ</th>
-                              <th>VÝHER</th>
-                           </tr>
-                           <tr>
-                              <td>1.</td>
-                              <td>
-                                 <a href="#">Tregler Tomáš</a>
-                              </td>
-                              <td>15</td>
-                           </tr>
-                           <tr>
-                              <td>2.</td>
-                              <td>
-                                 <a href="#">Prokopcov Dmitrij</a>
-                              </td>
-                              <td>12</td>
-                           </tr>
-                           <tr>
-                              <td>3.</td>
-                              <td>
-                                 <a href="#">Gavlas Antonín ml.</a>
-                              </td>
-                              <td>11</td>
-                           </tr>
-                           <tr>
-                              <td>4.</td>
-                              <td>
-                                 <a href="#">Kleprlík Jakub</a>
-                              </td>
-                              <td>10</td>
-                           </tr>
-                           <tr>
-                              <td>5.</td>
-                              <td>
-                                 <a href="#">Olejník Martin</a>
-                              </td>
-                              <td>9</td>
-                           </tr>
-                        </table>
-                        <a class="link" href="#">VÍCE</a>
-                     </div>
-                     
-                  </div>
-                  <div class="extraliga-prehled__box">
-                     <div class="extraliga-prehled__item">
-                        <h3>SÉRIE VÝHER</h3>
-                        <div class="hp-extraliga__img">
-                           <img src="images/content/liga-3.png" alt="">
-                        </div>
-                        <h4>SKST HODONÍN</h4>
-                        <h2>14</h2>
-                        <a class="link" href="#">VÍCE</a>
-                     </div>
-                  </div>
-                  <div class="extraliga-prehled__box">
-                     <div class="extraliga-prehled__item">
-                        <h3>NEJLEPŠÍ DOMA</h3>
-                        <div class="extraliga-prehled__item-table">
-                             <table>
-                              <tr>
-                                 <th>P.</th>
-                                 <th>tým</th>
-                                 <th>BODY</th>
-                              </tr>
-                              <tr>
-                                 <td>1.</td>
-                                 <td>
-                                    <a href="#">TJ Sokol PP Hradec Králové 2</a>
-                                 </td>
-                                 <td>27</td>
-                              </tr>
-                              <tr>
-                                 <td>2.</td>
-                                 <td>
-                                    <a href="#">HB Ostrov</a>
-                                 </td>
-                                 <td>22</td>
-                              </tr>
-                              <tr>
-                                 <td>3.</td>
-                                 <td>
-                                    <a href="#">TTC ENFIREEX OSTRAVA</a>
-                                 </td>
-                                 <td>21</td>
-                              </tr>
-                              <tr>
-                                 <td>4.</td>
-                                 <td>
-                                    <a href="#">SKST Stavoimpex Hodonín</a>
-                                 </td>
-                                 <td>20</td>
-                              </tr>
-                              <tr>
-                                 <td>5.</td>
-                                 <td>
-                                    <a href="#">SKST Cheb</a>
-                                 </td>
-                                 <td>18</td>
-                              </tr>
-                           </table>
-                        </div>
-                        <a class="link" href="#">VÍCE</a>
-                        </div>
-                  </div>
-                  <div class="extraliga-prehled__box">
-                     <div class="extraliga-prehled__item">
-                        <h3>NEJLEPŠÍ VENKU</h3>
-                        <div class="extraliga-prehled__item-table">
-                           <table>
-                              <tr>
-                                 <th>P.</th>
-                                 <th>tým</th>
-                                 <th>tým</th>
-                              </tr>
-                              <tr>
-                                 <td>1.</td>
-                                 <td>
-                                    <a href="#">HB Ostrov</a>
-                                 </td>
-                                 <td>15</td>
-                              </tr>
-                              <tr>
-                                 <td>2.</td>
-                                 <td>
-                                    <a href="#">KT Praha</a>
-                                 </td>
-                                 <td>12</td>
-                              </tr>
-                              <tr>
-                                 <td>3.</td>
-                                 <td>
-                                    <a href="#">SKST Charvát Havířov</a>
-                                 </td>
-                                 <td>11</td>
-                              </tr>
-                              <tr>
-                                 <td>4.</td>
-                                 <td>
-                                    <a href="#">SF SKK El Niňo Praha</a>
-                                 </td>
-                                 <td>10</td>
-                              </tr>
-                              <tr>
-                                 <td>5.</td>
-                                 <td>
-                                    <a href="#">TJ Ostrava KST</a>
-                                 </td>
-                                 <td>9</td>
-                              </tr>
-                           </table>
-                        </div>
-                        <a class="link" href="#">VÍCE</a>
-                        </div>
-                  </div>
-               </div>
-               <div class="zapas-page__statistics">
-                  <div class="zapas-page__statistics-col">
-                     <h3>AKTUÁLNÍ UTKÁNÍ</h3>
-                     <div class="zapas__box">
-                        <div class="zapas__item">
-                           <div class="zapas__info">
-                              <h4>SKST Stavoimpex Hodonín</h4>
-                              <h4>SF SKK El Niňo Praha</h4>
-                              <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                                 <a href="#">
-                                    <img src="images/svg/layer.svg" alt="">
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="zapas__result">
-                              3:1
-                           </div>
-                        </div>
-                        <div class="zapas__item">
-                           <div class="zapas__info">
-                              <h4>SKST Stavoimpex Hodonín</h4>
-                              <h4>SF SKK El Niňo Praha</h4>
-                              <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                                 <a href="#">
-                                    <img src="images/svg/layer.svg" alt="">
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="zapas__result">
-                              3:1
-                           </div>
-                        </div>
-                        <div class="zapas__item">
-                           <div class="zapas__info">
-                              <h4>SKST Stavoimpex Hodonín</h4>
-                              <h4>SF SKK El Niňo Praha</h4>
-                              <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                                 <a href="#">
-                                    <img src="images/svg/layer.svg" alt="">
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="zapas__result">
-                              3:1
-                           </div>
-                        </div>
-                        <div class="zapas__item">
-                           <div class="zapas__info">
-                              <h4>SKST Stavoimpex Hodonín</h4>
-                              <h4>SF SKK El Niňo Praha</h4>
-                              <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                                 <a href="#">
-                                    <img src="images/svg/layer.svg" alt="">
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="zapas__result">
-                              3:1
-                           </div>
-                        </div>
-                        <div class="zapas__item">
-                           <div class="zapas__info">
-                              <h4>SKST Stavoimpex Hodonín</h4>
-                              <h4>SF SKK El Niňo Praha</h4>
-                              <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                                 <a href="#">
-                                    <img src="images/svg/layer.svg" alt="">
-                                 </a>
-                              </p>
-                           </div>
-                           <div class="zapas__result">
-                              3:1
-                           </div>
-                        </div>
-                     </div>
-                     <a class="link" href="#">PŘEHLED UTKÁNÍ</a>
-                  </div>
-                  <div class="zapas-page__statistics-col">
-                     <h3>TABULKA</h3>
-                     <div class="zapas-page__table">
-                        <table>
-                           <tr>
-                              <th class="num">P.</th>
-                              <th class="team">TÝM</th>
-                              <th>Z</th>
-                              <th>SKÓRE</th>
-                              <th>B</th>
-                           </tr>
-                           <tr>
-                              <td class="num">1.</td>
-                              <td class="team">
-                                 <a href="#">HB Ostrov</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">2.</td>
-                              <td class="team">
-                                 <a href="#">SKST Cheb</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">3.</td>
-                              <td class="team">
-                                 <a href="#">KT Praha</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">4.</td>
-                              <td class="team">
-                                 <a href="#">TTC ENFIREEX OSTRAVA</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">5.</td>
-                              <td class="team">
-                                 <a href="#">SKST Charvát Havířov</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                        
-                           <tr>
-                              <td class="num">6.</td>
-                              <td class="team">
-                                 <a href="#">TJ Ostrava KST</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">7.</td>
-                              <td class="team">
-                                 <a href="#">TJ Sokol PP Hradec Králové 2</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">8.</td>
-                              <td class="team">
-                                 <a href="#">SKST Stavoimpex Hodonín</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">9.</td>
-                              <td class="team">
-                                 <a href="#">SF SKK El Niňo Praha</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                           <tr>
-                              <td class="num">10.</td>
-                              <td class="team">
-                                 <a href="#">SKST Liberec</a>
-                              </td>
-                              <td>18</td>
-                              <td>54:12</td>
-                              <td>54</td>
-                           </tr>
-                        </table>
-                     </div>
-                     <a class="link" href="#">kompletní tabulka</a>
-                  </div>
-               </div>
-                
-                  <section class="hp-cast">
-                     <h3>související články</h3>
-                     <div class="top-clanky__row">
-                        <div class="clanek">
-                           <a class="clanek__link" href="article.html">
-                              <div class="clanek__img">
-                                 <img src="images/content/tv-2.jpg" alt="">
-                              </div>
-                              <div class="clanek__info">
-                                 <h3>
-                                    Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl
-                                 </h3>
-                                 <span>14.7.2021</span>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="clanek">
-                           <a class="clanek__link" href="article.html">
-                              <div class="clanek__img">
-                                 <img src="images/content/tv-3.jpg" alt="">
-                              </div>
-                              <div class="clanek__info">
-                                 <h3>
-                                    Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže
-                                 </h3>
-                                 <span>14.7.2021</span>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="clanek">
-                           <a class="clanek__link" href="article.html">
-                              <div class="clanek__img">
-                                 <img src="images/content/tv-5.jpg" alt="">
-                              </div>
-                              <div class="clanek__info">
-                                 <h3>
-                                    Český stolní tenis na olympiádách – Rio de Janeiro 2016
-                                 </h3>
-                                 <span>14.7.2021</span>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="clanek">
-                           <a class="clanek__link" href="article.html">
-                              <div class="clanek__img">
-                                 <img src="images/content/tv-2.jpg" alt="">
-                              </div>
-                              <div class="clanek__info">
-                                 <h3>
-                                    Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl
-                                 </h3>
-                                 <span>14.7.2021</span>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="clanek">
-                           <a class="clanek__link" href="article.html">
-                              <div class="clanek__img">
-                                 <img src="images/content/tv-3.jpg" alt="">
-                              </div>
-                              <div class="clanek__info">
-                                 <h3>
-                                    Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže
-                                 </h3>
-                                 <span>14.7.2021</span>
-                              </div>
-                           </a>
-                        </div>
-                        <div class="clanek">
-                           <a class="clanek__link" href="article.html">
-                              <div class="clanek__img">
-                                 <img src="images/content/tv-5.jpg" alt="">
-                              </div>
-                              <div class="clanek__info">
-                                 <h3>
-                                    Český stolní tenis na olympiádách – Rio de Janeiro 2016
-                                 </h3>
-                                 <span>14.7.2021</span>
-                              </div>
-                           </a>
-                        </div>
-                        
-                    
-                     </div>
-                  </section>
-                  <a class="link" href="clanky.html">DALŠÍ ZPRÁVY</a>
-                 
-                  
-            </div>
-             
-            
-            <div class="extraliga "  id="tabulky">
-               <form class="form__filtr" action="">
-                  <select class="select" name="tabulka" id="tabulka">
-                     <option>Tabulka základní části</option>
-                     <option>2020</option>
-                     <option>2019</option>
-                     <option>2018</option>
-                  </select>
-                  <select class="select" name="kole" id="kole">
-                     <option>Po 18. kole</option>
-                     <option>Reprezentace 1</option>
-                     <option>Reprezentace 2</option>
-                     <option>Reprezentace 3</option>
-                   </select>
-               
-                
-                 </form>
-                 <div class="extraliga-tabulky">
-                    <div class="extraliga-tabulky__scroll">
-                     <table>
-                        <tr>
-                           <th class="num">P</th>
-                           <th class="team">DRUŽSTVO</th>
-                           <th>pu</th>
-                           <th>v</th>
-                           <th>r</th>
-                           <th>P</th>
-                           <th>K</th>
-                           <th>Skóre</th>
-                           <th class="elo">B</th>
-                           <th>ÚSD</th>
-                           <th>ÚSV</th>
-                           <th>VěkØ</th>
-                           <th>Série</th>
-                           <th>Úsp1+</th>
-                           <th>Úsp2+</th>
-                           <th>Úsp1-</th>
-                           <th>Úsp2-</th>
-                        </tr>
-                        <tr>
-                           <td class="num">1.</td>
-                           <td class="team">
-                              <a href="#">
-                               <img src="images/svg/einino.svg" alt="">  
-                               TJ Sokol PP Hradec Králové 2</a>
-                           </td>
-                           <td>18</td>
-                           <td>12</td>
-                           <td>2</td>
-                           <td>4</td>
-                           <td>0</td>
-                           <td>64:23</td>
-                           <td class="elo">72</td>
-                           <td>9</td>
-                           <td>6</td>
-                           <td>23</td>
-                           <td>7</td>
-                           <td>6</td>
-                           <td>4</td>
-                           <td>3</td>
-                           <td>5</td>
-                        </tr>
-                        <tr>
-                         <td class="num">2.</td>
-                         <td class="team"> 
-                            <a href="#">
-                               <img src="images/content/hodonin.jpg" alt="">
-                               SKST Stavoimpex Hodonín</a>
-                         </td>
-                         <td>18</td>
-                         <td>12</td>
-                         <td>2</td>
-                         <td>4</td>
-                         <td>0</td>
-                         <td>64:23</td>
-                         <td class="elo">72</td>
-                         <td>9</td>
-                         <td>6</td>
-                         <td>23</td>
-                         <td>7</td>
-                         <td>6</td>
-                         <td>4</td>
-                         <td>3</td>
-                         <td>5</td>
+                  <a href="#">Michal Obešlo</a>
+                  <h2>94,12 %</h2>
+                  <a class="link" href="#">VÍCE</a>
+                </div>
+              </div>
+              <div class="extraliga-prehled__box">
+                <div class="extraliga-prehled__item">
+                  <h3>žebříček hráčů</h3>
+                  <div class="extraliga-prehled__item-table">
+                    <table>
+                      <tr>
+                        <th>P.</th>
+                        <th>HRÁČ</th>
+                        <th>ELO</th>
                       </tr>
                       <tr>
-                         <td class="num">3.</td>
-                         <td class="team"> 
-                            <a href="#">
-                               <img src="" alt="">
-                               SF SKK El Niňo Praha</a>
-                         </td>
-                         <td>18</td>
-                         <td>12</td>
-                         <td>2</td>
-                         <td>4</td>
-                         <td>0</td>
-                         <td>64:23</td>
-                         <td class="elo">72</td>
-                         <td>9</td>
-                         <td>6</td>
-                         <td>23</td>
-                         <td>7</td>
-                         <td>6</td>
-                         <td>4</td>
-                         <td>3</td>
-                         <td>5</td>
+                        <td>1.</td>
+                        <td>
+                          <a href="#">Tregler Tomáš</a>
+                        </td>
+                        <td>2443</td>
                       </tr>
-                     </table>
-                    </div>
-                    <h3>
-                     M ČR družstev (play-off)
-                    </h3>
-                    <div class="extraliga-tabulky__inner">
-                      <div class="extraliga-tabulky__col">
-                         <div class="extraliga-tabulky__box">
-                           <div class="extraliga-tabulky__item">
-                              <div class="extraliga-tabulky__left">
-                                 <a href="#" class="win">HB Ostrov</a>
-                                 <a href="#">TJ Sokol PP Hradec Králové 2</a>
-                                 <div class="extraliga-tabulky__time">
-                                    <a href="#">3:1</a>
-                                    <a href="#">2:2</a>
-                                    <a href="#">3:1</a>
-                                 </div>
-                              </div>
-                              <a href="#" class="extraliga-tabulky__result">
-                                 2:1
-                              </a>
-                           </div>
-                           <div class="extraliga-tabulky__item">
-                              <div class="extraliga-tabulky__left">
-                                 <a href="#" class="win">KT Praha</a>
-                                 <a href="#">SKST Stavoimpex Hodonín</a>
-                                 <div class="extraliga-tabulky__time">
-                                    <a href="#">3:1</a>
-                                    <a href="#">2:2</a>
-                                    <a href="#">3:1</a>
-                                 </div>
-                              </div>
-                              <a href="#" class="extraliga-tabulky__result">
-                                 2:1
-                              </a>
-                           </div>
-                         </div>
-                         <div class="extraliga-tabulky__box">
-                           <div class="extraliga-tabulky__item">
-                              <div class="extraliga-tabulky__left">
-                                 
-                                 <a href="#">HB Ostrov</a>
-                                 <a href="#" class="win">TJ Sokol PP Hradec Králové 2</a>
-                                 <div class="extraliga-tabulky__time">
-                                    <a href="#">1:3</a>
-                                    <a href="#">3:2</a>
-                                    <a href="#">1:3</a>
-                                 </div>
-                              </div>
-                              <a href="#" class="extraliga-tabulky__result">
-                                 1:2
-                              </a>
-                           </div>
-                           <div class="extraliga-tabulky__item">
-                              <div class="extraliga-tabulky__left">
-                                 <a href="#" class="win">SKST Charvát Havířov</a>
-                                 <a href="#">SF SKK El Niňo Praha</a>
-                                 <div class="extraliga-tabulky__time">
-                                    <a href="#">3:1</a>
-                                    <a href="#">3:1</a>
-                                 </div>
-                              </div>
-                              <a href="#" class="extraliga-tabulky__result">
-                                 2:0
-                              </a>
-                           </div>
-                         </div>
-                      </div>
-                      <div class="extraliga-tabulky__midle">
-                        <div class="extraliga-tabulky__item">
-                           <div class="extraliga-tabulky__left">
-                              <a href="#" class="win">HB Ostrov</a>
-                              <a href="#">KT PRAHA</a>
-                              <div class="extraliga-tabulky__time">
-                                 <a href="#">3:1</a>
-                                 <a href="#">3:1</a>
-                              </div>
-                           </div>
-                           <a href="#" class="extraliga-tabulky__result">
-                              2:0
-                           </a>
-                        </div>
-                        <div class="extraliga-tabulky__item">
-                           <div class="extraliga-tabulky__left">
-                              
-                              <a href="#">TJ Sokol PP Hradec Králové 2</a>
-                              <a href="#" class="win">SKST Charvát Havířov</a>
-                              <div class="extraliga-tabulky__time">
-                                 <a href="#">3:1</a>
-                                 <a href="#">0:3</a>
-                                 <a href="#">2:3</a>
-                              </div>
-                           </div>
-                           <a href="#" class="extraliga-tabulky__result">
-                              1:2
-                           </a>
-                        </div>
-                      </div>
-                      <div class="extraliga-tabulky__final">
-                        <div class="extraliga-tabulky__item">
-                           <div class="extraliga-tabulky__left">
-                              <a href="#" class="win">HB Ostrov</a>
-                              <a href="#">SKST Charvát Havířov</a>
-                              <div class="extraliga-tabulky__time">
-                                 <a href="#">3:1</a>
-                                 <a href="#">3:1</a>
-                               
-                              </div>
-                           </div>
-                           <a href="#" class="extraliga-tabulky__result">
-                              2:0
-                           </a>
-                        </div>
-                      </div>
-                    </div>
-                 </div>
-            </div>
-            <div class="extraliga" id="utkani">
-               <form class="form__filtr" action="">
-                  <select class="select" name="sezona" id="sezona">
-                     <option>Extraliga mužů 2021/22</option>
-                     <option>2020</option>
-                     <option>2019</option>
-                     <option>2018</option>
-                  </select>
-                  <select class="select" name="cast" id="cast">
-                     <option>Základní část</option>
-                     <option>Reprezentace 1</option>
-                     <option>Reprezentace 2</option>
-                     <option>Reprezentace 3</option>
-                   </select>
-                   <select class="select" name="dvouhra" id="druz">
-                     <option>Všechna družstva</option>
-                     <option>2020</option>
-                     <option>2019</option>
-                     <option>2018</option>
-                  </select>
-                  <select class="select" name="utkan" id="zapasy">
-                     <option>Všechny zápasy</option>
-                     <option>Reprezentace 1</option>
-                     <option>Reprezentace 2</option>
-                     <option>Reprezentace 3</option>
-                   </select>
-                 </form>
-               <div class="extraliga-utkani">
-                  <h3>1. kolo</h3>
-                  <div class="zapas__box">
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                  </div>
-                  <h3>2. kolo</h3>
-                  <div class="zapas__box">
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                  </div>
-                  <h3>3. kolo</h3>
-                  <div class="zapas__box">
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                     <div class="zapas__item">
-                        <div class="zapas__info">
-                           <h4>SKST Stavoimpex Hodonín</h4>
-                           <h4>SF SKK El Niňo Praha</h4>
-                           <p>Extraliga mužů / 12.8.2021 / 15:30 /
-                              <a href="#">
-                                 <img src="images/svg/layer.svg" alt="">
-                              </a>
-                           </p>
-                        </div>
-                        <div class="zapas__result">
-                           3:1
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="extraliga" id="statistiky">
-               <form class="form__filtr" action="">
-                  <select class="select" name="sezona" id="druzstva">
-                     <option>Všechna družstva</option>
-                     <option>2020</option>
-                     <option>2019</option>
-                     <option>2018</option>
-                  </select>
-                  <select class="select" name="cast" id="cast">
-                     <option>Základní část</option>
-                     <option>Reprezentace 1</option>
-                     <option>Reprezentace 2</option>
-                     <option>Reprezentace 3</option>
-                   </select>
-                   <select class="select" name="dvouhra" id="dvouhra">
-                     <option>Dvouhra</option>
-                     <option>2020</option>
-                     <option>2019</option>
-                     <option>2018</option>
-                  </select>
-                  <select class="select" name="utkan" id="utkan">
-                     <option>Všechna odehraná utkání</option>
-                     <option>Reprezentace 1</option>
-                     <option>Reprezentace 2</option>
-                     <option>Reprezentace 3</option>
-                   </select>
-             
-                 </form>
-                 <div class="extraliga-statistiky">
-                    <table>
-                       <tr>
-                          <th class="num">P</th>
-                          <th class="player">hráč</th>
-                          <th class="nar">Nar.</th>
-                          <th class="druz">družstvo</th>
-                          <th>ÚSP.</th>
-                          <th>skóre</th>
-                          <th>RANK.</th>
-                          <th class="elo">ELO</th>
-                          <th >ELO (STAB)</th>
-                          <th>SETY+</th>
-                          <th>SETY-</th>
-                          <th>ÚSP1+</th>
-                          <th>ÚSP2+</th>
-                          <th>ÚSP1-</th>
-                          <th>ÚSP2-</th>
-                       </tr>
-                       <tr>
-                          <td class="num">1.</td>
-                          <td class="player">
-                             <a href="#">
-                              Tymofieiev Oleksandr
-                             </a>
-                          </td>
-                          <td class="nar">1991</td>
-                          <td class="druz">
-                             <a href="#">
-                              TJ Sokol PP Hradec Králové 2
-                             </a>
-                          </td>
-                          <td>94%</td>
-                          <td>45:23</td>
-                          <td>1</td>
-                          <td class="elo">2235</td>
-                          <td>2132</td>
-                          <td>14</td>
-                          <td>12</td>
-                          <td>78%</td>
-                          <td>65%</td>
-                          <td>35%</td>
-                          <td>44%</td>
-                       </tr>
-                       <tr>
-                        <td class="num">2.</td>
-                        <td class="player">
-                           <a href="#">
-                              Obešlo Michal
-                           </a>
+                      <tr>
+                        <td>2.</td>
+                        <td>
+                          <a href="#">Prokopcov Dmitrij</a>
                         </td>
-                        <td class="nar">1991</td>
-                        <td class="druz">
-                           <a href="#">HB Ostrov</a>
+                        <td>2417</td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>
+                          <a href="#">Gavlas Antonín ml.</a>
                         </td>
-                        <td>94%</td>
-                        <td>45:23</td>
-                        <td>1</td>
-                        <td class="elo">2235</td>
-                        <td>2132</td>
-                        <td>14</td>
-                        <td>12</td>
-                        <td>78%</td>
-                        <td>65%</td>
-                        <td>35%</td>
-                        <td>44%</td>
-                     </tr>
-                     <tr>
-                        <td class="num">3.</td>
-                        <td class="player">
-                           <a href="#">
-                              Prokopcov Dmitrij
-                           </a>
+                        <td>2409</td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>
+                          <a href="#">Kleprlík Jakub</a>
                         </td>
-                        <td class="nar">1991</td>
-                        <td class="druz">
-                           <a href="#">HB Ostrov</a>
+                        <td>2365</td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>
+                          <a href="#">Olejník Martin</a>
                         </td>
-                        <td>94%</td>
-                        <td>45:23</td>
-                        <td>1</td>
-                        <td class="elo">2235</td>
-                        <td>2132</td>
-                        <td>14</td>
-                        <td>12</td>
-                        <td>78%</td>
-                        <td>65%</td>
-                        <td>35%</td>
-                        <td>44%</td>
-                     </tr>
-                     <tr>
-                        <td class="num">4.</td>
-                        <td class="player">
-                           <a href="#">
-                              Tymofieiev Oleksandr
-                           </a>
-                        </td>
-                        <td class="nar">1991</td>
-                        <td class="druz">
-                           <a href="#">TJ Sokol PP Hradec Králové 2</a>
-                        </td>
-                        <td>94%</td>
-                          <td>45:23</td>
-                          <td>1</td>
-                          <td class="elo">2235</td>
-                          <td>2132</td>
-                          <td>14</td>
-                          <td>12</td>
-                          <td>78%</td>
-                          <td>65%</td>
-                          <td>35%</td>
-                          <td>44%</td>
-                     </tr>
-                     <tr>
-                        <td class="num">5.</td>
-                       
-                        <td class="player">
-                           <a href="#">
-                              Obešlo Michal
-                           </a>
-                        </td>
-                        <td class="nar">1991</td>
-                        <td class="druz">
-                           <a href="#">HB Ostrov</a>
-                        </td>
-                        <td>94%</td>
-                        <td>45:23</td>
-                        <td>1</td>
-                        <td class="elo">2235</td>
-                        <td>2132</td>
-                        <td>14</td>
-                        <td>12</td>
-                        <td>78%</td>
-                        <td>65%</td>
-                        <td>35%</td>
-                        <td>44%</td>
-                     </tr>
-                     <tr>
-                        <td class="num">6.</td>
-                        
-                        <td class="player">
-                           <a href="#">
-                              Prokopcov Dmitrij
-                           </a>
-                        </td>
-                        <td class="nar">1991</td>
-                        <td class="druz">
-                           <a href="#">HB Ostrov</a>
-                        </td>
-                        <td>94%</td>
-                        <td>45:23</td>
-                        <td>1</td>
-                        <td class="elo">2235</td>
-                        <td>2132</td>
-                        <td>14</td>
-                        <td>12</td>
-                        <td>78%</td>
-                        <td>65%</td>
-                        <td>35%</td>
-                        <td>44%</td>
-                     </tr>
+                        <td>2359</td>
+                      </tr>
                     </table>
-                 </div>
+                  </div>
+                  <a class="link" href="#">VÍCE</a>
+                </div>
+              </div>
+              <div class="extraliga-prehled__box">
+                <div class="extraliga-prehled__item">
+                  <h3>NEJVÍCE VÝHER</h3>
+                  <table>
+                    <tr>
+                      <th>P.</th>
+                      <th>HRÁČ</th>
+                      <th>VÝHER</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>
+                        <a href="#">Tregler Tomáš</a>
+                      </td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>
+                        <a href="#">Prokopcov Dmitrij</a>
+                      </td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>
+                        <a href="#">Gavlas Antonín ml.</a>
+                      </td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>
+                        <a href="#">Kleprlík Jakub</a>
+                      </td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>
+                        <a href="#">Olejník Martin</a>
+                      </td>
+                      <td>9</td>
+                    </tr>
+                  </table>
+                  <a class="link" href="#">VÍCE</a>
+                </div>
+              </div>
+              <div class="extraliga-prehled__box">
+                <div class="extraliga-prehled__item">
+                  <h3>SÉRIE VÝHER</h3>
+                  <div class="hp-extraliga__img">
+                    <img src="images/content/liga-3.png" alt="" />
+                  </div>
+                  <h4>SKST HODONÍN</h4>
+                  <h2>14</h2>
+                  <a class="link" href="#">VÍCE</a>
+                </div>
+              </div>
+              <div class="extraliga-prehled__box">
+                <div class="extraliga-prehled__item">
+                  <h3>NEJLEPŠÍ DOMA</h3>
+                  <div class="extraliga-prehled__item-table">
+                    <table>
+                      <tr>
+                        <th>P.</th>
+                        <th>tým</th>
+                        <th>BODY</th>
+                      </tr>
+                      <tr>
+                        <td>1.</td>
+                        <td>
+                          <a href="#">TJ Sokol PP Hradec Králové 2</a>
+                        </td>
+                        <td>27</td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>
+                          <a href="#">HB Ostrov</a>
+                        </td>
+                        <td>8</td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>
+                          <a href="#">TTC ENFIREEX OSTRAVA</a>
+                        </td>
+                        <td>6</td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>
+                          <a href="#">SKST Stavoimpex Hodonín</a>
+                        </td>
+                        <td>20</td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>
+                          <a href="#">SKST Cheb</a>
+                        </td>
+                        <td>18</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <a class="link" href="#">VÍCE</a>
+                </div>
+              </div>
+              <div class="extraliga-prehled__box">
+                <div class="extraliga-prehled__item">
+                  <h3>NEJLEPŠÍ VENKU</h3>
+                  <div class="extraliga-prehled__item-table">
+                    <table>
+                      <tr>
+                        <th>P.</th>
+                        <th>tým</th>
+                        <th>tým</th>
+                      </tr>
+                      <tr>
+                        <td>1.</td>
+                        <td>
+                          <a href="#">HB Ostrov</a>
+                        </td>
+                        <td>15</td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>
+                          <a href="#">KT Praha</a>
+                        </td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>3.</td>
+                        <td>
+                          <a href="#">SKST Charvát Havířov</a>
+                        </td>
+                        <td>11</td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>
+                          <a href="#">SF SKK El Niňo Praha</a>
+                        </td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>5.</td>
+                        <td>
+                          <a href="#">TJ Ostrava KST</a>
+                        </td>
+                        <td>9</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <a class="link" href="#">VÍCE</a>
+                </div>
+              </div>
             </div>
-            <div class="extraliga" id="adresar">
-               <div class="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163930.50325744558!2d14.325540071912187!3d50.05980578023404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPraha!5e0!3m2!1scs!2scz!4v1633473253294!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-               </div>
-               <div class="extraliga-adresar">
-                  <div class="extraliga-adresar__liga">
-                     <h4>Extraliga mužů</h4>
-                  <div class="extraliga-adresar__vedouci">
-                     <h6>vedoucí soutěže</h6>
-                     <p>
-                        <b>Miroslav Henžel</b>
-                     </p>
-                     <p>+420 724 049092</p>
-                     <a href="mailto:henzel.miroslav@seznam.cz">henzel.miroslav@seznam.cz</a>
+            <div class="zapas-page__statistics">
+              <div class="zapas-page__statistics-col">
+                <h3>AKTUÁLNÍ UTKÁNÍ</h3>
+                <div class="zapas__box">
+                  <div class="zapas__item">
+                    <div class="zapas__info">
+                      <h4>SKST Stavoimpex Hodonín</h4>
+                      <h4>SF SKK El Niňo Praha</h4>
+                      <p>
+                        Extraliga mužů / 12.8.2021 / 15:30 /
+                        <a href="#">
+                          <img src="images/svg/layer.svg" alt="" />
+                        </a>
+                      </p>
+                    </div>
+                    <div class="zapas__result">3:1</div>
                   </div>
-                  <div class="extraliga-adresar__adresa">
-                     <h6>ADRESA</h6>
-                     <p>Václava Jiřikovského 165/23,</p>
-                     <p>70030 Ostrava-Jih, Dubina</p>
+                  <div class="zapas__item">
+                    <div class="zapas__info">
+                      <h4>SKST Stavoimpex Hodonín</h4>
+                      <h4>SF SKK El Niňo Praha</h4>
+                      <p>
+                        Extraliga mužů / 12.8.2021 / 15:30 /
+                        <a href="#">
+                          <img src="images/svg/layer.svg" alt="" />
+                        </a>
+                      </p>
+                    </div>
+                    <div class="zapas__result">3:1</div>
                   </div>
+                  <div class="zapas__item">
+                    <div class="zapas__info">
+                      <h4>SKST Stavoimpex Hodonín</h4>
+                      <h4>SF SKK El Niňo Praha</h4>
+                      <p>
+                        Extraliga mužů / 12.8.2021 / 15:30 /
+                        <a href="#">
+                          <img src="images/svg/layer.svg" alt="" />
+                        </a>
+                      </p>
+                    </div>
+                    <div class="zapas__result">3:1</div>
                   </div>
-                  <div class="extraliga-adresar__row">
-                     <div class="extraliga-adresar__box">
-                        <div class="extraliga-adresar__item">
-                           <div class="hp-extraliga__img">
-                              <img src="images/content/liga-3.png" alt="">
-                           </div>
-                           <h4>SKST HODONÍN</h4>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
-                              <p>
-                                 <b>František Mikulecký</b>
-                              </p>
-                              <p>+420 737 124287</p>
-                              <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
-   
-                           </div>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>HERNÍ VYBAVENÍ</h6>
-                              <p>
-                                 <b>Míčky:</b> STIGA Perform 40+, plast, bílá
-                              </p>
-                              <p>
-                                 <b>Stoly:</b> STIGA, EXPERT ROLLER, modrá
-                              </p>
-                           </div>
-                           <div class="extraliga-adresar__adresa">
-                              <h6>herna</h6>
-                              <p>
-                                 <b>Schválil:</b> Česká asociace stolního tenisu
-                              </p>
-                              <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
-                              <p>u nákupního centra Futurum</p>
-                              <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="extraliga-adresar__box">
-                        <div class="extraliga-adresar__item">
-                           <div class="hp-extraliga__img">
-                              <img src="images/content/liga-3.png" alt="">
-                           </div>
-                           <h4>SKST HODONÍN</h4>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
-                              <p>
-                                 <b>František Mikulecký</b>
-                              </p>
-                              <p>+420 737 124287</p>
-                              <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
-   
-                           </div>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>HERNÍ VYBAVENÍ</h6>
-                              <p>
-                                 <b>Míčky:</b> STIGA Perform 40+, plast, bílá
-                              </p>
-                              <p>
-                                 <b>Stoly:</b> STIGA, EXPERT ROLLER, modrá
-                              </p>
-                           </div>
-                           <div class="extraliga-adresar__adresa">
-                              <h6>herna</h6>
-                              <p>
-                                 <b>Schválil:</b> Česká asociace stolního tenisu
-                              </p>
-                              <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
-                              <p>u nákupního centra Futurum</p>
-                              <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="extraliga-adresar__box">
-                        <div class="extraliga-adresar__item">
-                           <div class="hp-extraliga__img">
-                              <img src="images/content/liga-3.png" alt="">
-                           </div>
-                           <h4>SKST HODONÍN</h4>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
-                              <p>
-                                 <b>František Mikulecký</b>
-                              </p>
-                              <p>+420 737 124287</p>
-                              <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
-   
-                           </div>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>HERNÍ VYBAVENÍ</h6>
-                              <p>
-                                 <b>Míčky:</b> STIGA Perform 40+, plast, bílá
-                              </p>
-                              <p>
-                                 <b>Stoly:</b> STIGA, EXPERT ROLLER, modrá
-                              </p>
-                           </div>
-                           <div class="extraliga-adresar__adresa">
-                              <h6>herna</h6>
-                              <p>
-                                 <b>Schválil:</b> Česká asociace stolního tenisu
-                              </p>
-                              <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
-                              <p>u nákupního centra Futurum</p>
-                              <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="extraliga-adresar__box">
-                        <div class="extraliga-adresar__item">
-                           <div class="hp-extraliga__img">
-                              <img src="images/content/liga-3.png" alt="">
-                           </div>
-                           <h4>SKST HODONÍN</h4>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
-                              <p>
-                                 <b>František Mikulecký</b>
-                              </p>
-                              <p>+420 737 124287</p>
-                              <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
-   
-                           </div>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>HERNÍ VYBAVENÍ</h6>
-                              <p>
-                                 <b>Míčky:</b> STIGA Perform 40+, plast, bílá
-                              </p>
-                              <p>
-                                 <b>Stoly:</b> STIGA, EXPERT ROLLER, modrá
-                              </p>
-                           </div>
-                           <div class="extraliga-adresar__adresa">
-                              <h6>herna</h6>
-                              <p>
-                                 <b>Schválil:</b> Česká asociace stolního tenisu
-                              </p>
-                              <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
-                              <p>u nákupního centra Futurum</p>
-                              <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="extraliga-adresar__box">
-                        <div class="extraliga-adresar__item">
-                           <div class="hp-extraliga__img">
-                              <img src="images/content/liga-3.png" alt="">
-                           </div>
-                           <h4>SKST HODONÍN</h4>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
-                              <p>
-                                 <b>František Mikulecký</b>
-                              </p>
-                              <p>+420 737 124287</p>
-                              <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
-   
-                           </div>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>HERNÍ VYBAVENÍ</h6>
-                              <p>
-                                 <b>Míčky:</b> STIGA Perform 40+, plast, bílá
-                              </p>
-                              <p>
-                                 <b>Stoly:</b> STIGA, EXPERT ROLLER, modrá
-                              </p>
-                           </div>
-                           <div class="extraliga-adresar__adresa">
-                              <h6>herna</h6>
-                              <p>
-                                 <b>Schválil:</b> Česká asociace stolního tenisu
-                              </p>
-                              <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
-                              <p>u nákupního centra Futurum</p>
-                              <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="extraliga-adresar__box">
-                        <div class="extraliga-adresar__item">
-                           <div class="hp-extraliga__img">
-                              <img src="images/content/liga-3.png" alt="">
-                           </div>
-                           <h4>SKST HODONÍN</h4>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
-                              <p>
-                                 <b>František Mikulecký</b>
-                              </p>
-                              <p>+420 737 124287</p>
-                              <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
-   
-                           </div>
-                           <div class="extraliga-adresar__vedouci">
-                              <h6>HERNÍ VYBAVENÍ</h6>
-                              <p>
-                                 <b>Míčky:</b> STIGA Perform 40+, plast, bílá
-                              </p>
-                              <p>
-                                 <b>Stoly:</b> STIGA, EXPERT ROLLER, modrá
-                              </p>
-                           </div>
-                           <div class="extraliga-adresar__adresa">
-                              <h6>herna</h6>
-                              <p>
-                                 <b>Schválil:</b> Česká asociace stolního tenisu
-                              </p>
-                              <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
-                              <p>u nákupního centra Futurum</p>
-                              <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="zapas__item">
+                    <div class="zapas__info">
+                      <h4>SKST Stavoimpex Hodonín</h4>
+                      <h4>SF SKK El Niňo Praha</h4>
+                      <p>
+                        Extraliga mužů / 12.8.2021 / 15:30 /
+                        <a href="#">
+                          <img src="images/svg/layer.svg" alt="" />
+                        </a>
+                      </p>
+                    </div>
+                    <div class="zapas__result">3:1</div>
                   </div>
-               </div>
-            
-            </div>   
-         </div>
-       
+                  <div class="zapas__item">
+                    <div class="zapas__info">
+                      <h4>SKST Stavoimpex Hodonín</h4>
+                      <h4>SF SKK El Niňo Praha</h4>
+                      <p>
+                        Extraliga mužů / 12.8.2021 / 15:30 /
+                        <a href="#">
+                          <img src="images/svg/layer.svg" alt="" />
+                        </a>
+                      </p>
+                    </div>
+                    <div class="zapas__result">3:1</div>
+                  </div>
+                </div>
+                <a class="link" href="#">PŘEHLED UTKÁNÍ</a>
+              </div>
+              <div class="zapas-page__statistics-col">
+                <h3>TABULKA</h3>
+                <div class="zapas-page__table">
+                  <table>
+                    <tr>
+                      <th class="num">P.</th>
+                      <th class="team">TÝM</th>
+                      <th>Z</th>
+                      <th>SKÓRE</th>
+                      <th>B</th>
+                    </tr>
+                    <tr>
+                      <td class="num">1.</td>
+                      <td class="team">
+                        <a href="#">HB Ostrov</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">2.</td>
+                      <td class="team">
+                        <a href="#">SKST Cheb</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">3.</td>
+                      <td class="team">
+                        <a href="#">KT Praha</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">4.</td>
+                      <td class="team">
+                        <a href="#">TTC ENFIREEX OSTRAVA</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">5.</td>
+                      <td class="team">
+                        <a href="#">SKST Charvát Havířov</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+
+                    <tr>
+                      <td class="num">6.</td>
+                      <td class="team">
+                        <a href="#">TJ Ostrava KST</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">7.</td>
+                      <td class="team">
+                        <a href="#">TJ Sokol PP Hradec Králové 2</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">8.</td>
+                      <td class="team">
+                        <a href="#">SKST Stavoimpex Hodonín</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">9.</td>
+                      <td class="team">
+                        <a href="#">SF SKK El Niňo Praha</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                    <tr>
+                      <td class="num">10.</td>
+                      <td class="team">
+                        <a href="#">SKST Liberec</a>
+                      </td>
+                      <td>18</td>
+                      <td>54:12</td>
+                      <td>54</td>
+                    </tr>
+                  </table>
+                </div>
+                <a class="link" href="#">kompletní tabulka</a>
+              </div>
+            </div>
+
+            <section class="hp-cast">
+              <h3>související články</h3>
+              <div class="top-clanky__row">
+                <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                    <div class="clanek__img">
+                      <img src="images/content/tv-2.jpg" alt="" />
+                    </div>
+                    <div class="clanek__info">
+                      <h3>Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl</h3>
+                      <span>14.7.2021</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                    <div class="clanek__img">
+                      <img src="images/content/tv-3.jpg" alt="" />
+                    </div>
+                    <div class="clanek__info">
+                      <h3>Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže</h3>
+                      <span>14.7.2021</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                    <div class="clanek__img">
+                      <img src="images/content/tv-5.jpg" alt="" />
+                    </div>
+                    <div class="clanek__info">
+                      <h3>Český stolní tenis na olympiádách – Rio de Janeiro 2016</h3>
+                      <span>14.7.2021</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                    <div class="clanek__img">
+                      <img src="images/content/tv-2.jpg" alt="" />
+                    </div>
+                    <div class="clanek__info">
+                      <h3>Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl</h3>
+                      <span>14.7.2021</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                    <div class="clanek__img">
+                      <img src="images/content/tv-3.jpg" alt="" />
+                    </div>
+                    <div class="clanek__info">
+                      <h3>Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže</h3>
+                      <span>14.7.2021</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="clanek">
+                  <a class="clanek__link" href="article.html">
+                    <div class="clanek__img">
+                      <img src="images/content/tv-5.jpg" alt="" />
+                    </div>
+                    <div class="clanek__info">
+                      <h3>Český stolní tenis na olympiádách – Rio de Janeiro 2016</h3>
+                      <span>14.7.2021</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+            <a class="link" href="clanky.html">DALŠÍ ZPRÁVY</a>
+          </div>
+
+          <div class="extraliga" id="tabulky">
+            <form class="form__filtr" action="">
+              <select class="select" name="tabulka" id="tabulka">
+                <option>Tabulka základní části</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+              </select>
+              <select class="select" name="kole" id="kole">
+                <option>Po 18. kole</option>
+                <option>Reprezentace 1</option>
+                <option>Reprezentace 2</option>
+                <option>Reprezentace 3</option>
+              </select>
+            </form>
+            <div class="extraliga-tabulky">
+              <div class="extraliga-tabulky__scroll">
+                <table>
+                  <tr>
+                    <th class="num">P</th>
+                    <th class="team">DRUŽSTVO</th>
+                    <th>pu</th>
+                    <th>v</th>
+                    <th>r</th>
+                    <th>P</th>
+                    <th>K</th>
+                    <th>Skóre</th>
+                    <th class="elo">B</th>
+                    <th>ÚSD</th>
+                    <th>ÚSV</th>
+                    <th>VěkØ</th>
+                    <th>Série</th>
+                    <th>Úsp1+</th>
+                    <th>Úsp2+</th>
+                    <th>Úsp1-</th>
+                    <th>Úsp2-</th>
+                  </tr>
+                  <tr>
+                    <td class="num">1.</td>
+                    <td class="team">
+                      <a href="#">
+                        <img src="images/svg/einino.svg" alt="" />
+                        TJ Sokol PP Hradec Králové 2</a
+                      >
+                    </td>
+                    <td>18</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>64:23</td>
+                    <td class="elo">72</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>23</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td class="num">2.</td>
+                    <td class="team">
+                      <a href="#">
+                        <img src="images/content/hodonin.jpg" alt="" />
+                        SKST Stavoimpex Hodonín</a
+                      >
+                    </td>
+                    <td>18</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>64:23</td>
+                    <td class="elo">72</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>23</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td class="num">3.</td>
+                    <td class="team">
+                      <a href="#">
+                        <img src="" alt="" />
+                        SF SKK El Niňo Praha</a
+                      >
+                    </td>
+                    <td>18</td>
+                    <td>12</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>64:23</td>
+                    <td class="elo">72</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>23</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+              </div>
+              <h3>M ČR družstev (play-off)</h3>
+              <div class="extraliga-tabulky__inner">
+                <div class="extraliga-tabulky__col">
+                  <div class="extraliga-tabulky__box">
+                    <div class="extraliga-tabulky__item">
+                      <div class="extraliga-tabulky__left">
+                        <a href="#" class="win">HB Ostrov</a>
+                        <a href="#">TJ Sokol PP Hradec Králové 2</a>
+                        <div class="extraliga-tabulky__time">
+                          <a href="#">3:1</a>
+                          <a href="#">2:2</a>
+                          <a href="#">3:1</a>
+                        </div>
+                      </div>
+                      <a href="#" class="extraliga-tabulky__result"> 2:1 </a>
+                    </div>
+                    <div class="extraliga-tabulky__item">
+                      <div class="extraliga-tabulky__left">
+                        <a href="#" class="win">KT Praha</a>
+                        <a href="#">SKST Stavoimpex Hodonín</a>
+                        <div class="extraliga-tabulky__time">
+                          <a href="#">3:1</a>
+                          <a href="#">2:2</a>
+                          <a href="#">3:1</a>
+                        </div>
+                      </div>
+                      <a href="#" class="extraliga-tabulky__result"> 2:1 </a>
+                    </div>
+                  </div>
+                  <div class="extraliga-tabulky__box">
+                    <div class="extraliga-tabulky__item">
+                      <div class="extraliga-tabulky__left">
+                        <a href="#">HB Ostrov</a>
+                        <a href="#" class="win">TJ Sokol PP Hradec Králové 2</a>
+                        <div class="extraliga-tabulky__time">
+                          <a href="#">1:3</a>
+                          <a href="#">3:2</a>
+                          <a href="#">1:3</a>
+                        </div>
+                      </div>
+                      <a href="#" class="extraliga-tabulky__result"> 1:2 </a>
+                    </div>
+                    <div class="extraliga-tabulky__item">
+                      <div class="extraliga-tabulky__left">
+                        <a href="#" class="win">SKST Charvát Havířov</a>
+                        <a href="#">SF SKK El Niňo Praha</a>
+                        <div class="extraliga-tabulky__time">
+                          <a href="#">3:1</a>
+                          <a href="#">3:1</a>
+                        </div>
+                      </div>
+                      <a href="#" class="extraliga-tabulky__result"> 2:0 </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="extraliga-tabulky__midle">
+                  <div class="extraliga-tabulky__item">
+                    <div class="extraliga-tabulky__left">
+                      <a href="#" class="win">HB Ostrov</a>
+                      <a href="#">KT PRAHA</a>
+                      <div class="extraliga-tabulky__time">
+                        <a href="#">3:1</a>
+                        <a href="#">3:1</a>
+                      </div>
+                    </div>
+                    <a href="#" class="extraliga-tabulky__result"> 2:0 </a>
+                  </div>
+                  <div class="extraliga-tabulky__item">
+                    <div class="extraliga-tabulky__left">
+                      <a href="#">TJ Sokol PP Hradec Králové 2</a>
+                      <a href="#" class="win">SKST Charvát Havířov</a>
+                      <div class="extraliga-tabulky__time">
+                        <a href="#">3:1</a>
+                        <a href="#">0:3</a>
+                        <a href="#">2:3</a>
+                      </div>
+                    </div>
+                    <a href="#" class="extraliga-tabulky__result"> 1:2 </a>
+                  </div>
+                </div>
+                <div class="extraliga-tabulky__final">
+                  <div class="extraliga-tabulky__item">
+                    <div class="extraliga-tabulky__left">
+                      <a href="#" class="win">HB Ostrov</a>
+                      <a href="#">SKST Charvát Havířov</a>
+                      <div class="extraliga-tabulky__time">
+                        <a href="#">3:1</a>
+                        <a href="#">3:1</a>
+                      </div>
+                    </div>
+                    <a href="#" class="extraliga-tabulky__result"> 2:0 </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="extraliga" id="utkani">
+            <form class="form__filtr" action="">
+              <select class="select" name="sezona" id="sezona">
+                <option>Extraliga mužů 2021/22</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+              </select>
+              <select class="select" name="cast" id="cast">
+                <option>Základní část</option>
+                <option>Reprezentace 1</option>
+                <option>Reprezentace 2</option>
+                <option>Reprezentace 3</option>
+              </select>
+              <select class="select" name="dvouhra" id="druz">
+                <option>Všechna družstva</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+              </select>
+              <select class="select" name="utkan" id="zapasy">
+                <option>Všechny zápasy</option>
+                <option>Reprezentace 1</option>
+                <option>Reprezentace 2</option>
+                <option>Reprezentace 3</option>
+              </select>
+            </form>
+            <div class="extraliga-utkani">
+              <h3>1. kolo</h3>
+              <div class="zapas__box">
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+              </div>
+              <h3>2. kolo</h3>
+              <div class="zapas__box">
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+              </div>
+              <h3>3. kolo</h3>
+              <div class="zapas__box">
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+                <div class="zapas__item">
+                  <div class="zapas__info">
+                    <h4>SKST Stavoimpex Hodonín</h4>
+                    <h4>SF SKK El Niňo Praha</h4>
+                    <p>
+                      Extraliga mužů / 12.8.2021 / 15:30 /
+                      <a href="#">
+                        <img src="images/svg/layer.svg" alt="" />
+                      </a>
+                    </p>
+                  </div>
+                  <div class="zapas__result">3:1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="extraliga" id="statistiky">
+            <form class="form__filtr" action="">
+              <select class="select" name="sezona" id="druzstva">
+                <option>Všechna družstva</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+              </select>
+              <select class="select" name="cast" id="cast">
+                <option>Základní část</option>
+                <option>Reprezentace 1</option>
+                <option>Reprezentace 2</option>
+                <option>Reprezentace 3</option>
+              </select>
+              <select class="select" name="dvouhra" id="dvouhra">
+                <option>Dvouhra</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+              </select>
+              <select class="select" name="utkan" id="utkan">
+                <option>Všechna odehraná utkání</option>
+                <option>Reprezentace 1</option>
+                <option>Reprezentace 2</option>
+                <option>Reprezentace 3</option>
+              </select>
+            </form>
+            <div class="extraliga-statistiky">
+              <table>
+                <tr>
+                  <th class="num">P</th>
+                  <th class="player">hráč</th>
+                  <th class="nar">Nar.</th>
+                  <th class="druz">družstvo</th>
+                  <th>ÚSP.</th>
+                  <th>skóre</th>
+                  <th>RANK.</th>
+                  <th class="elo">ELO</th>
+                  <th>ELO (STAB)</th>
+                  <th>SETY+</th>
+                  <th>SETY-</th>
+                  <th>ÚSP1+</th>
+                  <th>ÚSP2+</th>
+                  <th>ÚSP1-</th>
+                  <th>ÚSP2-</th>
+                </tr>
+                <tr>
+                  <td class="num">1.</td>
+                  <td class="player">
+                    <a href="#"> Tymofieiev Oleksandr </a>
+                  </td>
+                  <td class="nar">1991</td>
+                  <td class="druz">
+                    <a href="#"> TJ Sokol PP Hradec Králové 2 </a>
+                  </td>
+                  <td>94%</td>
+                  <td>45:23</td>
+                  <td>1</td>
+                  <td class="elo">2235</td>
+                  <td>2132</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>78%</td>
+                  <td>65%</td>
+                  <td>35%</td>
+                  <td>44%</td>
+                </tr>
+                <tr>
+                  <td class="num">2.</td>
+                  <td class="player">
+                    <a href="#"> Obešlo Michal </a>
+                  </td>
+                  <td class="nar">1991</td>
+                  <td class="druz">
+                    <a href="#">HB Ostrov</a>
+                  </td>
+                  <td>94%</td>
+                  <td>45:23</td>
+                  <td>1</td>
+                  <td class="elo">2235</td>
+                  <td>2132</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>78%</td>
+                  <td>65%</td>
+                  <td>35%</td>
+                  <td>44%</td>
+                </tr>
+                <tr>
+                  <td class="num">3.</td>
+                  <td class="player">
+                    <a href="#"> Prokopcov Dmitrij </a>
+                  </td>
+                  <td class="nar">1991</td>
+                  <td class="druz">
+                    <a href="#">HB Ostrov</a>
+                  </td>
+                  <td>94%</td>
+                  <td>45:23</td>
+                  <td>1</td>
+                  <td class="elo">2235</td>
+                  <td>2132</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>78%</td>
+                  <td>65%</td>
+                  <td>35%</td>
+                  <td>44%</td>
+                </tr>
+                <tr>
+                  <td class="num">4.</td>
+                  <td class="player">
+                    <a href="#"> Tymofieiev Oleksandr </a>
+                  </td>
+                  <td class="nar">1991</td>
+                  <td class="druz">
+                    <a href="#">TJ Sokol PP Hradec Králové 2</a>
+                  </td>
+                  <td>94%</td>
+                  <td>45:23</td>
+                  <td>1</td>
+                  <td class="elo">2235</td>
+                  <td>2132</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>78%</td>
+                  <td>65%</td>
+                  <td>35%</td>
+                  <td>44%</td>
+                </tr>
+                <tr>
+                  <td class="num">5.</td>
+
+                  <td class="player">
+                    <a href="#"> Obešlo Michal </a>
+                  </td>
+                  <td class="nar">1991</td>
+                  <td class="druz">
+                    <a href="#">HB Ostrov</a>
+                  </td>
+                  <td>94%</td>
+                  <td>45:23</td>
+                  <td>1</td>
+                  <td class="elo">2235</td>
+                  <td>2132</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>78%</td>
+                  <td>65%</td>
+                  <td>35%</td>
+                  <td>44%</td>
+                </tr>
+                <tr>
+                  <td class="num">6.</td>
+
+                  <td class="player">
+                    <a href="#"> Prokopcov Dmitrij </a>
+                  </td>
+                  <td class="nar">1991</td>
+                  <td class="druz">
+                    <a href="#">HB Ostrov</a>
+                  </td>
+                  <td>94%</td>
+                  <td>45:23</td>
+                  <td>1</td>
+                  <td class="elo">2235</td>
+                  <td>2132</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>78%</td>
+                  <td>65%</td>
+                  <td>35%</td>
+                  <td>44%</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="extraliga" id="adresar">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d163930.50325744558!2d14.325540071912187!3d50.05980578023404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b939c0970798b%3A0x400af0f66164090!2sPraha!5e0!3m2!1scs!2scz!4v1633473253294!5m2!1scs!2scz"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="extraliga-adresar">
+              <div class="extraliga-adresar__liga">
+                <h4>Extraliga mužů</h4>
+                <div class="extraliga-adresar__vedouci">
+                  <h6>vedoucí soutěže</h6>
+                  <p>
+                    <b>Miroslav Henžel</b>
+                  </p>
+                  <p>+420 724 049092</p>
+                  <a href="mailto:henzel.miroslav@seznam.cz">henzel.miroslav@seznam.cz</a>
+                </div>
+                <div class="extraliga-adresar__adresa">
+                  <h6>ADRESA</h6>
+                  <p>Václava Jiřikovského 165/23,</p>
+                  <p>70030 Ostrava-Jih, Dubina</p>
+                </div>
+              </div>
+              <div class="extraliga-adresar__row">
+                <div class="extraliga-adresar__box">
+                  <div class="extraliga-adresar__item">
+                    <div class="hp-extraliga__img">
+                      <img src="images/content/liga-3.png" alt="" />
+                    </div>
+                    <h4>SKST HODONÍN</h4>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
+                      <p>
+                        <b>František Mikulecký</b>
+                      </p>
+                      <p>+420 737 124287</p>
+                      <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
+                    </div>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>HERNÍ VYBAVENÍ</h6>
+                      <p><b>Míčky:</b> STIGA Perform 40+, plast, bílá</p>
+                      <p><b>Stoly:</b> STIGA, EXPERT ROLLER, modrá</p>
+                    </div>
+                    <div class="extraliga-adresar__adresa">
+                      <h6>herna</h6>
+                      <p><b>Schválil:</b> Česká asociace stolního tenisu</p>
+                      <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
+                      <p>u nákupního centra Futurum</p>
+                      <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="extraliga-adresar__box">
+                  <div class="extraliga-adresar__item">
+                    <div class="hp-extraliga__img">
+                      <img src="images/content/liga-3.png" alt="" />
+                    </div>
+                    <h4>SKST HODONÍN</h4>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
+                      <p>
+                        <b>František Mikulecký</b>
+                      </p>
+                      <p>+420 737 124287</p>
+                      <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
+                    </div>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>HERNÍ VYBAVENÍ</h6>
+                      <p><b>Míčky:</b> STIGA Perform 40+, plast, bílá</p>
+                      <p><b>Stoly:</b> STIGA, EXPERT ROLLER, modrá</p>
+                    </div>
+                    <div class="extraliga-adresar__adresa">
+                      <h6>herna</h6>
+                      <p><b>Schválil:</b> Česká asociace stolního tenisu</p>
+                      <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
+                      <p>u nákupního centra Futurum</p>
+                      <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="extraliga-adresar__box">
+                  <div class="extraliga-adresar__item">
+                    <div class="hp-extraliga__img">
+                      <img src="images/content/liga-3.png" alt="" />
+                    </div>
+                    <h4>SKST HODONÍN</h4>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
+                      <p>
+                        <b>František Mikulecký</b>
+                      </p>
+                      <p>+420 737 124287</p>
+                      <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
+                    </div>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>HERNÍ VYBAVENÍ</h6>
+                      <p><b>Míčky:</b> STIGA Perform 40+, plast, bílá</p>
+                      <p><b>Stoly:</b> STIGA, EXPERT ROLLER, modrá</p>
+                    </div>
+                    <div class="extraliga-adresar__adresa">
+                      <h6>herna</h6>
+                      <p><b>Schválil:</b> Česká asociace stolního tenisu</p>
+                      <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
+                      <p>u nákupního centra Futurum</p>
+                      <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="extraliga-adresar__box">
+                  <div class="extraliga-adresar__item">
+                    <div class="hp-extraliga__img">
+                      <img src="images/content/liga-3.png" alt="" />
+                    </div>
+                    <h4>SKST HODONÍN</h4>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
+                      <p>
+                        <b>František Mikulecký</b>
+                      </p>
+                      <p>+420 737 124287</p>
+                      <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
+                    </div>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>HERNÍ VYBAVENÍ</h6>
+                      <p><b>Míčky:</b> STIGA Perform 40+, plast, bílá</p>
+                      <p><b>Stoly:</b> STIGA, EXPERT ROLLER, modrá</p>
+                    </div>
+                    <div class="extraliga-adresar__adresa">
+                      <h6>herna</h6>
+                      <p><b>Schválil:</b> Česká asociace stolního tenisu</p>
+                      <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
+                      <p>u nákupního centra Futurum</p>
+                      <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="extraliga-adresar__box">
+                  <div class="extraliga-adresar__item">
+                    <div class="hp-extraliga__img">
+                      <img src="images/content/liga-3.png" alt="" />
+                    </div>
+                    <h4>SKST HODONÍN</h4>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
+                      <p>
+                        <b>František Mikulecký</b>
+                      </p>
+                      <p>+420 737 124287</p>
+                      <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
+                    </div>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>HERNÍ VYBAVENÍ</h6>
+                      <p><b>Míčky:</b> STIGA Perform 40+, plast, bílá</p>
+                      <p><b>Stoly:</b> STIGA, EXPERT ROLLER, modrá</p>
+                    </div>
+                    <div class="extraliga-adresar__adresa">
+                      <h6>herna</h6>
+                      <p><b>Schválil:</b> Česká asociace stolního tenisu</p>
+                      <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
+                      <p>u nákupního centra Futurum</p>
+                      <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="extraliga-adresar__box">
+                  <div class="extraliga-adresar__item">
+                    <div class="hp-extraliga__img">
+                      <img src="images/content/liga-3.png" alt="" />
+                    </div>
+                    <h4>SKST HODONÍN</h4>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>ORGANIZAČNÍ PRACOVNÍK</h6>
+                      <p>
+                        <b>František Mikulecký</b>
+                      </p>
+                      <p>+420 737 124287</p>
+                      <a href="mailto:fr.mikulecky@seznam.cz">fr.mikulecky@seznam.cz</a>
+                    </div>
+                    <div class="extraliga-adresar__vedouci">
+                      <h6>HERNÍ VYBAVENÍ</h6>
+                      <p><b>Míčky:</b> STIGA Perform 40+, plast, bílá</p>
+                      <p><b>Stoly:</b> STIGA, EXPERT ROLLER, modrá</p>
+                    </div>
+                    <div class="extraliga-adresar__adresa">
+                      <h6>herna</h6>
+                      <p><b>Schválil:</b> Česká asociace stolního tenisu</p>
+                      <a href="#">Lipová alej 4110/23B, 695 01 Hodonín</a>
+                      <p>u nákupního centra Futurum</p>
+                      <a href="#">49°50'7.112"N, 18°16'7.999"E</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-   </main>
+    </main>
 
-
-   <div class="hp-partners">
+    <div class="hp-partners">
       <div class="container">
-         <div class="hp-partners__inner">
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/1.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/2.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/3.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/4.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/5.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/6.png" alt="">
-               </a>
-            </div>
+        <div class="hp-partners__inner">
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/1.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/2.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/3.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/4.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/5.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/6.png" alt="" />
+            </a>
+          </div>
 
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/7.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/8.png" alt="">
-               </a>
-            </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/7.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/8.png" alt="" />
+            </a>
+          </div>
 
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/9.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/10.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/11.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/12.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/13.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/14.png" alt="">
-               </a>
-            </div>
-
-         </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/9.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/10.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/11.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/12.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/13.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/14.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <!-- footer start  -->
-   <footer class="footer">
+    <!-- footer start  -->
+    <footer class="footer">
       <a class="footer__logo" href="#">
-         <img src="images/svg/footer-logo.svg" alt="">
+        <img src="images/svg/footer-logo.svg" alt="" />
       </a>
       <ul class="footer__list">
-         <li>
-            <a href="#">Cookies</a>
-         </li>
-         <li>
-            <a href="#">Copyright</a>
-         </li>
-         <li>
-            <a href="#">Fakturační údaje</a>
-         </li>
-         <li>
-            <a href="#">Podmínky použití</a>
-         </li>
-         <li>
-            <a href="#">Obchodní podmínky</a>
-         </li>
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Copyright</a>
+        </li>
+        <li>
+          <a href="#">Fakturační údaje</a>
+        </li>
+        <li>
+          <a href="#">Podmínky použití</a>
+        </li>
+        <li>
+          <a href="#">Obchodní podmínky</a>
+        </li>
       </ul>
       <ul class="social">
-         <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/facebook.svg" alt="">
-            </a>
-         </li>
-         <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/twitter.svg" alt="">
-            </a>
-         </li>
-         <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/youtube.svg" alt="">
-            </a>
-         </li>
-         <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/instagram.svg" alt="">
-            </a>
-         </li>
-         <li class="social__item">
-            <a class="social__link" href="#">
-               <img src="images/svg/flickr.svg" alt="">
-            </a>
-         </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/facebook.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/twitter.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/youtube.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/instagram.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/flickr.svg" alt="" />
+          </a>
+        </li>
       </ul>
       <p>
-         © Česká asociace stolního tenisu & <a href="https://esportsmedia.cz/">eSportsmedia</a> s.r.o
+        © Česká asociace stolního tenisu & <a href="https://esportsmedia.cz/">eSportsmedia</a> s.r.o
       </p>
+    </footer>
 
-   </footer>
-  
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="js/libs.min.js"></script>
-   <script src="js/light-gallery.js"></script>
-   <script src="js/timer.js"></script>
-   <script src="js/main.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/light-gallery.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
