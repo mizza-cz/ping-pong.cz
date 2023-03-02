@@ -143,6 +143,7 @@
     .hrac-page_statistiky .druzstvo-page__soupiska table th,
     .hrac-page_statistiky .druzstvo-page__soupiska table td {
       max-width: max-content;
+      min-width: 50px;
       &:first-child {
         max-width: 200px;
       }
