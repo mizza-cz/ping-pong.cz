@@ -138,11 +138,11 @@
 @media (max-width: 740px) {
   .hrac-page {
     .druzstvo-page__soupiska table {
-      width: 900px;
+      width: max-content;
     }
     .hrac-page_statistiky .druzstvo-page__soupiska table th,
     .hrac-page_statistiky .druzstvo-page__soupiska table td {
-      max-width: 30px;
+      max-width: max-content;
       &:first-child {
         max-width: 200px;
       }
