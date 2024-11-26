@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ping-pong.cz</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Ping-pong.cz</title>
-   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-   integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/libs.min.css">
-   <link rel="stylesheet" href="css/lightgallery.css">
-   <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-   <!-- <div id="overlay">
+  <body>
+    <!-- <div id="overlay">
      
       <div class="popup popup--youtube">
          
@@ -32,8 +37,8 @@
       </div>
    </div> -->
 
-   <!-- popup -->
-   <!-- <div id="overlay">
+    <!-- popup -->
+    <!-- <div id="overlay">
       <div class="popup">
         <h1>popup</h1>
         <p>
@@ -44,300 +49,425 @@
           <button class="close" title="zavřít" onclick="document.getElementById('overlay').style.display='none';"></button>
       </div>
   </div> -->
-   <!-- popup -->
+    <!-- popup -->
 
-
-   <header class="header">
+    <header class="header">
       <div class="container">
-         <div class="head">
-            <a class="head__logo" href="index.html">
-               <img class="white-logo" src="images/logo.png" alt="">
-               <img class="dark-logo" src="images/dark-logo.png" alt="">
-            </a>
-            <nav class="head__menu">
-               <ul class="head__list">
-                  <li>
-                     <a class="active" href="#">
-                        <span>Český stolní tenis</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <span>STIS</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.89543 0.89543 0 2 0H12C13.1046 0 14 0.89543 14 2V10C14 11.1046 13.1046 12 12 12H9.7808L9.903 12.4887L10.7071 13.2929C10.9931 13.5789 11.0787 14.009 10.9239 14.3827C10.7691 14.7563 10.4045 15 10 15H4.00003C3.59557 15 3.23093 14.7563 3.07615 14.3827C2.92137 14.009 3.00692 13.5789 3.29292 13.2929L4.09706 12.4887L4.21925 12H2C0.89543 12 0 11.1046 0 10V2ZM5.7713 9C5.75657 8.9997 5.74189 8.9997 5.72725 9H2V2H12V9H8.2728C8.2582 8.9997 8.2435 8.9997 8.2288 9H5.7713Z" fill="#E3003C"/>
-                        </svg>
-                        <span>ping-pong TV</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="hp-cast.html">
-                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M12 3C12 4.65685 10.6569 6 9 6C7.34315 6 6 4.65685 6 3C6 1.34315 7.34315 0 9 0C10.6569 0 12 1.34315 12 3Z" fill="#E3003C"/>
-                           <path d="M17 5C17 6.10457 16.1046 7 15 7C13.8954 7 13 6.10457 13 5C13 3.89543 13.8954 3 15 3C16.1046 3 17 3.89543 17 5Z" fill="#E3003C"/>
-                           <path d="M13 12C13 9.7909 11.2091 8 9 8C6.79086 8 5 9.7909 5 12V15H13V12Z" fill="#E3003C"/>
-                           <path d="M5 5C5 6.10457 4.10457 7 3 7C1.89543 7 1 6.10457 1 5C1 3.89543 1.89543 3 3 3C4.10457 3 5 3.89543 5 5Z" fill="#E3003C"/>
-                           <path d="M15 15V12C15 10.9459 14.7282 9.9552 14.2507 9.0943C14.4902 9.0327 14.7413 9 15 9C16.6569 9 18 10.3431 18 12V15H15Z" fill="#E3003C"/>
-                           <path d="M3.74926 9.0943C3.27185 9.9552 3 10.9459 3 12V15H0V12C0 10.3431 1.34315 9 3 9C3.25871 9 3.50977 9.0327 3.74926 9.0943Z" fill="#E3003C"/>
-                           </svg>
-                        <span>ČAST</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#">
-                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M0 10V13C0 14.6569 3.13401 16 7 16C10.866 16 14 14.6569 14 13V10C14 11.6569 10.866 13 7 13C3.13401 13 0 11.6569 0 10Z" fill="#E3003C"/>
-                           <path d="M0 5V8C0 9.6569 3.13401 11 7 11C10.866 11 14 9.6569 14 8V5C14 6.65685 10.866 8 7 8C3.13401 8 0 6.65685 0 5Z" fill="#E3003C"/>
-                           <path d="M14 3C14 4.65685 10.866 6 7 6C3.13401 6 0 4.65685 0 3C0 1.34315 3.13401 0 7 0C10.866 0 14 1.34315 14 3Z" fill="#E3003C"/>
-                           </svg>
-                        <span>REGISTR</span>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-            <ul class="social">
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
-                     <img class="social__icon" src="images/svg/facebook.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/facebook-head.svg" >
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
-                     <img class="social__icon" src="images/svg/twitter.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/twitter-head.svg" >
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw">
-                     <img class="social__icon" src="images/svg/youtube.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/youtube-head.svg" >
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
-                     <img class="social__icon" src="images/svg/instagram.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="">
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a target="_blank" class="social__link" href="https://www.flickr.com/photos/czechtabletennis/albums">
-                     <img class="social__icon" src="images/svg/flickr.svg" alt="">
-                     <img class="social__icon--head" src="images/svg/flickr-head.svg" >
-                  </a>
-               </li>
+        <div class="head">
+          <a class="head__logo" href="index.html">
+            <!-- <img class="white-logo" src="images/logo.png" alt="">
+               <img class="dark-logo" src="images/dark-logo.png" alt=""> -->
+            <img src="images/svg/logo-1.svg" alt="" />
+          </a>
+          <nav class="head__menu">
+            <ul class="head__list">
+              <li>
+                <a class="active" href="#">
+                  <span>Český stolní tenis</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>STIS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="14"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 2C0 0.89543 0.89543 0 2 0H12C13.1046 0 14 0.89543 14 2V10C14 11.1046 13.1046 12 12 12H9.7808L9.903 12.4887L10.7071 13.2929C10.9931 13.5789 11.0787 14.009 10.9239 14.3827C10.7691 14.7563 10.4045 15 10 15H4.00003C3.59557 15 3.23093 14.7563 3.07615 14.3827C2.92137 14.009 3.00692 13.5789 3.29292 13.2929L4.09706 12.4887L4.21925 12H2C0.89543 12 0 11.1046 0 10V2ZM5.7713 9C5.75657 8.9997 5.74189 8.9997 5.72725 9H2V2H12V9H8.2728C8.2582 8.9997 8.2435 8.9997 8.2288 9H5.7713Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>ping-pong TV</span>
+                </a>
+              </li>
+              <li>
+                <a href="hp-cast.html">
+                  <svg
+                    width="18"
+                    height="15"
+                    viewBox="0 0 18 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C12 4.65685 10.6569 6 9 6C7.34315 6 6 4.65685 6 3C6 1.34315 7.34315 0 9 0C10.6569 0 12 1.34315 12 3Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M17 5C17 6.10457 16.1046 7 15 7C13.8954 7 13 6.10457 13 5C13 3.89543 13.8954 3 15 3C16.1046 3 17 3.89543 17 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M13 12C13 9.7909 11.2091 8 9 8C6.79086 8 5 9.7909 5 12V15H13V12Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M5 5C5 6.10457 4.10457 7 3 7C1.89543 7 1 6.10457 1 5C1 3.89543 1.89543 3 3 3C4.10457 3 5 3.89543 5 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M15 15V12C15 10.9459 14.7282 9.9552 14.2507 9.0943C14.4902 9.0327 14.7413 9 15 9C16.6569 9 18 10.3431 18 12V15H15Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M3.74926 9.0943C3.27185 9.9552 3 10.9459 3 12V15H0V12C0 10.3431 1.34315 9 3 9C3.25871 9 3.50977 9.0327 3.74926 9.0943Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>ČAST</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 10V13C0 14.6569 3.13401 16 7 16C10.866 16 14 14.6569 14 13V10C14 11.6569 10.866 13 7 13C3.13401 13 0 11.6569 0 10Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M0 5V8C0 9.6569 3.13401 11 7 11C10.866 11 14 9.6569 14 8V5C14 6.65685 10.866 8 7 8C3.13401 8 0 6.65685 0 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M14 3C14 4.65685 10.866 6 7 6C3.13401 6 0 4.65685 0 3C0 1.34315 3.13401 0 7 0C10.866 0 14 1.34315 14 3Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>REGISTR</span>
+                </a>
+              </li>
             </ul>
-            <div class="head__btn">
-               <img src="images/svg//ellipsis-v-solid.svg" alt="">
-            </div>
-         </div>
-        
+          </nav>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.facebook.com/CeskyPingPong/"
+              >
+                <img class="social__icon" src="images/svg/facebook.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/facebook-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+                <img class="social__icon" src="images/svg/twitter.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/twitter-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw"
+              >
+                <img class="social__icon" src="images/svg/youtube.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/youtube-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.instagram.com/cesky_pingpong/"
+              >
+                <img class="social__icon" src="images/svg/instagram.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.flickr.com/photos/czechtabletennis/albums"
+              >
+                <img class="social__icon" src="images/svg/flickr.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/flickr-head.svg" />
+              </a>
+            </li>
+          </ul>
+          <div class="head__btn">
+            <img src="images/svg//ellipsis-v-solid.svg" alt="" />
+          </div>
+        </div>
       </div>
       <div class="header__bottom">
         <div class="container">
-           
-         <div class="mob-menu">
+          <div class="mob-menu">
             <div class="mob-menu__btn"></div>
           </div>
-           <div class="header__inner">
-           
+          <div class="header__inner">
             <nav class="navbar">
-               <ul class="navbar__menu">
-                  <li class="navbar__menu-list">
-                     <a href="soutez.html" class="navbar__menu-item">
-                        Soutěže
-                     </a>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <a href="reprezentace.html" class="navbar__menu-item">
-                        Reprezentace
-                     </a>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        MLÁDEŽ
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="#">link 1</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        Žebříčky
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="#">link 1</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        Akce
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="#">link 1</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <div class="navbar__menu-item">
-                        Média
-                     </div>
-                     <ul class="dropdown-menu">
-                        <li class="dropdown-menu__list">
-                          <a href="fotogalerie.html">Fotogalerie</a>
-                        </li>
-                        <li class="dropdown-menu__list">
-                           <a href="#">link 2 dadas dsada sdas das dsa</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 3</a>
-                         </li>
-                         <li class="dropdown-menu__list">
-                           <a href="#">link 4</a>
-                         </li>
-                     </ul>
-                  </li>
-                  <li class="navbar__menu-list">
-                     <a href="partneri.html" class="navbar__menu-item">
-                        Partneři
-                     </a>
-                   
-                  </li>
-               </ul>
+              <ul class="navbar__menu">
+                <li class="navbar__menu-list">
+                  <a href="soutez.html" class="navbar__menu-item"> Soutěže </a>
+                </li>
+                <li class="navbar__menu-list">
+                  <a href="reprezentace.html" class="navbar__menu-item"> Reprezentace </a>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">MLÁDEŽ</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Žebříčky</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Akce</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Média</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <a href="partneri.html" class="navbar__menu-item"> Partneři </a>
+                </li>
+              </ul>
             </nav>
             <div class="user-menu">
-               <a href="#" class="search-togle js-search-inline-toggle" role="button" aria-haspopup="true">
-                  <i class="fas fa-search"></i>
-               </a>
-               <a  class="user-menu__item js-theme-toggle" href="#">
-                  <svg class="user-menu__item--white" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M16 11.0757C14.9493 11.5509 13.7829 11.8154 12.5548 11.8154C7.93228 11.8154 4.18495 8.06809 4.18495 3.4455C4.18495 2.21725 4.44951 1.05079 4.92476 0C2.02067 1.31328 0 4.23579 0 7.63024C0 12.2528 3.74733 16.0001 8.3699 16.0001C11.7642 16.0001 14.6867 13.9796 16 11.0757Z" fill="white"/>
-                     </svg>
-                     <svg class="user-menu__item--dark" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z" fill="#fff" fill-rule="evenodd"/></svg>
-               </a>
-               <div class="notification-box">
-                  <a class="user-menu__item js-notification-toggle" aria-haspopup="true" aria-expanded="false" id="notification-menu" href="notifikace.html">
-                     <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z" fill="white"/>
-                        <path d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z" fill="white"/>
-                        </svg>
-                        <span class="notification_point"></span>
-                  </a>
-                  <ul class="notification-popup d-none js-notification-popup" aria-labelledby="notification-menu">
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                     <li>
-                        <a href="#">Testovací text notifikace</a>
-                     </li>
-                  </ul>
-               </div>
-               <script async src="js/notification.js"></script>
-               <a class="user-menu__item" href="#">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z" fill="white"/>
-                     </svg>
-               </a>
+              <a
+                href="#"
+                class="search-togle js-search-inline-toggle"
+                role="button"
+                aria-haspopup="true"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a class="user-menu__item js-theme-toggle" href="#">
+                <svg
+                  class="user-menu__item--white"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 11.0757C14.9493 11.5509 13.7829 11.8154 12.5548 11.8154C7.93228 11.8154 4.18495 8.06809 4.18495 3.4455C4.18495 2.21725 4.44951 1.05079 4.92476 0C2.02067 1.31328 0 4.23579 0 7.63024C0 12.2528 3.74733 16.0001 8.3699 16.0001C11.7642 16.0001 14.6867 13.9796 16 11.0757Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  class="user-menu__item--dark"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z"
+                    fill="#fff"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <div class="notification-box">
+                <a
+                  class="user-menu__item js-notification-toggle"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  id="notification-menu"
+                  href="notifikace.html"
+                >
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="notification_point"></span>
+                </a>
+                <ul
+                  class="notification-popup d-none js-notification-popup"
+                  aria-labelledby="notification-menu"
+                >
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                  <li>
+                    <a href="#">Testovací text notifikace</a>
+                  </li>
+                </ul>
+              </div>
+              <script async src="js/notification.js"></script>
+              <a class="user-menu__item" href="#">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
             </div>
-            
-           </div>
+          </div>
         </div>
       </div>
-      <div class="search  d-none js-search-inline-wrapper" role="search">
-         <div class="search__content">
-             <form action="vyhledavani.html" class="search__form" method="GET">
-                 <div class="search__form-row">
-                     <input type="search" class="form-control" placeholder="Co hledáte?" aria-label="Hledej na ping-pong.cz" autofocus />
-                     <input type="submit" value="hledat" class="btn link" />
-                     <button aria-label="Hledat" class="btn btn-icon">
-                        <i class="fas fa-search"></i>
-                     </button>
-                 </div>
-             </form>
-             <button aria-lable="Zavřít hledaní" class="btn-link js-search-inline-toggle">
-                
-                 <svg  aria-hidden="true" focusable="false" data-prefix="far" data-icon="times-circle" class="svg-inline--fa fa-times-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
-             </button>
-         </div>
-         <div class="search__tags">
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>
-            <a href="" class="tag">tag</a>                                
-         </div>
-     </div>
-     <script async src="js/search-inline.js"></script>
-   </header>
-<!-- scoarboard start  -->
-   <section class="scoarboard">
+      <div class="search d-none js-search-inline-wrapper" role="search">
+        <div class="search__content">
+          <form action="vyhledavani.html" class="search__form" method="GET">
+            <div class="search__form-row">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Co hledáte?"
+                aria-label="Hledej na ping-pong.cz"
+                autofocus
+              />
+              <input type="submit" value="hledat" class="btn link" />
+              <button aria-label="Hledat" class="btn btn-icon">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <button aria-lable="Zavřít hledaní" class="btn-link js-search-inline-toggle">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="times-circle"
+              class="svg-inline--fa fa-times-circle fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="search__tags">
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+        </div>
+      </div>
+      <script async src="js/search-inline.js"></script>
+    </header>
+    <!-- scoarboard start  -->
+    <section class="scoarboard">
       <div class="scoarboard__inner">
-         <div class="scoarboard__item scoarboard__item--before">
+        <div class="scoarboard__item scoarboard__item--before">
           <div class="scoarboard__wrap">
             <div class="scoarboard__box">
-               <h6>před zápaseM</h6>
+              <h6>před zápaseM</h6>
               <div class="scoarboard__tym">
                 <h4>TJ Ostrava KST</h4>
                 <h4>HB Ostrov</h4>
@@ -345,38 +475,60 @@
               <p>Extraliga mužů / 12.8.2021 / 15:30</p>
             </div>
             <div class="scoarboard__result">
-               <a href="#"><span>0:0</span></a>
-               <a href="#">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM11.3321 7.75192C10.8718 7.44507 10.2799 7.41646 9.79221 7.67749C9.30447 7.93852 9 8.44681 9 9V15C9 15.5532 9.30447 16.0616 9.79221 16.3226C10.2799 16.5836 10.8718 16.5549 11.3321 16.2481L15.832 13.2481C16.2493 12.9699 16.5 12.5016 16.5 12C16.5 11.4985 16.2493 11.0301 15.832 10.7519L11.3321 7.75192Z" fill="#9B9B9F"/>
-                     </svg>
-               </a>
+              <a href="#"><span>0:0</span></a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM11.3321 7.75192C10.8718 7.44507 10.2799 7.41646 9.79221 7.67749C9.30447 7.93852 9 8.44681 9 9V15C9 15.5532 9.30447 16.0616 9.79221 16.3226C10.2799 16.5836 10.8718 16.5549 11.3321 16.2481L15.832 13.2481C16.2493 12.9699 16.5 12.5016 16.5 12C16.5 11.4985 16.2493 11.0301 15.832 10.7519L11.3321 7.75192Z"
+                    fill="#9B9B9F"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
-         </div>
-       
-         <div class="scoarboard__item scoarboard__item--before">
-            <div class="scoarboard__wrap">
-              <div class="scoarboard__box">
-                 <h6>před zápaseM</h6>
-                <div class="scoarboard__tym">
-                   <h4>SKST Liberec</h4>
-                   <h4>TTC ENFIREEX OSTRAVA</h4>
-                </div>
-                <p>Extraliga mužů / 12.8.2021 / 15:30</p>
+        </div>
+
+        <div class="scoarboard__item scoarboard__item--before">
+          <div class="scoarboard__wrap">
+            <div class="scoarboard__box">
+              <h6>před zápaseM</h6>
+              <div class="scoarboard__tym">
+                <h4>SKST Liberec</h4>
+                <h4>TTC ENFIREEX OSTRAVA</h4>
               </div>
-              <div class="scoarboard__result">
-                 <a href="#"><span>0:0</span></a>
-                 <a href="#">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                       <path fill-rule="evenodd" clip-rule="evenodd" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM11.3321 7.75192C10.8718 7.44507 10.2799 7.41646 9.79221 7.67749C9.30447 7.93852 9 8.44681 9 9V15C9 15.5532 9.30447 16.0616 9.79221 16.3226C10.2799 16.5836 10.8718 16.5549 11.3321 16.2481L15.832 13.2481C16.2493 12.9699 16.5 12.5016 16.5 12C16.5 11.4985 16.2493 11.0301 15.832 10.7519L11.3321 7.75192Z" fill="#9B9B9F"/>
-                       </svg>
-                 </a>
-              </div>
+              <p>Extraliga mužů / 12.8.2021 / 15:30</p>
             </div>
-           </div>
-        
-         <!-- <div class="scoarboard__item scoarboard__item--live">
+            <div class="scoarboard__result">
+              <a href="#"><span>0:0</span></a>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24ZM11.3321 7.75192C10.8718 7.44507 10.2799 7.41646 9.79221 7.67749C9.30447 7.93852 9 8.44681 9 9V15C9 15.5532 9.30447 16.0616 9.79221 16.3226C10.2799 16.5836 10.8718 16.5549 11.3321 16.2481L15.832 13.2481C16.2493 12.9699 16.5 12.5016 16.5 12C16.5 11.4985 16.2493 11.0301 15.832 10.7519L11.3321 7.75192Z"
+                    fill="#9B9B9F"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="scoarboard__item scoarboard__item--live">
             <div class="scoarboard__wrap">
               <div class="scoarboard__box">
                  <h6>ŽIVĚ</h6>
@@ -524,737 +676,842 @@
             </div>
            </div> -->
       </div>
-   </section>
-   <!-- scoarboard end  -->
-   <!-- top clanky  -->
-   <section class="top-clanky">
+    </section>
+    <!-- scoarboard end  -->
+    <!-- top clanky  -->
+    <section class="top-clanky">
       <div class="container">
-         <div class="top-clanky__inner">
-            <div class="top-clanek">
-               <a href="article.html">
-                  <div class="top-clanek__img">
-                     <img src="images/content/top-clanek.jpg" alt="">
-                  </div>
-                <div class="top-clanek__info">
-                  <h1>
-                     PAVEL ŠIRUČEK BY SI V TOKIU RÁD ZAHRÁL S JAPONCEM HARIMOTEM
-                  </h1>
-                  <span>
-                     14.7.2021
-                  </span>
-                </div>
-               </a>
-            </div>
+        <div class="top-clanky__inner">
+          <div class="top-clanek">
+            <a href="article.html">
+              <div class="top-clanek__img">
+                <img src="images/content/top-clanek.jpg" alt="" />
+              </div>
+              <div class="top-clanek__info">
+                <h1>PAVEL ŠIRUČEK BY SI V TOKIU RÁD ZAHRÁL S JAPONCEM HARIMOTEM</h1>
+                <span> 14.7.2021 </span>
+              </div>
+            </a>
+          </div>
           <div class="top-clanky__scroll">
             <div class="top-clanky__row">
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/clanek.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h4>
-                           V PINGCASTU SPECIÁL LUBOMÍR JANČAŘÍK CHVÁLÍ OLYMPIJSKOU KOLEKCI
-                        </h4>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/clanek.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h4>
-                           DOROSTENECKÉ TITULY OBHÁJILY TÝMY TJ OSTRAVA KST A HODONÍNA
-                        </h4>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/clanek.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h4>
-                           V MUŽSKÉ DVOUHŘE ZŮSTAL UŽ JEN LUBOMÍR JANČAŘÍK
-                        </h4>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
-               <div class="clanek">
-                  <a class="clanek__link" href="article.html">
-                     <div class="clanek__img">
-                        <img src="images/content/clanek.jpg" alt="">
-                     </div>
-                     <div class="clanek__info">
-                        <h4>
-                           SLAPNIČKA S KACÁLKOVOU VYHRÁLI KATEGORIE U19 NA VELKÉ CENĚ PRAHY…
-                        </h4>
-                        <span>14.7.2021</span>
-                     </div>
-                  </a>
-               </div>
+              <div class="clanek">
+                <a class="clanek__link" href="article.html">
+                  <div class="clanek__img">
+                    <img src="images/content/clanek.jpg" alt="" />
+                  </div>
+                  <div class="clanek__info">
+                    <h4>V PINGCASTU SPECIÁL LUBOMÍR JANČAŘÍK CHVÁLÍ OLYMPIJSKOU KOLEKCI</h4>
+                    <span>14.7.2021</span>
+                  </div>
+                </a>
+              </div>
+              <div class="clanek">
+                <a class="clanek__link" href="article.html">
+                  <div class="clanek__img">
+                    <img src="images/content/clanek.jpg" alt="" />
+                  </div>
+                  <div class="clanek__info">
+                    <h4>DOROSTENECKÉ TITULY OBHÁJILY TÝMY TJ OSTRAVA KST A HODONÍNA</h4>
+                    <span>14.7.2021</span>
+                  </div>
+                </a>
+              </div>
+              <div class="clanek">
+                <a class="clanek__link" href="article.html">
+                  <div class="clanek__img">
+                    <img src="images/content/clanek.jpg" alt="" />
+                  </div>
+                  <div class="clanek__info">
+                    <h4>V MUŽSKÉ DVOUHŘE ZŮSTAL UŽ JEN LUBOMÍR JANČAŘÍK</h4>
+                    <span>14.7.2021</span>
+                  </div>
+                </a>
+              </div>
+              <div class="clanek">
+                <a class="clanek__link" href="article.html">
+                  <div class="clanek__img">
+                    <img src="images/content/clanek.jpg" alt="" />
+                  </div>
+                  <div class="clanek__info">
+                    <h4>SLAPNIČKA S KACÁLKOVOU VYHRÁLI KATEGORIE U19 NA VELKÉ CENĚ PRAHY…</h4>
+                    <span>14.7.2021</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-         </div>
-         <a class="link" href="clanky.html">další články</a>
+        </div>
+        <a class="link" href="clanky.html">další články</a>
       </div>
-   </section>
-   <!-- top clanky end  -->
-   <!-- tv section -->
-   <section class="hp-tv">
+    </section>
+    <!-- top clanky end  -->
+    <!-- tv section -->
+    <section class="hp-tv">
       <a href="#" class="timer__wrapper">
-         <h3>Další TV Přenos za</h3>
-         <div class="calednar-date">
-            <div id="js-timer" class="timer" role="timer" aria-label="A timer, counting down to {{eventName}}" data-endtime="2022-10-30 17:00:00">
-               <span class="timer__item" id="timer-days">
-                  <span class="timer__value">{{days}}</span>
-                  <span class="timer__label timer__label-days">Dní</span>
-               </span>
-               <span class="timer__item" id="timer-hours">
-                  <span class="timer__value">{{hours}}</span>
-                  <span class="timer__label">Hodin</span>
-               </span>
-               <span class="timer__item" id="timer-minutes">
-                  <span class="timer__value">{{minutes}}</span>
-                  <span class="timer__label">Minut</span>
-               </span>
-               <span class="timer__item" id="timer-seconds">
-                  <span class="timer__value">{{seconds}}</span>
-                  <span class="timer__label">Sekund</span>
-               </span>
-            </div>
-           </div>
-         </a>
+        <h3>Další TV Přenos za</h3>
+        <div class="calednar-date">
+          <div
+            id="js-timer"
+            class="timer"
+            role="timer"
+            aria-label="A timer, counting down to {{eventName}}"
+            data-endtime="2022-10-30 17:00:00"
+          >
+            <span class="timer__item" id="timer-days">
+              <span class="timer__value">{{days}}</span>
+              <span class="timer__label timer__label-days">Dní</span>
+            </span>
+            <span class="timer__item" id="timer-hours">
+              <span class="timer__value">{{hours}}</span>
+              <span class="timer__label">Hodin</span>
+            </span>
+            <span class="timer__item" id="timer-minutes">
+              <span class="timer__value">{{minutes}}</span>
+              <span class="timer__label">Minut</span>
+            </span>
+            <span class="timer__item" id="timer-seconds">
+              <span class="timer__value">{{seconds}}</span>
+              <span class="timer__label">Sekund</span>
+            </span>
+          </div>
+        </div>
+      </a>
       <div class="hp-tv__slider">
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-1.jpg" alt="">
-                 
-               </div>
-               <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
-               <span>Extraliga žen / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-2.jpg" alt="">
-                  <span>ŽIVĚ</span>
-               </div>
-               <h3>HB Ostrov – KT Praha</h3>
-               <span>Extraliga mužů / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-3.jpg" alt="">
-                  <span>ŽIVĚ</span>
-               </div>
-               <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
-               <span>Extraliga mužů / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-4.jpg" alt="">
-                 
-               </div>
-               <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
-               <span>Extraliga žen / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item"> 
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-5.jpg" alt="">
-                  <span>ŽIVĚ</span>
-               </div>
-               <h3>SF SKK El Niňo Praha – TTC</h3>
-               <span>Extraliga žen / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-1.jpg" alt="">
-                 
-               </div>
-               <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
-               <span>Extraliga žen / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-2.jpg" alt="">
-                  <span>ŽIVĚ</span>
-               </div>
-               <h3>HB Ostrov – KT Praha</h3>
-               <span>Extraliga mužů / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-3.jpg" alt="">
-                  <span>ŽIVĚ</span>
-               </div>
-               <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
-               <span>Extraliga mužů / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item">
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-4.jpg" alt="">
-                 
-               </div>
-               <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
-               <span>Extraliga žen / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-         <div class="hp-tv__item"> 
-            <a href="tv-page.html">
-               <div class="hp-tv__img">
-                  <img src="images/content/tv-5.jpg" alt="">
-                  <span>ŽIVĚ</span>
-               </div>
-               <h3>SF SKK El Niňo Praha – TTC</h3>
-               <span>Extraliga žen / 12.8.2021 / 15:30</span>
-            </a>
-         </div>
-     
-
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-1.jpg" alt="" />
+            </div>
+            <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+            <span>Extraliga žen / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-2.jpg" alt="" />
+              <span>ŽIVĚ</span>
+            </div>
+            <h3>HB Ostrov – KT Praha</h3>
+            <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-3.jpg" alt="" />
+              <span>ŽIVĚ</span>
+            </div>
+            <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
+            <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-4.jpg" alt="" />
+            </div>
+            <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+            <span>Extraliga žen / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-5.jpg" alt="" />
+              <span>ŽIVĚ</span>
+            </div>
+            <h3>SF SKK El Niňo Praha – TTC</h3>
+            <span>Extraliga žen / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-1.jpg" alt="" />
+            </div>
+            <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+            <span>Extraliga žen / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-2.jpg" alt="" />
+              <span>ŽIVĚ</span>
+            </div>
+            <h3>HB Ostrov – KT Praha</h3>
+            <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-3.jpg" alt="" />
+              <span>ŽIVĚ</span>
+            </div>
+            <h3>TJ Ostrava KST – SVS Hradec Králové</h3>
+            <span>Extraliga mužů / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-4.jpg" alt="" />
+            </div>
+            <h3>HB Ostrov – TTC ENFIREEX Ostrava</h3>
+            <span>Extraliga žen / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
+        <div class="hp-tv__item">
+          <a href="tv-page.html">
+            <div class="hp-tv__img">
+              <img src="images/content/tv-5.jpg" alt="" />
+              <span>ŽIVĚ</span>
+            </div>
+            <h3>SF SKK El Niňo Praha – TTC</h3>
+            <span>Extraliga žen / 12.8.2021 / 15:30</span>
+          </a>
+        </div>
       </div>
       <a class="link" href="tv-page.html">PING-PONG TV</a>
-   </section>
+    </section>
 
-   <!-- tv section  -->
-   <!-- hp-extraliga start  -->
-   <section class="hp-extraliga">
+    <!-- tv section  -->
+    <!-- hp-extraliga start  -->
+    <section class="hp-extraliga">
       <div class="container">
-         <div class="hp-extraliga__inner">
-            <div class="tabs">
-               <h4 class="tab active link" data-id="1">Extraliga mužů</h4>
-               <h4 class="tab link" data-id="2">Extraliga ŽEN</h4>
+        <div class="hp-extraliga__inner">
+          <div class="tabs">
+            <h4 class="tab active link" data-id="1">Extraliga mužů</h4>
+            <h4 class="tab link" data-id="2">Extraliga ŽEN</h4>
+          </div>
+          <div class="hp-extraliga__content tab-active" id="1">
+            <div class="hp-extraliga__row">
+              <div class="hp-extraliga__col">
+                <h3>nejúspěšnější hráč</h3>
+                <a href="#">
+                  <div class="hp-extraliga__img">
+                    <img src="images/content/liga-1.png" alt="" />
+                  </div>
+                  <h4>Michal Obešlo</h4>
+                  <p>SKST Stavoimpex Hodonín</p>
+                  <span>94,12 %</span>
+                </a>
+              </div>
+              <div class="hp-extraliga__col">
+                <h3>ŽEBŘÍČEK HRÁČŮ</h3>
+                <a href="#">
+                  <div class="hp-extraliga__img">
+                    <img src="images/content/liga-2.png" alt="" />
+                  </div>
+                  <h4>tomáš tregler</h4>
+                  <p>HB Ostrov</p>
+                  <span>2438</span>
+                </a>
+              </div>
+              <div class="hp-extraliga__col">
+                <h3>SÉRIE VÝHER</h3>
+                <a href="#">
+                  <div class="hp-extraliga__img">
+                    <img src="images/content/liga-3.png" alt="" />
+                  </div>
+                  <h4>SKST Hodonín</h4>
+                  <p>1. místo v tabulce</p>
+                  <span>20</span>
+                </a>
+              </div>
             </div>
-            <div class="hp-extraliga__content tab-active" id="1">
-               <div class="hp-extraliga__row">
-                  <div class="hp-extraliga__col">
-                     <h3>nejúspěšnější hráč</h3>
-                     <a href="#">
-                        <div class="hp-extraliga__img">
-                           <img src="images/content/liga-1.png" alt="">
-                        </div>
-                        <h4>Michal Obešlo</h4>
-                        <p>SKST Stavoimpex Hodonín</p>
-                        <span>94,12 %</span>
-                     </a>
-                  </div>
-                  <div class="hp-extraliga__col">
-                     <h3>ŽEBŘÍČEK HRÁČŮ</h3>
-                    <a href="#">
-                     <div class="hp-extraliga__img">
-                        <img src="images/content/liga-2.png" alt="">
-                     </div>
-                     <h4>tomáš tregler</h4>
-                     <p>HB Ostrov</p>
-                     <span>2438</span>
-                    </a>
-                  </div>
-                  <div class="hp-extraliga__col">
-                     <h3>SÉRIE VÝHER</h3>
-                    <a href="#">
-                     <div class="hp-extraliga__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>SKST Hodonín</h4>
-                     <p>1. místo v tabulce</p>
-                     <span>20</span>
-                    </a>
-                  </div>
-               </div>
-               <a class="link" href="#">centrum statistik</a>
+            <a class="link" href="#">centrum statistik</a>
+          </div>
+          <div class="hp-extraliga__content" id="2">
+            <div class="hp-extraliga__row">
+              <div class="hp-extraliga__col">
+                <h3>SÉRIE VÝHER</h3>
+                <div class="hp-extraliga__img">
+                  <img src="images/content/liga-3.png" alt="" />
+                </div>
+                <h4>SKST Hodonín</h4>
+                <p>1. místo v tabulce</p>
+                <span>20</span>
+              </div>
+              <div class="hp-extraliga__col">
+                <h3>SÉRIE VÝHER</h3>
+                <div class="hp-extraliga__img">
+                  <img src="images/content/liga-3.png" alt="" />
+                </div>
+                <h4>SKST Hodonín</h4>
+                <p>1. místo v tabulce</p>
+                <span>20</span>
+              </div>
+              <div class="hp-extraliga__col">
+                <h3>SÉRIE VÝHER</h3>
+                <div class="hp-extraliga__img">
+                  <img src="images/partners/1.png" alt="" />
+                </div>
+                <h4>SKST Hodonín</h4>
+                <p>1. místo v tabulce</p>
+                <span>20</span>
+              </div>
             </div>
-            <div class="hp-extraliga__content" id="2">
-               <div class="hp-extraliga__row">
-                  <div class="hp-extraliga__col">
-                     <h3>SÉRIE VÝHER</h3>
-                     <div class="hp-extraliga__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>SKST Hodonín</h4>
-                     <p>1. místo v tabulce</p>
-                     <span>20</span>
-                  </div>
-                  <div class="hp-extraliga__col">
-                     <h3>SÉRIE VÝHER</h3>
-                     <div class="hp-extraliga__img">
-                        <img src="images/content/liga-3.png" alt="">
-                     </div>
-                     <h4>SKST Hodonín</h4>
-                     <p>1. místo v tabulce</p>
-                     <span>20</span>
-                  </div>
-                  <div class="hp-extraliga__col">
-                     <h3>SÉRIE VÝHER</h3>
-                     <div class="hp-extraliga__img">
-                        <img src="images/partners/1.png" alt="">
-                     </div>
-                     <h4>SKST Hodonín</h4>
-                     <p>1. místo v tabulce</p>
-                     <span>20</span>
-                  </div>
-               </div>
-               <a class="link" href="#">centrum statistik</a>
-            </div>
-         </div>
+            <a class="link" href="#">centrum statistik</a>
+          </div>
+        </div>
       </div>
-   </section>
+    </section>
 
-   <!-- hp-extraliga end  -->
+    <!-- hp-extraliga end  -->
 
-   <div class="ban">
-     <div class="container">
+    <div class="ban">
+      <div class="container">
         <a href="#" class="ban__inner">
-         <img src="" alt="">
+          <img src="" alt="" />
         </a>
-     </div>
-   </div>
-
-   <section class="hp-akce">
-      <div class="container">
-         <h3>AKTUÁLNÍ AKCE</h3>
-         <div class="hp-akce__inner">
-            <div class="hp-akce__item">
-               <a class="hp-akce__link" href="#">
-                  <span>MEZINÁRODNÍ</span>
-                  <h4>Evropské univerzitní hry, 2021</h4>
-                  <p>14. 7. - 27. 7. 2021</p>
-               </a>
-            </div>
-          
-            <div class="hp-akce__item">
-               <a class="hp-akce__link" href="#">
-                  <span>MLÁDEŽ</span>
-                  <h4>ITTF SQY French Para Open 2021</h4>
-                  <p>14. 7. - 27. 7. 2021</p>
-               </a>
-            </div>
-            <div class="hp-akce__item">
-               <a class="hp-akce__link" href="#">
-                  <span>MLÁDEŽ</span>
-                  <h4>WTT Youth Contender Varadzin</h4>
-                  <p>14. 7. - 27. 7. 2021</p>
-               </a>
-            </div>
-            <div class="hp-akce__item">
-               <a class="hp-akce__link" href="#">
-                  <span>MEZINÁRODNÍ</span>
-                  <h4>World Table Tennis Championships Finals</h4>
-                  <p>14. 7. - 27. 7. 2021</p>
-               </a>
-            </div>
-         </div>
-         <a class="link" href="#">TERMÍNOVÁ LISTINA</a>
-      </div>
-   </section>
-
-   <div class="ban">
-      <div class="container">
-         <a href="#" class="ban__inner">
-          <img src="" alt="">
-         </a>
       </div>
     </div>
 
-   <section class="posts">
+    <section class="hp-akce">
       <div class="container">
-         <div class="posts__inner">
-            <div class="tabs">
-               <h4 class="tab link active" data-id="facebook">
-                  <span>FACEBOOK</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM13.2508 12.5271V19.0557H10.5495V12.5274H9.2V10.2776H10.5495V8.92678C10.5495 7.0914 11.3116 6 13.4766 6H15.279V8.25006H14.1524C13.3096 8.25006 13.2538 8.56447 13.2538 9.15125L13.2508 10.2773H15.2918L15.053 12.5271H13.2508Z" fill="white"/>
-                     </svg>
+        <h3>AKTUÁLNÍ AKCE</h3>
+        <div class="hp-akce__inner">
+          <div class="hp-akce__item">
+            <a class="hp-akce__link" href="#">
+              <span>MEZINÁRODNÍ</span>
+              <h4>Evropské univerzitní hry, 2021</h4>
+              <p>14. 7. - 27. 7. 2021</p>
+            </a>
+          </div>
+
+          <div class="hp-akce__item">
+            <a class="hp-akce__link" href="#">
+              <span>MLÁDEŽ</span>
+              <h4>ITTF SQY French Para Open 2021</h4>
+              <p>14. 7. - 27. 7. 2021</p>
+            </a>
+          </div>
+          <div class="hp-akce__item">
+            <a class="hp-akce__link" href="#">
+              <span>MLÁDEŽ</span>
+              <h4>WTT Youth Contender Varadzin</h4>
+              <p>14. 7. - 27. 7. 2021</p>
+            </a>
+          </div>
+          <div class="hp-akce__item">
+            <a class="hp-akce__link" href="#">
+              <span>MEZINÁRODNÍ</span>
+              <h4>World Table Tennis Championships Finals</h4>
+              <p>14. 7. - 27. 7. 2021</p>
+            </a>
+          </div>
+        </div>
+        <a class="link" href="#">TERMÍNOVÁ LISTINA</a>
+      </div>
+    </section>
+
+    <div class="ban">
+      <div class="container">
+        <a href="#" class="ban__inner">
+          <img src="" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <section class="posts">
+      <div class="container">
+        <div class="posts__inner">
+          <div class="tabs">
+            <h4 class="tab link active" data-id="facebook">
+              <span>FACEBOOK</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM13.2508 12.5271V19.0557H10.5495V12.5274H9.2V10.2776H10.5495V8.92678C10.5495 7.0914 11.3116 6 13.4766 6H15.279V8.25006H14.1524C13.3096 8.25006 13.2538 8.56447 13.2538 9.15125L13.2508 10.2773H15.2918L15.053 12.5271H13.2508Z"
+                  fill="white"
+                />
+              </svg>
             </h4>
-               <h4 class="tab link" data-id="instagram">
-                  <span>INSTAGRTAM</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM9.36164 5.63867C10.0443 5.6076 10.2624 5.6 12.0006 5.6H11.9986C13.7373 5.6 13.9546 5.6076 14.6373 5.63867C15.3186 5.66987 15.784 5.77774 16.192 5.936C16.6133 6.09934 16.9693 6.31801 17.3253 6.67401C17.6813 7.02975 17.9 7.38682 18.064 7.80776C18.2213 8.21469 18.3293 8.67977 18.3613 9.36111C18.392 10.0438 18.4 10.2619 18.4 12.0001C18.4 13.7382 18.392 13.9558 18.3613 14.6385C18.3293 15.3196 18.2213 15.7848 18.064 16.1918C17.9 16.6126 17.6813 16.9697 17.3253 17.3255C16.9697 17.6815 16.6132 17.9007 16.1924 18.0641C15.7852 18.2224 15.3196 18.3303 14.6382 18.3615C13.9556 18.3925 13.7381 18.4001 11.9998 18.4001C10.2618 18.4001 10.0438 18.3925 9.36111 18.3615C8.6799 18.3303 8.21469 18.2224 7.80749 18.0641C7.38682 17.9007 7.02975 17.6815 6.67414 17.3255C6.31827 16.9697 6.09961 16.6126 5.936 16.1917C5.77787 15.7848 5.67 15.3197 5.63867 14.6384C5.60773 13.9557 5.6 13.7382 5.6 12.0001C5.6 10.2619 5.608 10.0436 5.63853 9.36097C5.6692 8.6799 5.7772 8.21469 5.93587 7.80762C6.09987 7.38682 6.31854 7.02975 6.67454 6.67401C7.03028 6.31814 7.38735 6.09947 7.80829 5.936C8.21523 5.77774 8.6803 5.66987 9.36164 5.63867Z" fill="#E3003C"/>
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.4265 6.75331C11.538 6.75313 11.6579 6.75319 11.7873 6.75325L12.0006 6.75331C13.7094 6.75331 13.912 6.75944 14.5868 6.79011C15.2108 6.81864 15.5495 6.92291 15.7751 7.01051C16.0737 7.12651 16.2867 7.26518 16.5105 7.48918C16.7345 7.71319 16.8732 7.92652 16.9895 8.22519C17.0771 8.45053 17.1815 8.7892 17.2099 9.4132C17.2405 10.0879 17.2472 10.2905 17.2472 11.9986C17.2472 13.7066 17.2405 13.9093 17.2099 14.5839C17.1813 15.2079 17.0771 15.5466 16.9895 15.7719C16.8735 16.0706 16.7345 16.2833 16.5105 16.5071C16.2865 16.7311 16.0739 16.8698 15.7751 16.9858C15.5497 17.0738 15.2108 17.1778 14.5868 17.2064C13.9121 17.237 13.7094 17.2437 12.0006 17.2437C10.2917 17.2437 10.0891 17.237 9.41447 17.2064C8.79046 17.1776 8.45179 17.0733 8.22605 16.9857C7.92739 16.8697 7.71405 16.731 7.49005 16.507C7.26604 16.283 7.12738 16.0702 7.01111 15.7714C6.92351 15.5461 6.81911 15.2074 6.79071 14.5834C6.76004 13.9087 6.75391 13.706 6.75391 11.997C6.75391 10.2879 6.76004 10.0863 6.79071 9.4116C6.81924 8.7876 6.92351 8.44893 7.01111 8.22332C7.12711 7.92465 7.26604 7.71132 7.49005 7.48732C7.71405 7.26331 7.92739 7.12465 8.22605 7.00838C8.45166 6.92038 8.79046 6.81638 9.41447 6.78771C10.0049 6.76104 10.2337 6.75304 11.4265 6.75171V6.75331ZM15.4169 7.81599C14.9929 7.81599 14.6489 8.15959 14.6489 8.58373C14.6489 9.00773 14.9929 9.35174 15.4169 9.35174C15.8409 9.35174 16.1849 9.00773 16.1849 8.58373C16.1849 8.15972 15.8409 7.81572 15.4169 7.81572V7.81599ZM8.71393 12C8.71393 10.185 10.1855 8.7134 12.0005 8.71333C13.8156 8.71333 15.2868 10.1849 15.2868 12C15.2868 13.8151 13.8157 15.2861 12.0006 15.2861C10.1855 15.2861 8.71393 13.8151 8.71393 12Z" fill="#E3003C"/>
-                     <path d="M12.0005 9.8667C13.1787 9.8667 14.1339 10.8218 14.1339 12.0001C14.1339 13.1782 13.1787 14.1334 12.0005 14.1334C10.8223 14.1334 9.86719 13.1782 9.86719 12.0001C9.86719 10.8218 10.8223 9.8667 12.0005 9.8667Z" fill="#E3003C"/>
-                     </svg>
-               </h4>
-               <h4 class="tab link" data-id="youtube">
-                  <span>YOUTUBE</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM17.7632 8.28631C18.1468 8.68322 18.272 9.58454 18.272 9.58454C18.272 9.58454 18.4 10.6432 18.4 11.7015V12.694C18.4 13.7527 18.272 14.811 18.272 14.811C18.272 14.811 18.1468 15.7123 17.7632 16.1092C17.3246 16.5787 16.8383 16.6272 16.5635 16.6547C16.5332 16.6577 16.5056 16.6604 16.4808 16.6635C14.6896 16.7959 12 16.8 12 16.8C12 16.8 8.672 16.7689 7.648 16.6684C7.59948 16.6591 7.54067 16.6519 7.47407 16.6437C7.14971 16.604 6.6406 16.5416 6.2364 16.1092C5.8528 15.7123 5.728 14.811 5.728 14.811C5.728 14.811 5.6 13.7527 5.6 12.694V11.7015C5.6 10.6432 5.728 9.58454 5.728 9.58454C5.728 9.58454 5.8528 8.68322 6.2364 8.28631C6.67594 7.81612 7.1627 7.76813 7.43759 7.74103C7.46739 7.73809 7.49471 7.7354 7.5192 7.73244C9.3104 7.6 11.9972 7.6 11.9972 7.6H12.0028C12.0028 7.6 14.6896 7.6 16.4808 7.73244C16.5053 7.7354 16.5326 7.7381 16.5624 7.74104C16.8371 7.76815 17.3241 7.8162 17.7632 8.28631Z" fill="#E3003C"/>
-                     <path d="M10.6784 13.8966L10.678 10.2214L14.1364 12.0654L10.6784 13.8966Z" fill="#E3003C"/>
-                     </svg>
-               </h4>
-               <h4 class="tab link" data-id="twitter">
-                  <span>TWITTER</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM11.6658 10.169L11.6406 9.75375C11.5651 8.67755 12.2282 7.69456 13.2774 7.31323C13.6635 7.17765 14.3182 7.1607 14.7463 7.27934C14.9142 7.33018 15.2331 7.49966 15.4598 7.65219L15.8711 7.93184L16.3243 7.78778C16.5761 7.71151 16.9119 7.5844 17.063 7.49966C17.2057 7.42339 17.3316 7.38102 17.3316 7.40645C17.3316 7.5505 17.021 8.042 16.7608 8.31317C16.4083 8.6945 16.509 8.72839 17.2224 8.47417C17.6505 8.33011 17.6589 8.33011 17.575 8.49112C17.5246 8.57586 17.2644 8.87245 16.9874 9.14362C16.5174 9.60969 16.4922 9.66054 16.4922 10.0503C16.4922 10.652 16.2068 11.9062 15.9214 12.5925C15.3926 13.8806 14.2595 15.211 13.1263 15.8805C11.5315 16.8211 9.40786 17.0584 7.61999 16.5075C7.02404 16.3211 6 15.8466 6 15.7618C6 15.7364 6.31057 15.7025 6.68829 15.694C7.4773 15.6771 8.26631 15.4568 8.93781 15.067L9.39108 14.7958L8.87066 14.6178C8.13201 14.3636 7.46891 13.7789 7.30103 13.2281C7.25067 13.0501 7.26746 13.0417 7.73751 13.0417L8.22434 13.0332L7.81305 12.8383C7.32621 12.5925 6.88134 12.1773 6.66311 11.7536C6.50362 11.4486 6.30218 10.6774 6.36093 10.6181C6.37772 10.5927 6.55399 10.6435 6.75544 10.7113C7.33461 10.9232 7.41015 10.8723 7.0744 10.5164C6.44487 9.87239 6.25181 8.91482 6.55399 8.0081L6.69668 7.60135L7.25067 8.15216C8.38383 9.26226 9.71843 9.92323 11.2461 10.1181L11.6658 10.169Z" fill="#E3003C"/>
-                     </svg>
-               </h4>
-               <h4 class="tab link" data-id="flickr">
-                  <span>FLICKR</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM19.1477 11.8993C19.1477 10.1883 17.7346 8.8 15.9883 8.8C14.2403 8.8 12.8263 10.1883 12.8263 11.8993C12.8263 13.6111 14.2403 14.9994 15.9883 14.9994C17.7346 14.9994 19.1477 13.6111 19.1477 11.8993ZM7.95857 8.8C9.70658 8.8 11.1205 10.1883 11.1205 11.8993C11.1205 13.6111 9.70658 14.9994 7.95857 14.9994C6.21309 14.9994 4.8 13.6111 4.8 11.8993C4.8 10.1883 6.21309 8.8 7.95857 8.8Z" fill="#E3003C"/>
-                     </svg>
-                     
-               </h4>
+            <h4 class="tab link" data-id="instagram">
+              <span>INSTAGRTAM</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM9.36164 5.63867C10.0443 5.6076 10.2624 5.6 12.0006 5.6H11.9986C13.7373 5.6 13.9546 5.6076 14.6373 5.63867C15.3186 5.66987 15.784 5.77774 16.192 5.936C16.6133 6.09934 16.9693 6.31801 17.3253 6.67401C17.6813 7.02975 17.9 7.38682 18.064 7.80776C18.2213 8.21469 18.3293 8.67977 18.3613 9.36111C18.392 10.0438 18.4 10.2619 18.4 12.0001C18.4 13.7382 18.392 13.9558 18.3613 14.6385C18.3293 15.3196 18.2213 15.7848 18.064 16.1918C17.9 16.6126 17.6813 16.9697 17.3253 17.3255C16.9697 17.6815 16.6132 17.9007 16.1924 18.0641C15.7852 18.2224 15.3196 18.3303 14.6382 18.3615C13.9556 18.3925 13.7381 18.4001 11.9998 18.4001C10.2618 18.4001 10.0438 18.3925 9.36111 18.3615C8.6799 18.3303 8.21469 18.2224 7.80749 18.0641C7.38682 17.9007 7.02975 17.6815 6.67414 17.3255C6.31827 16.9697 6.09961 16.6126 5.936 16.1917C5.77787 15.7848 5.67 15.3197 5.63867 14.6384C5.60773 13.9557 5.6 13.7382 5.6 12.0001C5.6 10.2619 5.608 10.0436 5.63853 9.36097C5.6692 8.6799 5.7772 8.21469 5.93587 7.80762C6.09987 7.38682 6.31854 7.02975 6.67454 6.67401C7.03028 6.31814 7.38735 6.09947 7.80829 5.936C8.21523 5.77774 8.6803 5.66987 9.36164 5.63867Z"
+                  fill="#E3003C"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.4265 6.75331C11.538 6.75313 11.6579 6.75319 11.7873 6.75325L12.0006 6.75331C13.7094 6.75331 13.912 6.75944 14.5868 6.79011C15.2108 6.81864 15.5495 6.92291 15.7751 7.01051C16.0737 7.12651 16.2867 7.26518 16.5105 7.48918C16.7345 7.71319 16.8732 7.92652 16.9895 8.22519C17.0771 8.45053 17.1815 8.7892 17.2099 9.4132C17.2405 10.0879 17.2472 10.2905 17.2472 11.9986C17.2472 13.7066 17.2405 13.9093 17.2099 14.5839C17.1813 15.2079 17.0771 15.5466 16.9895 15.7719C16.8735 16.0706 16.7345 16.2833 16.5105 16.5071C16.2865 16.7311 16.0739 16.8698 15.7751 16.9858C15.5497 17.0738 15.2108 17.1778 14.5868 17.2064C13.9121 17.237 13.7094 17.2437 12.0006 17.2437C10.2917 17.2437 10.0891 17.237 9.41447 17.2064C8.79046 17.1776 8.45179 17.0733 8.22605 16.9857C7.92739 16.8697 7.71405 16.731 7.49005 16.507C7.26604 16.283 7.12738 16.0702 7.01111 15.7714C6.92351 15.5461 6.81911 15.2074 6.79071 14.5834C6.76004 13.9087 6.75391 13.706 6.75391 11.997C6.75391 10.2879 6.76004 10.0863 6.79071 9.4116C6.81924 8.7876 6.92351 8.44893 7.01111 8.22332C7.12711 7.92465 7.26604 7.71132 7.49005 7.48732C7.71405 7.26331 7.92739 7.12465 8.22605 7.00838C8.45166 6.92038 8.79046 6.81638 9.41447 6.78771C10.0049 6.76104 10.2337 6.75304 11.4265 6.75171V6.75331ZM15.4169 7.81599C14.9929 7.81599 14.6489 8.15959 14.6489 8.58373C14.6489 9.00773 14.9929 9.35174 15.4169 9.35174C15.8409 9.35174 16.1849 9.00773 16.1849 8.58373C16.1849 8.15972 15.8409 7.81572 15.4169 7.81572V7.81599ZM8.71393 12C8.71393 10.185 10.1855 8.7134 12.0005 8.71333C13.8156 8.71333 15.2868 10.1849 15.2868 12C15.2868 13.8151 13.8157 15.2861 12.0006 15.2861C10.1855 15.2861 8.71393 13.8151 8.71393 12Z"
+                  fill="#E3003C"
+                />
+                <path
+                  d="M12.0005 9.8667C13.1787 9.8667 14.1339 10.8218 14.1339 12.0001C14.1339 13.1782 13.1787 14.1334 12.0005 14.1334C10.8223 14.1334 9.86719 13.1782 9.86719 12.0001C9.86719 10.8218 10.8223 9.8667 12.0005 9.8667Z"
+                  fill="#E3003C"
+                />
+              </svg>
+            </h4>
+            <h4 class="tab link" data-id="youtube">
+              <span>YOUTUBE</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM17.7632 8.28631C18.1468 8.68322 18.272 9.58454 18.272 9.58454C18.272 9.58454 18.4 10.6432 18.4 11.7015V12.694C18.4 13.7527 18.272 14.811 18.272 14.811C18.272 14.811 18.1468 15.7123 17.7632 16.1092C17.3246 16.5787 16.8383 16.6272 16.5635 16.6547C16.5332 16.6577 16.5056 16.6604 16.4808 16.6635C14.6896 16.7959 12 16.8 12 16.8C12 16.8 8.672 16.7689 7.648 16.6684C7.59948 16.6591 7.54067 16.6519 7.47407 16.6437C7.14971 16.604 6.6406 16.5416 6.2364 16.1092C5.8528 15.7123 5.728 14.811 5.728 14.811C5.728 14.811 5.6 13.7527 5.6 12.694V11.7015C5.6 10.6432 5.728 9.58454 5.728 9.58454C5.728 9.58454 5.8528 8.68322 6.2364 8.28631C6.67594 7.81612 7.1627 7.76813 7.43759 7.74103C7.46739 7.73809 7.49471 7.7354 7.5192 7.73244C9.3104 7.6 11.9972 7.6 11.9972 7.6H12.0028C12.0028 7.6 14.6896 7.6 16.4808 7.73244C16.5053 7.7354 16.5326 7.7381 16.5624 7.74104C16.8371 7.76815 17.3241 7.8162 17.7632 8.28631Z"
+                  fill="#E3003C"
+                />
+                <path
+                  d="M10.6784 13.8966L10.678 10.2214L14.1364 12.0654L10.6784 13.8966Z"
+                  fill="#E3003C"
+                />
+              </svg>
+            </h4>
+            <h4 class="tab link" data-id="twitter">
+              <span>TWITTER</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM11.6658 10.169L11.6406 9.75375C11.5651 8.67755 12.2282 7.69456 13.2774 7.31323C13.6635 7.17765 14.3182 7.1607 14.7463 7.27934C14.9142 7.33018 15.2331 7.49966 15.4598 7.65219L15.8711 7.93184L16.3243 7.78778C16.5761 7.71151 16.9119 7.5844 17.063 7.49966C17.2057 7.42339 17.3316 7.38102 17.3316 7.40645C17.3316 7.5505 17.021 8.042 16.7608 8.31317C16.4083 8.6945 16.509 8.72839 17.2224 8.47417C17.6505 8.33011 17.6589 8.33011 17.575 8.49112C17.5246 8.57586 17.2644 8.87245 16.9874 9.14362C16.5174 9.60969 16.4922 9.66054 16.4922 10.0503C16.4922 10.652 16.2068 11.9062 15.9214 12.5925C15.3926 13.8806 14.2595 15.211 13.1263 15.8805C11.5315 16.8211 9.40786 17.0584 7.61999 16.5075C7.02404 16.3211 6 15.8466 6 15.7618C6 15.7364 6.31057 15.7025 6.68829 15.694C7.4773 15.6771 8.26631 15.4568 8.93781 15.067L9.39108 14.7958L8.87066 14.6178C8.13201 14.3636 7.46891 13.7789 7.30103 13.2281C7.25067 13.0501 7.26746 13.0417 7.73751 13.0417L8.22434 13.0332L7.81305 12.8383C7.32621 12.5925 6.88134 12.1773 6.66311 11.7536C6.50362 11.4486 6.30218 10.6774 6.36093 10.6181C6.37772 10.5927 6.55399 10.6435 6.75544 10.7113C7.33461 10.9232 7.41015 10.8723 7.0744 10.5164C6.44487 9.87239 6.25181 8.91482 6.55399 8.0081L6.69668 7.60135L7.25067 8.15216C8.38383 9.26226 9.71843 9.92323 11.2461 10.1181L11.6658 10.169Z"
+                  fill="#E3003C"
+                />
+              </svg>
+            </h4>
+            <h4 class="tab link" data-id="flickr">
+              <span>FLICKR</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM19.1477 11.8993C19.1477 10.1883 17.7346 8.8 15.9883 8.8C14.2403 8.8 12.8263 10.1883 12.8263 11.8993C12.8263 13.6111 14.2403 14.9994 15.9883 14.9994C17.7346 14.9994 19.1477 13.6111 19.1477 11.8993ZM7.95857 8.8C9.70658 8.8 11.1205 10.1883 11.1205 11.8993C11.1205 13.6111 9.70658 14.9994 7.95857 14.9994C6.21309 14.9994 4.8 13.6111 4.8 11.8993C4.8 10.1883 6.21309 8.8 7.95857 8.8Z"
+                  fill="#E3003C"
+                />
+              </svg>
+            </h4>
+          </div>
+          <div class="posts__content tab-active" id="facebook">
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/top-clanek.jpg" alt="" />
+                </div>
+                <p>
+                  České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve
+                  skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně
+                  1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak
+                  přehrály 🇸🇪 Švédky 3:1.
+                </p>
+              </a>
             </div>
-            <div class="posts__content tab-active" id="facebook">
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/top-clanek.jpg" alt="">
-                     </div>
-                     <p>
-                        České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně 1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak přehrály 🇸🇪 Švédky 3:1. 
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-2.jpg" alt="">
-                     </div>
-                     <p>
-                        V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují momentálně s Tureckem. 👀
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-3.jpg" alt="">
-                     </div>
-                     <p>
-                        Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚  Již brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩 #ceskypingpong
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/top-clanek.jpg" alt="">
-                     </div>
-                     <p>
-                        České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně 1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak přehrály 🇸🇪 Švédky 3:1. 
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-2.jpg" alt="">
-                     </div>
-                     <p>
-                        V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují momentálně s Tureckem. 👀
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-3.jpg" alt="">
-                     </div>
-                     <p>
-                        Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚  Již brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩 #ceskypingpong
-                     </p>
-                  </a>
-               </div>
-           
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-2.jpg" alt="" />
+                </div>
+                <p>
+                  V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou
+                  v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují
+                  momentálně s Tureckem. 👀
+                </p>
+              </a>
             </div>
-            <div class="posts__content" id="instagram">
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/clanek.jpg" alt="">
-                     </div>
-                     <p>
-                        České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně 1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak přehrály 🇸🇪 Švédky 3:1. 
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-2.jpg" alt="">
-                     </div>
-                     <p>
-                        V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují momentálně s Tureckem. 👀
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-3.jpg" alt="">
-                     </div>
-                     <p>
-                        Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚  Již brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩 #ceskypingpong
-                     </p>
-                  </a>
-               </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-3.jpg" alt="" />
+                </div>
+                <p>
+                  Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚 Již
+                  brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do
+                  Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩
+                  #ceskypingpong
+                </p>
+              </a>
             </div>
-            <div class="posts__content" id="youtube">
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-1.jpg" alt="">
-                     </div>
-                     <p>
-                        České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně 1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak přehrály 🇸🇪 Švédky 3:1. 
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-2.jpg" alt="">
-                     </div>
-                     <p>
-                        V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují momentálně s Tureckem. 👀
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-3.jpg" alt="">
-                     </div>
-                     <p>
-                        Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚  Již brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩 #ceskypingpong
-                     </p>
-                  </a>
-               </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/top-clanek.jpg" alt="" />
+                </div>
+                <p>
+                  České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve
+                  skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně
+                  1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak
+                  přehrály 🇸🇪 Švédky 3:1.
+                </p>
+              </a>
             </div>
-            <div class="posts__content" id="twitter">
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-1.jpg" alt="">
-                     </div>
-                     <p>
-                        České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně 1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak přehrály 🇸🇪 Švédky 3:1. 
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-2.jpg" alt="">
-                     </div>
-                     <p>
-                        V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují momentálně s Tureckem. 👀
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-3.jpg" alt="">
-                     </div>
-                     <p>
-                        Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚  Již brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩 #ceskypingpong
-                     </p>
-                  </a>
-               </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-2.jpg" alt="" />
+                </div>
+                <p>
+                  V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou
+                  v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují
+                  momentálně s Tureckem. 👀
+                </p>
+              </a>
             </div>
-            <div class="posts__content" id="flickr">
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-1.jpg" alt="">
-                     </div>
-                     <p>
-                        České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně 1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak přehrály 🇸🇪 Švédky 3:1. 
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-2.jpg" alt="">
-                     </div>
-                     <p>
-                        V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují momentálně s Tureckem. 👀
-                     </p>
-                  </a>
-               </div>
-               <div class="post">
-                  <a class="post__link" href="#">
-                     <div class="post__img">
-                        <img src="images/content/post-3.jpg" alt="">
-                     </div>
-                     <p>
-                        Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚  Již brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩 #ceskypingpong
-                     </p>
-                  </a>
-               </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-3.jpg" alt="" />
+                </div>
+                <p>
+                  Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚 Již
+                  brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do
+                  Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩
+                  #ceskypingpong
+                </p>
+              </a>
             </div>
-         </div>
+          </div>
+          <div class="posts__content" id="instagram">
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/clanek.jpg" alt="" />
+                </div>
+                <p>
+                  České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve
+                  skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně
+                  1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak
+                  přehrály 🇸🇪 Švédky 3:1.
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-2.jpg" alt="" />
+                </div>
+                <p>
+                  V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou
+                  v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují
+                  momentálně s Tureckem. 👀
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-3.jpg" alt="" />
+                </div>
+                <p>
+                  Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚 Již
+                  brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do
+                  Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩
+                  #ceskypingpong
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="posts__content" id="youtube">
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-1.jpg" alt="" />
+                </div>
+                <p>
+                  České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve
+                  skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně
+                  1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak
+                  přehrály 🇸🇪 Švédky 3:1.
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-2.jpg" alt="" />
+                </div>
+                <p>
+                  V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou
+                  v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují
+                  momentálně s Tureckem. 👀
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-3.jpg" alt="" />
+                </div>
+                <p>
+                  Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚 Již
+                  brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do
+                  Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩
+                  #ceskypingpong
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="posts__content" id="twitter">
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-1.jpg" alt="" />
+                </div>
+                <p>
+                  České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve
+                  skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně
+                  1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak
+                  přehrály 🇸🇪 Švédky 3:1.
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-2.jpg" alt="" />
+                </div>
+                <p>
+                  V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou
+                  v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují
+                  momentálně s Tureckem. 👀
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-3.jpg" alt="" />
+                </div>
+                <p>
+                  Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚 Již
+                  brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do
+                  Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩
+                  #ceskypingpong
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="posts__content" id="flickr">
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-1.jpg" alt="" />
+                </div>
+                <p>
+                  České juniorky mají za sebou úvodní den na ME v chorvatském Varadžinu! 👋🏻 Ve
+                  skupině A obsadily třetí místo, když nejprve v úvodních zápasech prohrály shodně
+                  1:3 na zápasy s 🇳🇱 Nizozemskem a posléze také s 🇷🇺 Ruskem, na závěr skupiny pak
+                  přehrály 🇸🇪 Švédky 3:1.
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-2.jpg" alt="" />
+                </div>
+                <p>
+                  V Chorvatsku dnes začalo pro české výběry juniorské ME! 💥 Juniorky a junioři jsou
+                  v akci už od dopoledne, Češky zahájily turnaj prohrou s Nizozemskem a Češi bojují
+                  momentálně s Tureckem. 👀
+                </p>
+              </a>
+            </div>
+            <div class="post">
+              <a class="post__link" href="#">
+                <div class="post__img">
+                  <img src="images/content/post-3.jpg" alt="" />
+                </div>
+                <p>
+                  Týdenní přípravný kemp v Havířově nejen pro naše reprezentanty je u konce 🔚 Již
+                  brzy se můžete těšit na rozhovory s olympioniky, kteří se chystají na odlet do
+                  Tokia, a hned několik překvapení, tak sledujte naše sociální sítě 🤩
+                  #ceskypingpong
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-   </section>
+    </section>
 
-   <div class="hp-partners">
+    <div class="hp-partners">
       <div class="container">
-         <div class="hp-partners__inner">
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/1.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/2.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/3.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/4.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/5.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/6.png" alt="">
-               </a>
-            </div>
+        <div class="hp-partners__inner">
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/1.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/2.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/3.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/4.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/5.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/6.png" alt="" />
+            </a>
+          </div>
 
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/7.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/8.png" alt="">
-               </a>
-            </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/7.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/8.png" alt="" />
+            </a>
+          </div>
 
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/9.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/10.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/11.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/12.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/13.png" alt="">
-               </a>
-            </div>
-            <div class="hp-partners__item">
-               <a href="#">
-                  <img src="images/partners/14.png" alt="">
-               </a>
-            </div>
-
-         </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/9.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/10.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/11.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/12.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/13.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/14.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
-   </div>
+    </div>
 
-   <!-- footer start  -->
-   <footer class="footer">
+    <!-- footer start  -->
+    <footer class="footer">
       <a class="footer__logo" href="#">
-         <img src="images/svg/footer-logo.svg" alt="">
+        <img src="images/svg/footer-logo.svg" alt="" />
       </a>
       <ul class="footer__list">
-         <li>
-            <a href="#">Cookies</a>
-         </li>
-         <li>
-            <a href="#">Copyright</a>
-         </li>
-         <li>
-            <a href="#">Fakturační údaje</a>
-         </li>
-         <li>
-            <a href="#">Podmínky použití</a>
-         </li>
-         <li>
-            <a href="#">Obchodní podmínky</a>
-         </li>
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Copyright</a>
+        </li>
+        <li>
+          <a href="#">Fakturační údaje</a>
+        </li>
+        <li>
+          <a href="#">Podmínky použití</a>
+        </li>
+        <li>
+          <a href="#">Obchodní podmínky</a>
+        </li>
       </ul>
       <ul class="social">
-         <li class="social__item">
-            <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
-               <img  src="images/svg/facebook-head.svg" alt="">
-            </a>
-         </li>
-         <li class="social__item">
-            <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
-               <img  src="images/svg/twitter-head.svg" >
-            </a>
-         </li>
-         <li class="social__item">
-            <a target="_blank" class="social__link" href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw">
-               <img  src="images/svg/youtube-head.svg" >
-            </a>
-         </li>
-         <li class="social__item">
-            <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
-               <img  src="images/svg/instagram-head.svg" alt="">
-            </a>
-         </li>
-         <li class="social__item">
-            <a target="_blank" class="social__link" href="https://www.flickr.com/photos/czechtabletennis/albums">
-               <img  src="images/svg/flickr-head.svg" >
-            </a>
-         </li>
+        <li class="social__item">
+          <a target="_blank" class="social__link" href="https://www.facebook.com/CeskyPingPong/">
+            <img src="images/svg/facebook-head.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+            <img src="images/svg/twitter-head.svg" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            target="_blank"
+            class="social__link"
+            href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw"
+          >
+            <img src="images/svg/youtube-head.svg" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a target="_blank" class="social__link" href="https://www.instagram.com/cesky_pingpong/">
+            <img src="images/svg/instagram-head.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a
+            target="_blank"
+            class="social__link"
+            href="https://www.flickr.com/photos/czechtabletennis/albums"
+          >
+            <img src="images/svg/flickr-head.svg" />
+          </a>
+        </li>
       </ul>
       <p>
-         © Česká asociace stolního tenisu & <a href="https://esportsmedia.cz/">eSportsmedia</a> s.r.o
+        © Česká asociace stolního tenisu & <a href="https://esportsmedia.cz/">eSportsmedia</a> s.r.o
       </p>
+    </footer>
 
-   </footer>
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="js/libs.min.js"></script>
-   <script src="js/light-gallery.js"></script>
-   <script src="js/timer.js"></script>
-   <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/light-gallery.js"></script>
+    <script src="js/timer.js"></script>
+    <script type="text/javascript">
       var delay_popup = 1000;
       setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
-</script>
-   <script src="js/main.js"></script>
-</body>
-
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
