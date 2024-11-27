@@ -1,8 +1,8 @@
 .dark-logo {
-  display: none;
+  display: none !important;
 }
 .white-logo {
-  display: block;
+  display: none !important;
 }
 .notification-box {
   margin: 0 6px;
@@ -97,7 +97,9 @@
     }
   }
   &__logo {
-    width: 151px;
+    // width: 151px;
+    // height: 64px;
+    width: 90px;
     height: 64px;
     svg path {
       transition: all 0.4s;
@@ -548,6 +550,24 @@ a.navbar__menu-item {
   min-width: 340px;
 }
 @media (max-width: 940px) {
+  .head__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 220px;
+    padding-left: 16px;
+  }
+  .white-logo {
+    display: block !important;
+  }
+  .theme-dark {
+    .dark-logo {
+      display: block !important;
+    }
+    .white-logo {
+      display: none !important;
+    }
+  }
   .header {
     .container {
       padding: 4px 0;
@@ -594,4 +614,7 @@ a.navbar__menu-item {
 }
 
 @media (max-width: 840px) {
+}
+
+.new-logo {
 }
