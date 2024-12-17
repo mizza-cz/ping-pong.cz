@@ -245,10 +245,13 @@
     flex-direction: column;
     text-align: center;
     p {
+      img {
+        margin: 8px auto !important;
+      }
       a {
         display: block;
         img {
-          margin: 8px auto;
+          margin: 8px auto !important;
         }
       }
     }

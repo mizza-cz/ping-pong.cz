@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ping-pong.cz</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ycb4nfn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="head">
+          <a class="head__logo" href="index.html">
+            <img class="white-logo" src="images/logo.png" alt="" />
+            <img class="dark-logo" src="images/dark-logo.png" alt="" />
+            <img class="new-logo" src="images/svg/logo-1.svg" alt="" />
+          </a>
+          <nav class="head__menu">
+            <ul class="head__list">
+              <li>
+                <a href="#">
+                  <svg
+                    width="14"
+                    height="15"
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 2C0 0.89543 0.89543 0 2 0H12C13.1046 0 14 0.89543 14 2V10C14 11.1046 13.1046 12 12 12H9.7808L9.903 12.4887L10.7071 13.2929C10.9931 13.5789 11.0787 14.009 10.9239 14.3827C10.7691 14.7563 10.4045 15 10 15H4.00003C3.59557 15 3.23093 14.7563 3.07615 14.3827C2.92137 14.009 3.00692 13.5789 3.29292 13.2929L4.09706 12.4887L4.21925 12H2C0.89543 12 0 11.1046 0 10V2ZM5.7713 9C5.75657 8.9997 5.74189 8.9997 5.72725 9H2V2H12V9H8.2728C8.2582 8.9997 8.2435 8.9997 8.2288 9H5.7713Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>ping-pong TV</span>
+                </a>
+              </li>
+              <li>
+                <a href="hp-cast.html">
+                  <svg
+                    width="18"
+                    height="15"
+                    viewBox="0 0 18 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 3C12 4.65685 10.6569 6 9 6C7.34315 6 6 4.65685 6 3C6 1.34315 7.34315 0 9 0C10.6569 0 12 1.34315 12 3Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M17 5C17 6.10457 16.1046 7 15 7C13.8954 7 13 6.10457 13 5C13 3.89543 13.8954 3 15 3C16.1046 3 17 3.89543 17 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M13 12C13 9.7909 11.2091 8 9 8C6.79086 8 5 9.7909 5 12V15H13V12Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M5 5C5 6.10457 4.10457 7 3 7C1.89543 7 1 6.10457 1 5C1 3.89543 1.89543 3 3 3C4.10457 3 5 3.89543 5 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M15 15V12C15 10.9459 14.7282 9.9552 14.2507 9.0943C14.4902 9.0327 14.7413 9 15 9C16.6569 9 18 10.3431 18 12V15H15Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M3.74926 9.0943C3.27185 9.9552 3 10.9459 3 12V15H0V12C0 10.3431 1.34315 9 3 9C3.25871 9 3.50977 9.0327 3.74926 9.0943Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>ČAST</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 10V13C0 14.6569 3.13401 16 7 16C10.866 16 14 14.6569 14 13V10C14 11.6569 10.866 13 7 13C3.13401 13 0 11.6569 0 10Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M0 5V8C0 9.6569 3.13401 11 7 11C10.866 11 14 9.6569 14 8V5C14 6.65685 10.866 8 7 8C3.13401 8 0 6.65685 0 5Z"
+                      fill="#E3003C"
+                    />
+                    <path
+                      d="M14 3C14 4.65685 10.866 6 7 6C3.13401 6 0 4.65685 0 3C0 1.34315 3.13401 0 7 0C10.866 0 14 1.34315 14 3Z"
+                      fill="#E3003C"
+                    />
+                  </svg>
+                  <span>REGISTR</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.facebook.com/CeskyPingPong/"
+              >
+                <img class="social__icon" src="images/svg/facebook.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/facebook-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a target="_blank" class="social__link" href="https://twitter.com/ceskypingpong">
+                <img class="social__icon" src="images/svg/twitter.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/twitter-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.youtube.com/channel/UCuMuj4wLcmv5tzeQwi1GxTw"
+              >
+                <img class="social__icon" src="images/svg/youtube.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/youtube-head.svg" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.instagram.com/cesky_pingpong/"
+              >
+                <img class="social__icon" src="images/svg/instagram.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/instagram-head.svg" alt="" />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                target="_blank"
+                class="social__link"
+                href="https://www.flickr.com/photos/czechtabletennis/albums"
+              >
+                <img class="social__icon" src="images/svg/flickr.svg" alt="" />
+                <img class="social__icon--head" src="images/svg/flickr-head.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="mob-menu">
+            <div class="mob-menu__btn"></div>
+          </div>
+          <div class="header__inner">
+            <nav class="navbar">
+              <ul class="navbar__menu">
+                <li class="navbar__menu-list">
+                  <a href="soutez.html" class="navbar__menu-item"> Soutěže </a>
+                </li>
+                <li class="navbar__menu-list">
+                  <a href="reprezentace.html" class="navbar__menu-item"> Reprezentace </a>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">MLÁDEŽ</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Žebříčky</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Akce</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 1</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <div class="navbar__menu-item">Média</div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-menu__list">
+                      <a href="fotogalerie.html">Fotogalerie</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 2 dadas dsada sdas das dsa</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 3</a>
+                    </li>
+                    <li class="dropdown-menu__list">
+                      <a href="#">link 4</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar__menu-list">
+                  <a href="partneri.html" class="navbar__menu-item"> Partneři </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="user-menu">
+              <a
+                href="#"
+                class="search-togle js-search-inline-toggle"
+                role="button"
+                aria-haspopup="true"
+              >
+                <i class="fas fa-search"></i>
+              </a>
+              <a class="user-menu__item js-theme-toggle" href="#">
+                <svg
+                  class="user-menu__item--white"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 11.0757C14.9493 11.5509 13.7829 11.8154 12.5548 11.8154C7.93228 11.8154 4.18495 8.06809 4.18495 3.4455C4.18495 2.21725 4.44951 1.05079 4.92476 0C2.02067 1.31328 0 4.23579 0 7.63024C0 12.2528 3.74733 16.0001 8.3699 16.0001C11.7642 16.0001 14.6867 13.9796 16 11.0757Z"
+                    fill="white"
+                  />
+                </svg>
+                <svg
+                  class="user-menu__item--dark"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m8 0c.5523 0 1 .44772 1 1v1c0 .55228-.4477 1-1 1-.55228 0-1-.44772-1-1v-1c0-.55228.44772-1 1-1zm4 8c0 2.2091-1.7909 4-4 4-2.20914 0-4-1.7909-4-4 0-2.20914 1.79086-4 4-4 2.2091 0 4 1.79086 4 4zm-.4644 4.9497.7071.7071c.3905.3905 1.0237.3905 1.4142 0s.3905-1.0237 0-1.4142l-.7071-.7071c-.3905-.3905-1.0237-.3905-1.4142 0s-.3905 1.0237 0 1.4142zm2.1212-10.60661c.3905.39053.3905 1.02369 0 1.41422l-.7071.7071c-.3905.39053-1.0237.39053-1.4142 0-.3905-.39052-.3905-1.02369 0-1.41421l.7071-.70711c.3905-.39052 1.0237-.39052 1.4142 0zm1.3432 6.65691c.5523 0 1-.4477 1-1 0-.55228-.4477-1-1-1h-1c-.5523 0-1 .44772-1 1 0 .5523.4477 1 1 1zm-7 4c.5523 0 1 .4477 1 1v1c0 .5523-.4477 1-1 1-.55228 0-1-.4477-1-1v-1c0-.5523.44772-1 1-1zm-4.94969-8.53557c.39052.39053 1.02369.39053 1.41421 0 .39053-.39052.39053-1.02369 0-1.41421l-.7071-.70711c-.39053-.39052-1.02369-.39052-1.41422 0-.39052.39052-.39052 1.02369 0 1.41421zm1.41412 8.48527-.70711.7071c-.39052.3905-1.02369.3905-1.41421 0s-.39052-1.0237 0-1.4142l.70711-.7071c.39052-.3905 1.02369-.3905 1.41421 0 .39053.3905.39053 1.0237 0 1.4142zm-2.46443-3.9497c.55228 0 1-.4477 1-1 0-.55228-.44772-1-1-1h-1c-.55228 0-1 .44772-1 1 0 .5523.44772 1 1 1z"
+                    fill="#fff"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </a>
+              <a class="user-menu__item" href="#">
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 0C3.68632 0 1.00003 2.68629 1.00003 6V9.5858L0.29292 10.2929C0.0069204 10.5789 -0.0786296 11.009 0.0761504 11.3827C0.23093 11.7564 0.59557 12 1.00003 12H13C13.4045 12 13.7691 11.7564 13.9239 11.3827C14.0787 11.009 13.9931 10.5789 13.7071 10.2929L13 9.5858V6C13 2.68629 10.3137 0 7 0Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M7 16C5.34315 16 4 14.6569 4 13H10C10 14.6569 8.6569 16 7 16Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a class="user-menu__item" href="#">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM10 5C10 6.10457 9.1046 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.1046 3 10 3.89543 10 5ZM7.99993 9C5.98239 9 4.24394 10.195 3.45374 11.9157C4.55403 13.192 6.18265 14 7.99998 14C9.8173 14 11.4459 13.1921 12.5462 11.9158C11.756 10.195 10.0175 9 7.99993 9Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search d-none js-search-inline-wrapper" role="search">
+        <div class="search__content">
+          <form action="vyhledavani.html" class="search__form" method="GET">
+            <div class="search__form-row">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Co hledáte?"
+                aria-label="Hledej na ping-pong.cz"
+                autofocus
+              />
+              <input type="submit" value="hledat" class="btn link" />
+              <button aria-label="Hledat" class="btn btn-icon">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <button aria-lable="Zavřít hledaní" class="btn-link js-search-inline-toggle">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="times-circle"
+              class="svg-inline--fa fa-times-circle fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="search__tags">
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+          <a href="" class="tag">tag</a>
+        </div>
+      </div>
+      <script async src="js/search-inline.js"></script>
+    </header>
+    <main class="article">
+      <div class="container">
+        <h1>Koronavirus</h1>
+        <div class="article__img">
+          <img src="images/content/koronavirus.jpg" alt="" />
+        </div>
+        <div class="articleContent simple-page">
+          <p>
+            <strong>
+              Aktuální situace způsobená novým druhem koronaviru ovlivňuje náš každodenní život a
+              nevyhnula se ani stolnímu tenisu. Na této stránce naleznete přehledně na jednom místě
+              všechna opatření, která přijímá vedení České asociace stolního tenisu v souvislosti s
+              omezením sportovních soutěží, turnajů, ale i dalších plánovaných akcí v ČR. No a
+              protože nyní tráví většina z nás hodně času v domácím prostředí, přinášíme tipy, jak
+              tento čas trávit pohybem a stolním tenisem. V neposlední řadě zde naleznete obecná
+              doporučení a relevantní informace k probíhající pandemii.
+            </strong>
+          </p>
+          <h3>PRAVIDLA PRO KONÁNÍ SOUTĚŽÍ VE STOLNÍM TENISU 2021-2022</h3>
+          <p>26.11.2021</p>
+          <p>
+            Pravidla pro konání soutěží ve stolním tenisu ze dne 22.11.2021 zůstávají v platnosti i
+            na základě vyhlášeného nouzového stavu. Usnesení vlády ČR ze dne 25. listopadu o
+            vyhlášeném nouzového stav najdete
+            <a
+              href="https://www.vlada.cz/assets/epidemie-koronaviru/dulezite-informace/vyhlaseni-nouzoveho-stavu-1065.pdf"
+              >ZDE</a
+            >. V Usnesení vlády ČR č. 1066
+            <a
+              href="https://www.vlada.cz/assets/epidemie-koronaviru/dulezite-informace/omezeni-maloobchodu-a-sluzeb-1066.pdf"
+              >ZDE</a
+            >
+            ze dne 25. listopadu 2021 o přijetí krizového opatření se ve vztahu k přípravě
+            amatérských sportovců a sportovním utkání organizované sportovními svazy nic nezměnilo,
+            viz bod II/14 d.
+          </p>
+          <p>23.11.2021</p>
+          <p>
+            Aktuální informace pro sportovce zveřejněné na stránkách Národní sportovní agentury
+            najdete
+            <a href="https://agenturasport.cz/vlada-schvalila-restart-profesionalniho-sportu/"
+              >ZDE</a
+            >.
+          </p>
+          <p>22.11.2021</p>
+          <p>
+            Aktualizace pravidel pro konání soutěží ve stolním tenisu 2021-2022 s platností od
+            22.11.2021 jsou zveřejněna
+            <a
+              href="https://old.ping-pong.cz/dokumenty/pravidla-pro-konani-soutezi-ve-stolnim-tenisu-2021-22_platna-od-22-11-2022/"
+              >ZDE</a
+            >.
+          </p>
+          <p>5.11.2021</p>
+          <p>
+            Aktualizace pravidel pro konání soutěží ve stolním tenisu 2021-2022 od 1.11.2021 jsou
+            zveřejněna
+            <a
+              href="https://old.ping-pong.cz/dokumenty/pravidla-pro-konani-soutezi-ve-stolnim-tenisu-2021-22/"
+              >ZDE</a
+            >. Aktuální informace pro sportovce jsou zveřejněny na stránkách Národní sportovní
+            agentury (NSA)
+            <a href="https://agenturasport.cz/vlada-schvalila-restart-profesionalniho-sportu/"
+              >ZDE</a
+            >. Mimořádná a ochranná opatření &#8211; co aktuálně platí, jsou zveřejněná na webových
+            stránkách
+            <a
+              href="https://www.vlada.cz/cz/media-centrum/aktualne/vyhlaseni-nouzoveho-stavu-180234/"
+              >www.vlada.cz</a
+            >
+          </p>
+          <hr />
+          <p>
+            Dne 25.8.2021 VV ČAST na svém zasedání schválil pravidla pro konání mistrovských a
+            nemistrovských soutěží ve stolním tenisu. Důvodem zavedení pravidel jsou stále
+            přetrvávající mimořádná opatření k zamezení šíření onemocnění covid-19 ze strany
+            Ministerstva zdravotnictví. Aktualizace podmínek bude zveřejňována na těchto stránkách.
+            Informace budou rozesílány všem organizačním pracovníků družstev. Schválená pravidla
+            jsou zveřejněna
+            <a
+              href="https://old.ping-pong.cz/dokumenty/pravidla-pro-konani-soutezi-ve-stolnim-tenisu-2021-22/"
+              >ZDE</a
+            >. Součásti pravidel je formulář &#8222;Čestné prohlášení o bezinfekčnosti&#8220;.
+          </p>
+          <hr />
+          <h3>AKTUÁLNÍ INFORMACE PRO SPORTOVCE</h3>
+          <p>
+            Sportovní příprava amatérských sportovců organizována sportovními svazy je POVOLENA.
+            Aktuální informace a podmínky jsou zveřejněny na stránkách Národní sportovní agentury
+            (NSA)
+            <a href="https://agenturasport.cz/vlada-schvalila-restart-profesionalniho-sportu/"
+              >ZDE</a
+            >.
+          </p>
+
+          <h3>NIŽŠÍ LIGOVÉ SOUTĚŽE SEZONY 2020/2021 BYLY ANULOVÁNY</h3>
+          <p>
+            Výkonný výbor ČAST na svém jednání dne 24. 2. 2021 rozhodl o dalším konání soutěží v
+            sezoně 2020/2021. Obě extraligové soutěže pokračují dál podle stávajících podmínek.
+          </p>
+          <p>
+            Ostatní ligové soutěže sezony 2020/2021 jsou anulovány. Družstva hrající v sezoně
+            2020/2021 budou mít nárok se přihlásit v následujícím ročníku do stejných soutěží. Na
+            základě zájmu některých oddílů odehrát soutěže i bez postupů a sestupů (vyplývá z
+            odpovědí na dotazníky) bude v rámci možnosti navržen systém nemistrovské soutěže pro
+            kluby, mající zájem soutěž hrát. Uvedené soutěže budou uspořádány na základě vývoje
+            epidemické situace v České republice. V současnosti se řeší systém a podmínky. Bližší
+            informace budou zveřejněny dodatečně.
+          </p>
+          <p>
+            Kompletní zprávu ředitele soutěží ČAST najdete
+            <a href="https://old.ping-pong.cz/wp-content/uploads/2021/02/INFO_ŘS_2021_16.pdf"
+              >ZDE</a
+            >
+          </p>
+          <h3>RESTART EXTRALIGY ŽEN SE BLÍŽÍ</h3>
+          <p>
+            Pouze šest kompletních kol stihly na podzim odehrát kluby v Extralize žen. Pak byla z
+            epidemických důvodů soutěž přerušena. Podobně jako mužská extraliga, obdržely i ženy už
+            na konci minulého roku výjimku Ministerstva zdravotnictví. Jejich soutěž se znovu
+            rozběhne na začátku února.
+          </p>
+          <p>
+            Jak už před několika týdny avizoval ředitel soutěží Miroslav Henžel, v případě Extraligy
+            žen dojde ke změně systému základní i nadstavbové části. Družstva nebudou hrát
+            dvoukolovým způsobem každý s každým, ale stihnou odehrát jen jedno kolo, tedy bez odvet.
+            Pak bude následovat play off o titul pro nejlepších osm týmů. Poslední dvě družstva po
+            základní části automaticky sestupují do 1. ligy, družstvo na 9. místě končí soutěž po
+            základní části a družstva na 10. – 13. místě budou hrát play out o udržení. Extraligovou
+            účast si zajistí dvě z nich.
+          </p>
+          <p>
+            Už úvodní kola soutěže naznačila, kdo bude v letošním ročníku patřit k největším
+            aspirantům na boje o titul. Dvě družstva mají prozatím stoprocentní bilanci. Konkrétně
+            MSK Gumotex Břeclav a SK Dobré ještě neprohrály a jsou na prvních dvou místech tabulky.
+            Za nimi je s jednou porážkou SKST Stavoimpex Hodonín. Následují SVS Hradec Králové,
+            Hodonín B a SKST Havířov.
+          </p>
+          <p>
+            Utkání se budou hrát v podobném režimu, jako je tomu u mužů. Povinné budou testy na
+            koronavirus pro hráče, trenéry i rozhodčí, přísná hygienická pravidla v průběhu
+            samotného utkání a samozřejmě zatím bez přítomnosti diváků.
+          </p>
+          <p>
+            A ještě jedna drobná změna, která vstoupila v platnost od začátku roku 2021. Družstvo
+            CDU Sport – Stolní tenis Ostrava změnilo název a soutěž dohraje jako MH – Stolní tenis
+            Ostrava.
+          </p>
+          <h3>
+            DOPLŇUJÍCÍ A UPŘESŇUJÍCÍ INFORMACE K ORGANIZACI EXTRALIGY MUŽŮ V DOBĚ PANDEMIE COVID-19
+          </h3>
+          <p>
+            Doplňující informace k extralize mužů najde
+            <strong
+              ><a
+                href="https://old.ping-pong.cz/wp-content/uploads/2021/01/ELM_dopl%C5%88uj%C3%ADc%C3%AD-informace_%C5%98S_2021_01_06.pdf"
+                target="_blank"
+                rel="noopener"
+                >ZDE</a
+              ></strong
+            >
+          </p>
+          <p>
+            Formulář o bezinfekčnosti (SELFREPORTING) si můžete stáhnout
+            <strong
+              ><a
+                href="https://old.ping-pong.cz/dokumenty/extraliga-muzu-doplnujici-a-upresnujici-informace-k-organizaci-v-dobe-pandemie-covid-19/"
+                target="_blank"
+                rel="noopener"
+                >ZDE</a
+              ></strong
+            >
+          </p>
+          <p>
+            Detailní informace v souvislosti s Covid-19 v běžném životě najdete
+            <strong><a href="https://covid.gov.cz/" target="_blank" rel="noopener">ZDE</a></strong>
+          </p>
+          <p>
+            Aktuální informace o koronaviru včetně antigenního testování najdete
+            <strong><a href="https://koronavirus.mzcr.cz/">ZDE</a></strong>
+          </p>
+          <p>
+            Matice opatření pro sport je ke stažení
+            <a
+              href="https://koronavirus.mzcr.cz/wp-content/uploads/2020/12/Matice_opatreni_PES_druheho_stupne_sport_final_29112020.pdf"
+              target="_blank"
+              rel="noopener"
+              ><strong>ZDE</strong></a
+            >
+          </p>
+          <h3>NEJVYŠŠÍ DOMÁCÍ SOUTĚŽE OBDRŽELY VÝJIMKU A V LEDNU SE OPĚT ROZJEDOU</h3>
+          <p>
+            Po dvouměsíční přestávce se už příští týden opět rozjedou obě nejvyšší domácí ligové
+            soutěže. Česká asociace stolního tenisu obdržela od Ministerstva zdravotnictví
+            <strong
+              >Stanovení závazných hygienicko-epidemických podmínek pro konání významných
+              sportovních akcí nebo soutěže</strong
+            >. V praxi tento dokument povoluje konání profesionálních soutěží i v nejvyšší stupni
+            Protiepidemického systému PES v souladu s pravidly pro konání sportovních soutěží v době
+            pandemie onemocnění COVID-19 vydanými Národní sportovní agenturou..
+          </p>
+          <p>
+            Extraliga mužů a Extraliga žen tak mohou v lednu 2021 pokračovat podle rozlosování,
+            které ředitel soutěží ČAST rozeslal klubům už v polovině prosince. Jako první vstoupí do
+            bojů o mistrovské body muži.
+            <strong
+              >Ve čtvrtek 7. ledna 2021 od 18 hodin přivítají před kamerami ping-pong.tv a
+              ArenaSport TV hráči TTC Enfireex Ostrava družstvo TJ Sokol PP Hradec Králové
+              2.</strong
+            >
+            O den později přijdou na řadu další čtyři duely 11. kola. Podle rozlosování čeká hráče
+            pořádný maraton, jen v lednu by se mělo odehrát šest kol. Ženy svoji soutěž zahájí
+            později. První dvojkolo je čeká ve dnech 22. &#8211; 24. ledna 2021.
+          </p>
+          <p>
+            Vedení ČAST připravilo pro všechny kluby podrobný
+            <strong>Manuál pro organizační a hygienické zajištění utkání družstev,</strong>
+            který velmi podrobně a přesně určuje, co je potřeba pro naplnění podmínek, určených
+            Ministerstvem zdravotnictví, udělat. Ať už se jedná o rozdělení sportoviště na
+            jednotlivé zóny, přípravu před utkáním nebo utkání samotného. Hrát se bude, podobně jako
+            v jiných sportech, pochopitelně bez přítomnosti diváků.
+          </p>
+          <p>
+            Pro všechny kluby navíc platí povinnost zajistit si samy vyšetření hráčů či hráček na
+            přítomnost viru SARS-CoV-2 formou RT-PCR nebo antigenního testu na přítomnost antigenu
+            SARS-CoV-2, včetně úhrady uvedených testů.
+          </p>
+          <p>
+            V nejbližších dnech bude v informačním systému STIS aktualizováno rozlosování obou
+            soutěží. Ostatní soutěže řízené ČAST jsou prozatím stále pozastaveny. Jedná se o soutěže
+            od 1. ligy mužů a žen směrem dolů, hrát se nemohou ani soutěže řízené krajskými a
+            regionálními svazy. Stejně tak je zrušen první bodovací turnaj mládeže v roce 2021,
+            který se měl uskutečnit v polovině ledna v Liberci a Jablonci nad Nisou.
+          </p>
+          <p>
+            Manuál pro pořádání soutěží najdete
+            <a
+              href="https://old.ping-pong.cz/wp-content/uploads/2020/12/Manual_covid_final_NSA_08122020_družstva_final.pdf"
+              ><strong><span style="color: #e3003c">ZDE</span></strong></a
+            >
+          </p>
+          <p>&nbsp;</p>
+          <h3>LIGOVÉ SOUTĚŽE LETOS UŽ NEBUDOU</h3>
+          <p>
+            Na základě zveřejněných informací Národní sportovní agentury (NSA), vydaného opatření
+            Ministerstvem zdravotnictví o povinnosti roušek u sportovců v uzavřených prostorech a
+            usnesením vlády ze dne 30. 11. 2020 rozhodl výkonný výbor ČAST dne 30. 11. 2020 o
+            změnách v soutěžích.
+          </p>
+          <p><strong>Byla zrušena všechna letošní kola nižších ligových soutěží. </strong></p>
+          <p>
+            <strong
+              ><br />
+              Výkonný výbor ČAST dále dne 3. prosince 2020 rozhodl:</strong
+            >
+          </p>
+          <p>
+            <strong
+              >a) extraligová utkání mužů 10. kola plánovaná v termínu 19. 12. 2020 se
+              odkládají,</strong
+            >
+          </p>
+          <p>
+            <strong
+              >b) odložená extraligová utkání žen 11. – 12. kola plánovaná na termín 11. – 13. 12.
+              2020 se odkládají,</strong
+            >
+          </p>
+          <p>
+            <strong
+              >c) utkání Českého poháru plánovaná odehrát v termínech do konce roku 2020 se
+              odkládají,</strong
+            >
+          </p>
+          <p>
+            <strong
+              >d) mistrovství České republiky staršího žactva v termínu 19. – 20. 12. 2020 se
+              ruší</strong
+            >
+          </p>
+          <p>
+            <strong
+              >Aktuální plán změn najdete ve zprávě ředitele soutěží Miroslava Henžela
+              <a href="https://old.ping-pong.cz/wp-content/uploads/2020/12/INFO_ŘS_2021_11.pdf"
+                ><span style="color: #e3003c">ZDE</span></a
+              ></strong
+            >
+          </p>
+          <p>&nbsp;</p>
+          <h3>MISTROVSTVÍ REPUBLIKY MLADŠÍHO ŽACTVA JE ZRUŠENO</h3>
+          <p>
+            Mistrovství České republiky mladšího žactva v termínu 5. &#8211; 6. 12. 2020 ve Světlé
+            nad Sázavou se z důvodů přetrvávajících opatření a vládních omezení pro sportovní
+            soutěže RUŠÍ. Odloženy jsou také extraligové a ligové soutěže, plánované na tento týden.
+          </p>
+          <p>
+            Další informace k soutěžím budou zveřejněny po schůzi STK ČAST, která se koná dne 28.
+            11. 2020 v Praze.
+          </p>
+          <p>
+            Kompletní informace ředitele soutěží ČAST najdete
+            <a href="https://old.ping-pong.cz/wp-content/uploads/2020/11/INFO_ŘS_2021_09.pdf"
+              ><strong><span style="color: #e3003c">ZDE</span></strong></a
+            >
+          </p>
+
+          <h3>EXTRALIGOVÉ I LIGOVÉ SOUTĚŽE JSOU STÁLE POZASTAVENY</h3>
+          <p>
+            Na základě jednání s Národní sportovní agenturou (NSA) byla žádost o restart
+            extraligových soutěží stolního tenisu pozastavena. Důvodem pozastavení žádosti byla
+            skutečnost, že většina klubů nesplňuje (obtížně splňuje) podmínku profesionalizace nebo
+            nesouhlasí s restartem z jiných důvodů.<br />
+            Z těchto důvodů bylo odloženo 8. kolo extraligy mužů, stejně jako 9. – 12. kolo
+            extraligy žen plánované v termínech od 13. 11. do 22. 11. 2020. V případě, že bude možné
+            spuštění soutěží na základě ukončení nouzového stavu nebo na základě uvolnění
+            sportovních aktivit v termínu od 27. listopadu, budou se hrát dle původního
+            rozlosování.<br />
+            Ostatní ligové soutěže mužů a žen budou spuštěny v termínu od 28. listopadu jen v
+            případě, že to bude umožněno na základě vládních opatření.<br />
+            Kompletní informace ředitele soutěží ČAST najdete
+            <a href="https://old.ping-pong.cz/wp-content/uploads/2020/11/INFO_ŘS_2021_08.pdf"
+              ><span style="color: #e3003c"><strong>ZDE</strong></span></a
+            >
+          </p>
+
+          <h3>VÝKLADOVÉ STANOVISKO K NOUZOVÉMU STAVU VE SPORTU</h3>
+          <p>
+            Od pondělí 5. října 2020 platí na území České republiky nouzový stav. O jeho vyhlášení
+            rozhodla vláda Andreje Babiše na mimořádné schůzi ve středu 30. září 2020. Od uvedeného
+            data zároveň platí i krizové opatření, kterým vláda omezuje volný pohyb osob, především
+            pořádání hromadných akcí.
+          </p>
+          <p>
+            Sportovní akce v rámci soutěží, které jsou organizované sportovními svazy (národní svaz,
+            krajský svaz a regionální svaz) jsou omezené v počtu účasti nepřevyšujícím celkem
+            <strong>130 osob</strong> (sportovci a nezbytné osoby) v rámci vnitřního i vnějšího
+            sportoviště.
+          </p>
+          <p>
+            Stejné omezení se vztahuje i na přípravu (trénink, soustředění apod.) sportovců pro
+            sportovní akce v rámci soutěží, které jsou organizované sportovními svazy.
+          </p>
+          <p>
+            <strong> Sportovci jsou: </strong>osoby řádně registrované sportovním svazem a jsou
+            přímo zapojené do soutěží dané sportovní akce jako hráči.
+          </p>
+          <p>
+            <strong> Nezbytné osoby</strong> <strong>jsou:</strong> osoby, které zajišťují
+            organizační a technické zázemí včetně rozhodčích, delegátů, osob zajišťující
+            zpravodajství.
+          </p>
+          <p>
+            <strong>Ze sportovních akcí je vyloučena veřejnost (diváci, doprovod hráčů).</strong>
+          </p>
+          <p>Krizové opatření, kterým vláda omezuje volný pohyb osob platí do 18. října 2020.</p>
+          <p>
+            Výkladové stanovisko k nouzovému stavu ve sportu, které vydala NSA je zveřejněno
+            <a href="https://www.agenturasport.cz/aktualni-usneseni-vlady-cr-ve-vztahu-ke-sportu/"
+              ><strong>ZDE</strong></a
+            >.
+          </p>
+          <p>
+            Usnesení vlády České republiky ze dne 30. září 2020 je zveřejněné
+            <a href="https://www.agenturasport.cz/wp-content/uploads/2020/09/IHOABTXK4Y1T.pdf"
+              ><strong>ZDE</strong></a
+            >.
+          </p>
+          <h2></h2>
+          <h2>METODICKÝ POKYN A PRAVIDLA PRO KONÁNÍ SPORTOVNÍCH AKCÍ</h2>
+          <p>
+            dne 18.9.2020 vydala hlavní hygienička ČR metodický pokyn a pravidla pro konání
+            sportovních soutěží, které připravila Národní sportovní agentura (NSA) ve spolupráci s
+            Ministerstvem zdravotnictví a jsou určena k zajištění řádného průběhu sportovních
+            soutěží i v této těžké epidemiologické situaci. Pravidla zohledňují prioritu NSA, kterou
+            je vždy zdraví sportovců, trenérů, rozhodčích, realizačních týmů i diváků, zároveň však
+            zohledňují i zájem NSA, aby byly zahájeny a reálně mohly i probíhat soutěže v
+            jednotlivých sportovních odvětvích, a to zejména mistrovské soutěže v kolektivních i
+            individuálních sportech.
+          </p>
+          <p>
+            Metodický pokyn a s ním spojené dokumenty najdete
+            <a
+              href="https://koronavirus.mzcr.cz/metodicky-pokyn-hlavni-hygienicky-cr-k-jednotnemu-postupu-krajskych-hygienickych-stanic-pri-konani-sportovnich-akci?fbclid=IwAR20Ge6IumTaWhEHtt7LtVatjYI46Lig_HPNgd0v4rExpNiYH_AzM5maPUU"
+              >ZDE</a
+            >.
+          </p>
+          <h2>
+            <a
+              href="https://old.ping-pong.cz/wp-content/uploads/2020/08/Desatero-o-COVID-19-pro-sportovce-dne-17-8-2020.pdf"
+              >DESATERO O COVID-19 PRO SPORTOVCE</a
+            >
+          </h2>
+          <h2>COVID SPORT</h2>
+          <p>
+            Dne 15.6.2020 byla vyhlášena dotační výzva COVID SPORT. Veškeré informace k žádosti
+            naleznete <a href="https://www.agenturasport.cz/covid-sport/">ZDE</a>. K této výzvě
+            můžete využít následující informační kontakty:
+          </p>
+          <ul>
+            <li>Tel: 704 857 111 (po-čt v době od 9:00 do 12:00)</li>
+            <li>e-mail: <a href="mailto:dotace@agenturasport.cz">dotace@agenturasport.cz</a></li>
+          </ul>
+          <p>&nbsp;</p>
+          <h2>Finanční podpora spolků provozujících sportovní zařízení</h2>
+          <p>Vážení sportovní přátelé,</p>
+          <p>
+            možnost finanční podpory spolků provozujících sportovní zařízení, které mají hospodářské
+            ztráty způsobené uzavřením sportovišť, dostává reálnější obrysy.
+          </p>
+          <p>
+            Ztráty na tržbách, které vznikly v důsledků preventivních opatření vlády proti šíření
+            koronaviru, bezprostředně ohrožují existenci a majetek řady sportovních klubů.
+          </p>
+          <p>
+            Česká unie sportu v součinnosti s Národní sportovní agenturou a s podporou České obce
+            sokolské vyzvala předsedu vlády, aby se podobně jako ministerstvo kultury, zasadil o
+            pomoc provozovatelům zařízení. Tiskovou zprávu najdete
+            <a
+              href="https://old.ping-pong.cz/wp-content/uploads/2020/05/Tisková-zpráva_1.5.2020.pdf"
+              >ZDE</a
+            >
+          </p>
+          <p>
+            Vláda poté minulý týden schválila návrh zákona, kterým bude pomoc umožněna
+            prostřednictvím Národní sportovní agentury, která návrh zákona připravila.
+          </p>
+          <p>
+            Sledujte oficiální informace České unie sportu, abyste byli včas připraveni reagovat na
+            dotační výzvy, které pravděpodobně Národní sportovní agentura vypíše v případě schválení
+            státní podpory.
+          </p>
+          <p>Česká unie sportu bude své členy o situaci nadále průběžně informovat.</p>
+          <p>&nbsp;</p>
+          <h2></h2>
+          <h2 class="post_title_label">
+            Výkladové stanovisko NSA k Usnesení Vlády ČR ze dne 23. dubna 2020
+          </h2>
+          <p>
+            Výklad NSA
+            <a
+              href="http://www.agenturasport.cz/2020/04/30/vykladove-stanovisko-nsa-k-usneseni-vlady-cr-ze-dne-23-dubna-2020/"
+              >ZDE</a
+            >
+          </p>
+          <h2>
+            <img
+              class=""
+              src="http://www.agenturasport.cz/wp-content/uploads/2020/05/des03-1024x722.png"
+              width="879"
+              height="620"
+            />
+          </h2>
+          <h2>Česká unie sportu</h2>
+          <p>
+            <strong>Aktuální nastavení podmínek pro sportování včetně právního výkladu.</strong>
+          </p>
+          <p>
+            ČUS zveřejnila právní stanovisko k aktuálnímu opatření MZDR (aktuální od 7. dubna a i po
+            14. dubnu platné), aby nedocházelo k mylným výkladům a k porušování nařízených pravidel
+            prevence proti šíření koronaviru.
+            <a href="https://www.cuscz.cz/novinky/aktualizovane-opatreni-vlady-cr-od-16-3.html"
+              >Více na oficiálním webu ČUS</a
+            >.
+          </p>
+          <p>
+            Vláda s účinností ode dne 27. dubna 2020 od 00:00 hod.<br />
+            <strong>I. zakazuje</strong>
+          </p>
+          <p>bod f)</p>
+          <p>
+            přítomnost veřejnosti v provozovnách poskytovatelů služeb – vnitřních sportovišť včetně
+            vnitřních bazénů, s výjimkou posiloven, tělocvičen a fitness center, pro které se
+            nařizuje, aby byla dodržována následující pravidla:
+          </p>
+          <p>
+            i. omezit přítomnost klientů tak, aby byly mezi nimi rozestupy alespoň 2 metry a na
+            každých 10 m2 se vyskytoval nejvýše 1 klient,<br />
+            ii. nelze používat šatny a sprchy,<br />
+            iii. vstup a cvičení po celou dobu pouze s ochrannými prostředky dýchacích cest,<br />
+            iv. zajistit dezinfekci strojů a dalšího cvičebního nářadí a pomůcek po použití každým
+            klientem,<br />
+            v. průběžně dezinfikovat místa, kde se klienti vyskytují,<br />
+            vi. zajistit dezinfekci rukou pro personál i klienty,<br />
+            vii. klienti provedou povinnou dezinfekci rukou před zahájením a po celkovém ukončení
+            cvičení,<br />
+            viii. prodávat pouze balené nápoje a balené potraviny,<br />
+            ix. používat vzduchotechniku pouze se samostatným přívodem a odtahem vzduchu,<br />
+            x. je možné realizovat individuální tréninky pouze v režimu jeden na jednoho,<br />
+            xi. v sálech pro skupinová cvičení bez osobního kontaktu označit cvičební místa tak, aby
+            se zachovala potřebná vzdálenost mezi jednotlivými cvičícími nejméně 2 metry, vždy při
+            dodržení účasti nejvýše 8 cvičících a nejvýše 1 trenéra,<br />
+            xii. upravit časový harmonogram tak, aby mezi jednotlivými lekcemi proběhl úklid,
+            vyvětrání a dezinfekce prostor;
+          </p>
+          <h2>Opatření pro stolní tenis</h2>
+          <h3><strong>Výkonný výbor ČAST ruší všechny jím pořádané soutěže</strong></h3>
+          <ul>
+            <li style="list-style-type: none">
+              <ul>
+                <li style="list-style-type: none">
+                  <ul>
+                    <li style="list-style-type: none">
+                      <ul>
+                        <li style="list-style-type: none">
+                          <ul>
+                            <li style="list-style-type: none">
+                              <ul>
+                                <li>
+                                  Výkonný výbor rozhodl
+                                  <strong
+                                    >o ukončení všech extraligových a ligových soutěží řízených ČAST
+                                    s platností od 21.4</strong
+                                  >
+                                </li>
+                                <li>
+                                  více informací
+                                  <a
+                                    href="https://old.ping-pong.cz/wp-content/uploads/2020/04/Rozhodnut%C3%AD-VV-%C4%8CAST-o-ukon%C4%8Den%C3%AD-sout%C4%9B%C5%BE%C3%AD-2020-19.pdf"
+                                    >zde</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h3><strong>ČAST odkládá další akce</strong></h3>
+          <ul>
+            <li style="list-style-type: none">
+              <ul>
+                <li style="list-style-type: none">
+                  <ul>
+                    <li style="list-style-type: none">
+                      <ul>
+                        <li style="list-style-type: none">
+                          <ul>
+                            <li style="list-style-type: none">
+                              <ul>
+                                <li>
+                                  na dobu neurčitou se odkládá řádná konference ČAST, stejně jako
+                                  schůzky s Radami krajů
+                                </li>
+                                <li>
+                                  více informací
+                                  <a
+                                    href="https://old.ping-pong.cz/upresneni-vv-o-konani-soutezi-rizenych-cast-a-dalsich-akci/"
+                                    >zde</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h3><strong>Koronavirus posouvá také letní olympijské hry</strong></h3>
+          <ul>
+            <li style="list-style-type: none">
+              <ul>
+                <li style="list-style-type: none">
+                  <ul>
+                    <li style="list-style-type: none">
+                      <ul>
+                        <li style="list-style-type: none">
+                          <ul>
+                            <li style="list-style-type: none">
+                              <ul>
+                                <li>
+                                  Olympiáda v Tokiu se přesune na příští rok a začne 23. července
+                                  2021
+                                </li>
+                                <li>
+                                  Toto rozhodnutí platí také pro paralympijské hry, které mají nový
+                                  temrín stanoven na 24. srpna 2021
+                                </li>
+                                <li>
+                                  Mezinárodní federace stolního tenisu bude v úzkém kontaktu s MOV a
+                                  budou studovat další důsledky pro stolní tenis
+                                </li>
+                                <li>
+                                  více informací
+                                  <a
+                                    href="https://old.ping-pong.cz/olympiada-se-letos-kvuli-koronaviru-neuskutecni/"
+                                    >zde</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2>Co dělat v době karantény?</h2>
+          <p>
+            <em
+              >Karanténa nás připoutala doma. Tato izolace může být pro mnohé skličující a pomalu
+              nahlodávat tělo i ducha. Připravili jsme pro vás souhrn aktivit, kterými se v tomto
+              období můžete zabavit a zároveň tak udělat i něco pro sebe.</em
+            >
+          </p>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <span style="color: #e3003c"><strong>Domácí kondiční trénink</strong></span>
+            </li>
+          </ul>
+          <p>
+            Nepochybujeme o vaší pevné vůli, ale kdyby přece jen někdo potřeboval namotivovat k
+            vyšší aktivitě, přínášíme pár tipů na sportovní aplikace se kterými se můžeme udržovat
+            fit v pohodlí domova.
+          </p>
+          <p>
+            <iframe
+              width="900"
+              height="506"
+              src="https://www.youtube.com/embed/Nl49kR4aNsk?feature=oembed"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+          <ul>
+            <li>
+              <span style="color: #e3003c"><strong>Velký Československý kvíz</strong></span>
+            </li>
+          </ul>
+          <p>
+            Od 1. 4. 2020 běží VELKÝ ČESKO-SLOVENSKÝ KVÍZ o ceny v celkové hodnotě 27 000 Kč!
+            <a
+              href="http://Už ve středu 1. 4. 2020 spustíme VELKÝ ČESKO-SLOVENSKÝ KVÍZ o ceny v celkové hodnotě 27 000 Kč!"
+              >Zapojte se také zde.</a
+            >
+          </p>
+          <div></div>
+          <ul>
+            <li>
+              <span style="color: #e3003c"><strong>Škola ping-pongu</strong></span>
+            </li>
+          </ul>
+          <p>
+            V souvislosti s novou knihou Stolní tenis od Marty Novotné připravila ČAST videonávody,
+            které mají všem hráčům, trenérům i rodičům ukázat, jak správně hrát deset základních
+            úderů stolního tenisu.
+          </p>
+          <p>
+            <iframe
+              width="900"
+              height="506"
+              src="https://www.youtube.com/embed/ehlzYm24i0g?feature=oembed"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+          <p>
+            Další díly naleznete ke shlédnutí
+            <a
+              href="https://www.youtube.com/watch?v=ehlzYm24i0g&amp;list=PLDKgPcIEdvsrBH7dwxuWST2chwfBb5Hv5"
+              >zde</a
+            >
+          </p>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <span style="color: #e3003c"><strong>Výzva Všichni za stůl</strong></span>
+            </li>
+          </ul>
+          <p>
+            Na Facebook a Instagramu běží výzva s názvem #vsichnizastul. Zapojme se do ní všichni a
+            rozhýbejme tak Česko. Více informací najdete na
+            <a href="https://www.facebook.com/CeskaAsociaceStolnihoTenisu/posts/2592593007536403"
+              >FB profilu České asociace stolního tenisu.</a
+            >
+          </p>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <span style="color: #e3003c"
+                ><strong>Z historie českého stolního tenisu</strong></span
+              >
+            </li>
+          </ul>
+          <p>
+            Seriál, který všem fanouškům připomene nejvýznamnější a největší úspěchy českých
+            stolních tenistů. Každý den až do začátku května vychází na našem webu nový díl.
+          </p>
+          <p>
+            První díl naleznete
+            <a href="https://old.ping-pong.cz/z-historie-ceskeho-stolniho-tenisu-1-dil/">zde.</a>
+          </p>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <span style="color: #e3003c"
+                ><strong>Užitečné informace na stránkách České unie sportu</strong></span
+              >
+            </li>
+          </ul>
+          <div>
+            Na stránkách <a href="http://www.cuscz.cz">České unie sportu</a> je také možno sledovat
+            vývoj situace a získat informace o tom, co přináší pro sportovce, sportovní kluby a
+            spolky aktuální dění v zemi. Stránky jsou pravidelně aktualizovány.
+          </div>
+          <div>www.cuscz.cz</div>
+          <hr />
+          <h2>Informace ministerstva zdravotnictví ČR</h2>
+          <h3><strong>Co je koronavirus?</strong></h3>
+          <p>
+            Označení koronavirus se používá pro jakýkoli virus, patřící do podčeledi Coronaviridae.
+            Jde o souhrnné označení pro čtyři čeledi virů, které způsobují onemocnění u zvířat a
+            lidí s různým stupněm závažnosti. Název je odvozen od charakteristického uspořádání
+            povrchových struktur lipidového obalu virů ve tvaru sluneční korony. Může způsobit běžné
+            obtíže, jako je nachlazení, kašel, dýchací obtíže, teploty. Ale také smrtící choroby,
+            jako je dýchací onemocnění zvané těžký akutní respirační syndrom (SARS; Severe Acute
+            Respiratory Syndrome) či infekci MERS (Middle East Respiratory Syndrome).
+          </p>
+          <p>
+            Nový typ koronaviru označovaný jako „nový koronavirus“ neboli SARS-CoV-2 (původně
+            označený jako 2019-nCoV), případně také jako wuchanský koronavirus, se objevil poprvé v
+            na začátku prosince 2019 v čínské provincii Chu-pej, v níž se nachází jedenáctimilionové
+            město Wu-chan. Vědci už dokázali popsat genetickou strukturu viru. Čína tyto údaje
+            uvolnila veřejnosti, takže na výzkumu nyní pracuje řada odborných pracovišť po celém
+            světě. Onemocnění, které tento koronavirus způsobuje, dostalo označení COVID-19.
+          </p>
+          <h3><strong>Jak se onemocnění COVID-19 přenáší?</strong></h3>
+          <p>
+            Koronavirus se přenáší z člověka na člověka po úzkém kontaktu. Jedná se o tzv.
+            kapénkovou infekci, která je přenášena vzduchem. Zasahuje nejčastěji sliznice horních a
+            dolních dýchacích cest. Inkubační doba je týden až čtrnáct dní. Po týdnu od nakažení se
+            nemoc projeví horečkami, které neustupují. Mohou být provázené nepříjemnými pocity,
+            bolestmi kloubů a svalů a brzy se objeví projevy kašle.
+          </p>
+          <h3><strong>Jak se proti nákaze COVID-19 preventivně chránit?</strong></h3>
+          <p>Důležité je postupovat tak, jako při klasickém respiračním onemocnění:</p>
+          
+          <ul>
+            <li style="list-style-type: none">
+              <ul>
+                <li>vyhýbat se těm, kdo jsou zjevně nemocní</li>
+                <li>dodržovat základní hygienická pravidla</li>
+                <li>
+                  používat například i dezinfekci, pokud jsme v kontaktu s lidmi,
+                  kteří trpí akutními respiračními potížemi
+                </li>
+                <li>nezdržovat se v místech s vyšší koncentrací osob</li>
+                <li>
+                  jedinci, kteří trpí respiračním onemocněním by měli dodržovat
+                  pravidla respirační hygieny – tj. při kýchání a kašlání řádně
+                  užívat, nejlépe jednorázové, kapesníky, při kašlání a kýchání si
+                  zakrývat ústa paží/rukávem, nikoliv rukou! (kapénky se pak mohou
+                  přenést dál)
+                </li>
+                <li>
+                  důsledně chránit by se měli také zdravotníci, kteří přicházejí s
+                  pacienty nejvíce do styku
+                </li>
+              </ul>
+          <p>
+            Kompletní informace naleznete na webu MZ ČR, stránkách Světové zdravotnické organizace,
+            případně na speciální stránce ke koronaviru.
+          </p>
+          <ul>
+            <li style="list-style-type: none">
+              <ul>
+                <li style="list-style-type: none">
+                  <ul>
+                    <li style="list-style-type: none">
+                      <ul>
+                        <li style="list-style-type: none">
+                          <ul>
+                            <li style="list-style-type: none">
+                              <ul>
+                                <li><a href="http://www.mzcr.cz/">http://www.mzcr.cz/</a></li>
+                                <li>
+                                  <a href="https://koronavirus.mzcr.cz/"
+                                    >https://koronavirus.mzcr.cz/</a
+                                  >
+                                </li>
+                                <li>
+                                  <a href="https://www.vlada.cz/">https://www.vlada.cz/</a>
+                                </li>
+                                <li><a href="https://www.who.int/">https://www.who.int/</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h2></h2>
+          <p>&nbsp;</p>
+        </div>
+        <section class="hp-cast">
+          <h2>související články</h2>
+          <div class="top-clanky__row">
+            <div class="clanek">
+              <a class="clanek__link" href="article.html">
+                <div class="clanek__img">
+                  <img src="images/content/tv-2.jpg" alt="" />
+                </div>
+                <div class="clanek__info">
+                  <h3>Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl</h3>
+                  <span>14.7.2021</span>
+                </div>
+              </a>
+            </div>
+            <div class="clanek">
+              <a class="clanek__link" href="article.html">
+                <div class="clanek__img">
+                  <img src="images/content/tv-3.jpg" alt="" />
+                </div>
+                <div class="clanek__info">
+                  <h3>Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže</h3>
+                  <span>14.7.2021</span>
+                </div>
+              </a>
+            </div>
+            <div class="clanek">
+              <a class="clanek__link" href="article.html">
+                <div class="clanek__img">
+                  <img src="images/content/tv-5.jpg" alt="" />
+                </div>
+                <div class="clanek__info">
+                  <h3>Český stolní tenis na olympiádách – Rio de Janeiro 2016</h3>
+                  <span>14.7.2021</span>
+                </div>
+              </a>
+            </div>
+            <div class="clanek">
+              <a class="clanek__link" href="article.html">
+                <div class="clanek__img">
+                  <img src="images/content/tv-2.jpg" alt="" />
+                </div>
+                <div class="clanek__info">
+                  <h3>Pavel Širuček si na olympiádě v Tokiu nezahraje, los soutěží proběhl</h3>
+                  <span>14.7.2021</span>
+                </div>
+              </a>
+            </div>
+            <div class="clanek">
+              <a class="clanek__link" href="article.html">
+                <div class="clanek__img">
+                  <img src="images/content/tv-3.jpg" alt="" />
+                </div>
+                <div class="clanek__info">
+                  <h3>Kvarteto juniorek postoupilo ve dvouhře do hlavní soutěže</h3>
+                  <span>14.7.2021</span>
+                </div>
+              </a>
+            </div>
+            <div class="clanek">
+              <a class="clanek__link" href="article.html">
+                <div class="clanek__img">
+                  <img src="images/content/tv-5.jpg" alt="" />
+                </div>
+                <div class="clanek__info">
+                  <h3>Český stolní tenis na olympiádách – Rio de Janeiro 2016</h3>
+                  <span>14.7.2021</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="hp-partners">
+      <div class="container">
+        <div class="hp-partners__inner">
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/1.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/2.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/3.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/4.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/5.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/6.png" alt="" />
+            </a>
+          </div>
+
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/7.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/8.png" alt="" />
+            </a>
+          </div>
+
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/9.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/10.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/11.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/12.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/13.png" alt="" />
+            </a>
+          </div>
+          <div class="hp-partners__item">
+            <a href="#">
+              <img src="images/partners/14.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start  -->
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img src="images/svg/footer-logo.svg" alt="" />
+      </a>
+      <ul class="footer__list">
+        <li>
+          <a href="#">Cookies</a>
+        </li>
+        <li>
+          <a href="#">Copyright</a>
+        </li>
+        <li>
+          <a href="#">Fakturační údaje</a>
+        </li>
+        <li>
+          <a href="#">Podmínky použití</a>
+        </li>
+        <li>
+          <a href="#">Obchodní podmínky</a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/facebook.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/twitter.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/youtube.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/instagram.svg" alt="" />
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="images/svg/flickr.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+      <p>
+        © Česká asociace stolního tenisu & <a href="https://esportsmedia.cz/">eSportsmedia</a> s.r.o
+      </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/light-gallery.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
